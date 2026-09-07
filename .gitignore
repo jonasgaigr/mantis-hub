@@ -13,6 +13,7 @@ renv/sandbox/
 .quarto/
 _book/
 _site/
+documentation/
 figures_files/
 slides_files/
 pitch_files/
