@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-label="A left-to-right chain from field sensors through AI identification and benchmarking to published data and policy indicators, with numbered quality gates on the connectors. Brackets above mark Packages 1 and 2; a band below marks Package 3.">
+  <title>MANTIS is one quality-controlled chain from a sensor in the field to a policy indicator, and the three packages each own a different stretch of it.</title>
+  <desc>MANTIS runs a single quality-controlled chain from sensors in the field to policy indicators. Package 1 improves the schemes that feed the chain, Package 2 carries data through verification, benchmarking and publication, and Package 3 builds the capacity that keeps it running.</desc>
+  <defs>
+    <marker id="arrow-flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#555555"/></marker>
+    <marker id="arrow-feeds" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0.5 0.5 L 9 5 L 0.5 9.5" fill="none" stroke="#555555" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="#FFFFFF"/>
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <polyline points="42.24,189.77 42.24,170.33 781.44,170.33 781.44,189.77" fill="none" stroke="#999999" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt"/>
+    <text x="411.84" y="148.89" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Package 1 — Scheme improvement</text>
+    <polyline points="566.40,286.97 566.40,267.53 1567.68,267.53 1567.68,286.97" fill="none" stroke="#999999" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt"/>
+    <text x="1067.04" y="246.09" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Package 2 — Data flows</text>
+    <rect x="19.20" y="832.95" width="1833.60" height="58.32" rx="11.52" fill="#E6E6E6" stroke="#999999" stroke-width="2.88"/>
+    <text x="936.00" y="865.98" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Package 3 — Capacity building</text>
+    <polyline points="257.28,586.13 304.32,586.13" fill="none" stroke="#555555" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#arrow-flow)"/>
+    <polyline points="519.36,586.13 566.40,586.13" fill="none" stroke="#555555" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#arrow-flow)"/>
+    <polyline points="781.44,586.13 828.48,586.13" fill="none" stroke="#555555" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#arrow-flow)"/>
+    <polyline points="1043.52,586.13 1090.56,586.13" fill="none" stroke="#555555" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#arrow-flow)"/>
+    <polyline points="1305.60,586.13 1352.64,586.13" fill="none" stroke="#555555" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#arrow-flow)"/>
+    <polyline points="1567.68,586.13 1614.72,586.13" fill="none" stroke="#555555" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#arrow-flow)"/>
+    <polyline points="595.20,386.33 804.96,386.33 804.96,527.16" fill="none" stroke="#555555" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#arrow-feeds)"/>
+    <rect x="42.24" y="515.93" width="215.04" height="140.40" fill="#FFFFFF" stroke="#111111" stroke-width="4.80"/>
+    <text x="149.76" y="571.17" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Sensors in</text>
+    <text x="149.76" y="613.33" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">the field</text>
+    <rect x="304.32" y="515.93" width="215.04" height="140.40" fill="#FFFFFF" stroke="#111111" stroke-width="4.80"/>
+    <text x="411.84" y="571.17" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Images and</text>
+    <text x="411.84" y="613.33" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">sounds</text>
+    <rect x="566.40" y="515.93" width="215.04" height="140.40" fill="#FFFFFF" stroke="#111111" stroke-width="4.80"/>
+    <text x="673.92" y="571.17" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">AI</text>
+    <text x="673.92" y="613.33" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">identification</text>
+    <rect x="828.48" y="515.93" width="215.04" height="140.40" fill="#FFFFFF" stroke="#111111" stroke-width="4.80"/>
+    <text x="936.00" y="550.09" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Records</text>
+    <text x="936.00" y="592.25" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">with known</text>
+    <text x="936.00" y="634.41" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">uncertainty</text>
+    <rect x="1090.56" y="515.93" width="215.04" height="140.40" fill="#FFFFFF" stroke="#111111" stroke-width="4.80"/>
+    <text x="1198.08" y="550.09" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Open</text>
+    <text x="1198.08" y="592.25" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">published</text>
+    <text x="1198.08" y="634.41" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">data</text>
+    <rect x="1352.64" y="515.93" width="215.04" height="140.40" fill="#FFFFFF" stroke="#111111" stroke-width="4.80"/>
+    <text x="1460.16" y="571.17" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Policy</text>
+    <text x="1460.16" y="613.33" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">indicators</text>
+    <rect x="1614.72" y="515.93" width="215.04" height="140.40" rx="70.20" fill="#FFFFFF" stroke="#111111" stroke-width="4.80"/>
+    <text x="1722.24" y="592.25" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Policy use</text>
+    <rect x="268.80" y="335.19" width="326.40" height="102.27" rx="15.36" fill="#FFFFFF" stroke="#111111" stroke-width="4.80" stroke-dasharray="19.20 13.44"/>
+    <text x="432.00" y="371.37" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Expert-verified</text>
+    <text x="432.00" y="413.53" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">reference dataset</text>
+    <polyline points="280.80,527.16 280.80,566.08 292.32,586.13 280.80,606.18 280.80,645.10" fill="none" stroke="#111111" stroke-width="7.68" stroke-linejoin="round" stroke-linecap="butt"/>
+    <circle cx="280.80" cy="667.23" r="21.08" fill="#FFFFFF" stroke="#111111" stroke-width="2.88"/>
+    <text x="280.80" y="679.13" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">1</text>
+    <text x="280.80" y="715.93" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Deployment</text>
+    <text x="280.80" y="758.09" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">registration</text>
+    <polyline points="804.96,527.16 804.96,566.08 816.48,586.13 804.96,606.18 804.96,645.10" fill="none" stroke="#111111" stroke-width="7.68" stroke-linejoin="round" stroke-linecap="butt"/>
+    <circle cx="804.96" cy="667.23" r="21.08" fill="#FFFFFF" stroke="#111111" stroke-width="2.88"/>
+    <text x="804.96" y="679.13" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">2</text>
+    <text x="804.96" y="715.93" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">Expert</text>
+    <text x="804.96" y="758.09" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">verification</text>
+    <polyline points="1067.04,527.16 1067.04,566.08 1078.56,586.13 1067.04,606.18 1067.04,645.10" fill="none" stroke="#111111" stroke-width="7.68" stroke-linejoin="round" stroke-linecap="butt"/>
+    <circle cx="1067.04" cy="667.23" r="21.08" fill="#FFFFFF" stroke="#111111" stroke-width="2.88"/>
+    <text x="1067.04" y="679.13" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">3</text>
+    <text x="1067.04" y="715.93" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">AI</text>
+    <text x="1067.04" y="758.09" font-size="34.00" fill="#111111" text-anchor="middle" font-weight="600">benchmarking</text>
+    <polyline points="57.60,933.35 122.50,933.35" fill="none" stroke="#555555" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#arrow-flow)"/>
+    <text x="140.80" y="944.23" font-size="32.00" fill="#555555" text-anchor="start">solid arrow: data flows to</text>
+    <polyline points="544.13,933.35 609.02,933.35" fill="none" stroke="#555555" stroke-width="3.84" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#arrow-feeds)"/>
+    <text x="627.33" y="944.23" font-size="32.00" fill="#555555" text-anchor="start">open arrowhead: feeds into</text>
+    <polyline points="1094.59,916.71 1094.59,927.69 1100.99,933.35 1094.59,939.01 1094.59,949.99" fill="none" stroke="#111111" stroke-width="4.80" stroke-linejoin="round" stroke-linecap="butt"/>
+    <text x="1149.50" y="944.23" font-size="32.00" fill="#555555" text-anchor="start">numbered bar: quality-control gate</text>
+  </g>
+</svg>
