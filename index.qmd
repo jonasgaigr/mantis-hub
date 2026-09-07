@@ -123,7 +123,7 @@ problems, so they should not be solved redundantly across up to 27 Member
 States. Read the quote out – it is the proposal's own sentence.
 :::
 
-## The aim: connective tissue, not another project
+## The aim: connective tissue
 
 - **Connect data acquisition** – align protocols, deployments and annotations, and extend spatial and taxonomic coverage with new sensor deployments.  [Package 1]{.small}
 - **Connect the data** – harmonise datasets and metadata into a seamless, quality-controlled flow from images and sounds to indicators, including transnational benchmarking of AI models.  [Package 2]{.small}
@@ -142,7 +142,7 @@ a Task 2.5.3 activity as opposed to a conventional research grant.
 
 ## At the end of this activity…
 
-> …national automated monitoring efforts using image and sound technologies will function as a **connected, transnational system** rather than isolated national deployments.
+> …national and regional automated monitoring efforts using image and sound technologies will function as a **connected, transnational system** rather than isolated national deployments.
 
 **Because MANTIS will have –**
 
