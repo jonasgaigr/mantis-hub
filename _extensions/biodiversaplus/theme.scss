@@ -1,0 +1,1001 @@
+/*-- scss:defaults --*/
+
+// Data-URI'd logo + mask. Generated from assets/logo-full.png and assets/logo-mask.svg.
+// Regenerate after swapping either file:
+//   quarto run _extensions/biodiversaplus/assets/build-assets.ts
+@import "assets/assets";
+
+// ===========================================================================
+// BRAND PALETTE
+// ---------------------------------------------------------------------------
+// Every colour below was read out of the source deck, not chosen.
+// The named colours are the theme scheme in ppt/theme/theme1.xml
+// (<a:clrScheme name="Bio Colours">). The deck contains no raw <a:srgbClr>
+// anywhere - every slide, layout and the master reference scheme slots only -
+// so this scheme *is* the palette.
+// The gradient stops are sampled from the 8000px-wide artwork in ppt/media/.
+// ===========================================================================
+
+$bd-green:       #98C01E !default;  // accent1 - primary brand green
+$bd-turquoise:   #02A3A7 !default;  // accent2 - turquoise / "aqua"
+$bd-navy:        #103B60 !default;  // accent3 - brand navy, the logo wordmark colour
+$bd-ink:         #000000 !default;  // dk1 / tx1 - body text
+$bd-paper:       #FFFFFF !default;  // lt1 / bg1 - slide background
+
+// "Section Start Blue" in the source deck paints its title with tx2 (#44546A),
+// the untouched Office default - every sibling layout uses a real brand accent,
+// and the blue *content* layout uses accent3. Treated here as an authoring slip
+// and normalised to the brand navy. Set this to #44546A to reproduce the deck
+// literally.
+$bd-blue-heading: $bd-navy !default;
+
+// Gradient stops, sampled left -> right across the footer bars in ppt/media/.
+// The midpoint of the green ramp lands exactly on accent1.
+$bd-green-from:      #749E28 !default;
+$bd-green-mid:       #98C01E !default;
+$bd-green-to:        #C9D74F !default;
+
+$bd-navy-from:       #0D2F4D !default;
+$bd-navy-mid:        #405E78 !default;
+$bd-navy-to:         #7191BF !default;
+
+$bd-turquoise-from:  #00918F !default;
+$bd-turquoise-mid:   #52B29A !default;
+$bd-turquoise-to:    #8ED1E7 !default;
+
+$bd-gradient-green:     linear-gradient(90deg, $bd-green-from 0%, $bd-green-mid 50%, $bd-green-to 100%) !default;
+$bd-gradient-blue:      linear-gradient(90deg, $bd-navy-from 0%, $bd-navy-mid 50%, $bd-navy-to 100%) !default;
+$bd-gradient-turquoise: linear-gradient(90deg, $bd-turquoise-from 0%, $bd-turquoise-mid 50%, $bd-turquoise-to 100%) !default;
+
+// Neutral support tones. Not in the source palette (the deck has no greys beyond
+// the unused Office lt2), derived from the brand navy so tables/rules/code stay
+// in family instead of introducing a foreign grey.
+$bd-rule:      rgba(16, 59, 96, 0.22) !default;   // hairlines, table borders
+$bd-wash:      rgba(16, 59, 96, 0.05) !default;   // table stripe, code background
+$bd-muted:     rgba(0, 0, 0, 0.62) !default;      // captions, footer text
+
+// ===========================================================================
+// SLIDE GEOMETRY
+// ---------------------------------------------------------------------------
+// The source slide is 12192000 x 6858000 EMU = 13.333in x 7.5in = 960 x 540 pt.
+// The reveal canvas is 1280 x 720, so 1pt in the deck == 4/3 px here, and every
+// measured percentage below maps straight onto the canvas.
+// Changing these two values requires changing width/height in _extension.yml.
+// ===========================================================================
+
+$bd-slide-width:  1280px !default;
+$bd-slide-height: 720px !default;
+
+// Title slide: the white header band ends at y=1375/4500 = 30.56% of the overlay
+// artwork, and the logo mark's outer contour fits a circle at centre (7141, 2880)
+// r 2380 in the 8000x4500 source - it bleeds off the right and bottom edges.
+// Neither is needed as a CSS value: both the colour field and the mark are traced
+// straight out of the artwork into assets/title-field.svg and assets/logo-mask.svg,
+// which carry a slide-space viewBox and so need no positioning maths at all.
+
+// Content slides: the footer rule sits at y=87.3%, spanning 7.39% -> 96.66%.
+$bd-footer-rule-top:   $bd-slide-height * 0.873 !default;      // 628px
+$bd-footer-rule-left:  7.39% !default;
+$bd-footer-rule-width: 89.27% !default;
+$bd-footer-rule-height: 2px !default;                          // 9/583 of the strip ~ 1.4px, rounded up to stay crisp
+
+// Content slides: small logo at x=3.31%, width 15.56% of the slide.
+$bd-footer-logo-left:  $bd-slide-width * 0.0331 !default;      // 42px
+$bd-footer-logo-width: $bd-slide-width * 0.1556 !default;      // 199px
+
+// Section dividers: solid gradient bar occupying the bottom 12.96% of the slide.
+$bd-section-bar-height: $bd-slide-height * 0.1296 !default;    // 93px
+
+// Closing slide (ppt/slides/slide11.xml on the "Blank" layout). Same white header
+// band as the title slide - the band edge is at the same y=1375/4500 - but the
+// colour field runs edge to edge below it and the logo mark sits inside the field
+// as a hole rather than cutting its right-hand boundary. The field including that
+// hole is traced into assets/closing-field.svg, so only the mark needs placing.
+//
+// The mark is the *same* silhouette as the title slide's, at 0.79235 scale and
+// offset (1331.1, 919.7) in the 8000x4500 source; that transform is baked into
+// assets/_assets.scss by build-assets.ts, so nothing here has to place it.
+//
+// Header band: the logo sits exactly where the title slide puts it; the EU funding
+// lockup to its right is the one thing the closing band adds.
+$bd-closing-eu-left:   $bd-slide-width * 0.5096 !default;      // 652px
+$bd-closing-eu-top:    $bd-slide-height * 0.1231 !default;     // 89px
+$bd-closing-eu-width:  $bd-slide-width * 0.4569 !default;      // 585px
+
+// Text. The source uses four separate boxes; the two that matter are the message
+// block at x 12.5% / y 39.53% (48.57% wide, clearing the mark) and the contact
+// block pinned to the foot of the slide - icons at x 13.31%, their labels at
+// 15.77%, one line every 5.72% of slide height.
+$bd-closing-text-top:     $bd-slide-height * 0.3953 !default;  // 285px
+$bd-closing-text-left:    $bd-slide-width * 0.125 !default;    // 160px
+$bd-closing-text-right:   $bd-slide-width * 0.3893 !default;   // 498px
+$bd-closing-foot-bottom:  $bd-slide-height * 0.0615 !default;  // 44px
+$bd-closing-foot-indent:  $bd-slide-width * 0.0081 !default;   // 10px, 12.5% -> 13.31%
+$bd-closing-icon-gap:     $bd-slide-width * 0.0246 !default;   // 32px, 13.31% -> 15.77%
+$bd-closing-icon-size:    $bd-slide-width * 0.0199 !default;   // 25px
+$bd-closing-line-gap:     $bd-slide-height * 0.0206 !default;  // 15px, for a 5.72% pitch
+$bd-closing-rule-width:   $bd-slide-width * 0.0514 !default;   // 66px
+$bd-closing-rule-gap:     $bd-slide-height * 0.0247 !default;  // 18px, y 76.27% -> 78.73%
+
+// Content margins. The source uses 2.7% for titles and 6.7% for body text; a
+// single margin is used here so headings and body align, which reads better when
+// reveal flows content rather than positioning it at fixed coordinates.
+$bd-margin-x: $bd-slide-width * 0.06 !default;                 // 77px
+$bd-margin-top: $bd-slide-height * 0.049 !default;             // 35px, the source title y
+$bd-margin-bottom: $bd-slide-height * 0.16 !default;           // 115px, clears the footer chrome
+
+// ===========================================================================
+// TYPOGRAPHY
+// ---------------------------------------------------------------------------
+// Sizes in the source deck, in points, x 4/3 to reach canvas px.
+// Extracted:  36pt section title, 30pt title-slide title (bold), 28pt content
+//             title, 20pt subtitle / section body, 18pt column header,
+//             12pt body, 9pt footer.
+// Derived:    h4/h5/h6 and the body default, interpolated on the same ramp -
+//             the deck only defines the sizes listed above.
+// ===========================================================================
+
+// Arial is Monotype-licensed and cannot be redistributed. Arimo is metric-
+// compatible with it (identical advance widths), so machines without Arial get
+// the same line breaks rather than a reflow. Loaded in _extension.yml.
+$bd-font-family: Arial, Arimo, "Helvetica Neue", Helvetica, sans-serif !default;
+
+// Body. The deck's dense two-column body is 12pt (16px) and its section-divider
+// body placeholder is 20pt (26.7px); 18px sits between them and stays readable
+// once reveal scales the canvas up to the window. Use `.small` for the deck's 12pt.
+$presentation-font-size-root: 18px !default;
+$presentation-font-family: $bd-font-family !default;
+$font-family-sans-serif: $bd-font-family !default;
+$font-family-monospace: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace !default;
+
+$body-bg: $bd-paper !default;                     // lt1 / bg1
+$body-color: $bd-ink !default;                    // dk1 / tx1
+$link-color: $bd-turquoise !default;              // accent2; the deck's own hlink is the
+                                                  // untouched Office #0563C1, which is not a brand colour
+$link-color-hover: $bd-navy !default;
+$selection-bg: rgba(152, 192, 30, 0.35) !default; // accent1 at 35%
+$selection-color: $bd-ink !default;
+
+// Headings. The deck sets titles in the slide's accent colour and never uppercases
+// or letterspaces them; line spacing is 90% throughout.
+$presentation-heading-font: $bd-font-family !default;
+$presentation-heading-color: $bd-navy !default;
+$presentation-heading-font-weight: 400 !default;
+$presentation-heading-line-height: 1.1 !default;   // lnSpc 90000 = 90%
+$presentation-heading-text-transform: none !default;
+$presentation-heading-letter-spacing: normal !default;
+$presentation-heading-text-shadow: none !default;
+
+// em values are relative to the 18px root above.
+$presentation-h1-font-size: 2.667em !default;  // 48px  <- 36pt section divider title
+$presentation-h2-font-size: 2.074em !default;  // 37px  <- 28pt content slide title
+$presentation-h3-font-size: 1.333em !default;  // 24px  <- 18pt column header
+$presentation-h4-font-size: 1.111em !default;  // 20px  <- derived
+$bd-h5-font-size: 1.000em !default;            // 18px  <- derived
+$bd-h6-font-size: 0.889em !default;            // 16px  <- 12pt, the deck's body size
+
+$bd-title-font-size: 2.222em !default;         // 40px  <- 30pt title-slide title
+$bd-subtitle-font-size: 1.481em !default;      // 27px  <- 20pt title-slide subtitle
+$bd-footer-font-size: 0.667em !default;        // 12px  <- 9pt footer
+
+// Vertical rhythm. The deck's paragraph space-before is 10pt = 13.3px.
+$presentation-block-margin: 14px !default;
+
+$presentation-slide-text-align: left !default;
+$presentation-title-slide-text-align: left !default;
+
+/*-- scss:rules --*/
+
+// ===========================================================================
+// COLOUR VARIANTS
+// ---------------------------------------------------------------------------
+// The deck ships every content and section layout in three colourways
+// (green / blue / turquoise). They are exposed as slide classes:
+//   ## Slide title {.blue}
+// Green is the default because it is what the title slide uses.
+// ===========================================================================
+
+.reveal {
+  --bd-accent: #{$bd-green};
+  --bd-gradient: #{$bd-gradient-green};
+}
+.reveal .slides section {
+  &.green      { --bd-accent: #{$bd-green};      --bd-gradient: #{$bd-gradient-green}; }
+  &.blue       { --bd-accent: #{$bd-blue-heading}; --bd-gradient: #{$bd-gradient-blue}; }
+  &.turquoise,
+  &.aqua       { --bd-accent: #{$bd-turquoise};  --bd-gradient: #{$bd-gradient-turquoise}; }
+}
+
+// ===========================================================================
+// BASE
+// ===========================================================================
+
+.reveal {
+  font-family: $bd-font-family;
+  -webkit-font-smoothing: antialiased;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: $bd-font-family;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.1;
+  margin: 0 0 $presentation-block-margin 0;
+  // Titles take the slide's colourway; the deck colours every title with its
+  // layout accent rather than a single heading colour.
+  color: var(--bd-accent);
+}
+
+.reveal h5 { font-size: $bd-h5-font-size; }
+.reveal h6 { font-size: $bd-h6-font-size; }
+
+// Column headers on the two-column layouts are the accent colour at 18pt; deeper
+// headings fall back to navy so a slide with several levels stays legible.
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: $bd-navy;
+  font-weight: 700;
+}
+
+.reveal p { line-height: 1.35; }
+
+.reveal a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(2, 163, 167, 0.4);
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: $link-color-hover;
+    border-bottom-color: currentColor;
+  }
+}
+
+.reveal strong, .reveal b { font-weight: 700; }
+
+// Bullets. The master's bodyStyle sets a 0.25in (24px) hanging indent at level 1
+// and steps in by 0.5in at level 2. reveal adds its own `margin-left: 1em` to
+// lists, which is cleared here so the marker sits on the slide's left margin.
+.reveal ul { list-style: none; padding-left: 1.15em; margin-left: 0; }
+.reveal ul li {
+  position: relative;
+  margin-bottom: 0.35em;
+  &::before {
+    content: "\2022";   // U+2022 BULLET, escaped so the rule does not depend on stylesheet charset
+    position: absolute;
+    left: -1.15em;
+    color: var(--bd-accent);
+    font-weight: 700;
+  }
+}
+.reveal ul ul li::before { content: "\2013"; color: $bd-navy; }
+.reveal ol { padding-left: 1.2em; }
+.reveal ol li { margin-bottom: 0.35em; }
+.reveal ol li::marker { color: var(--bd-accent); font-weight: 700; }
+
+.reveal .small, .reveal small {
+  // The deck's dense two-column body size: 12pt.
+  font-size: $bd-h6-font-size;
+}
+
+// ===========================================================================
+// CONTENT SLIDES  (## Heading -> level2)
+// ---------------------------------------------------------------------------
+// Source: slideLayout9/10/11 "Content small title <colour>" - 28pt accent title
+// at the top left, a thin gradient rule at 87.3% of slide height, the small
+// logo below it at the left, and a 9pt marker at the right.
+// ===========================================================================
+
+// A level-1 heading followed by level-2 headings is wrapped by pandoc in a bare
+// <section> vertical stack, so real slides are not always direct children of
+// .slides. Quarto marks every actual slide with `.slide`; the stack wrapper has
+// no class at all. Selectors below key off `.slide` rather than child depth.
+.reveal .slides section.slide {
+  height: 100%;
+  padding: $bd-margin-top $bd-margin-x $bd-margin-bottom $bd-margin-x;
+  box-sizing: border-box;
+}
+
+// The stack wrapper is a container, not a slide: it must not take padding or
+// paint chrome behind its children. It does need an explicit height, or the
+// `height: 100%` on the slides inside it resolves against an auto-height parent
+// and vertical centring (.bd-centre) silently does nothing.
+.reveal .slides > section:not(.slide) {
+  padding: 0;
+  height: 100%;
+  &::before, &::after { content: none; }
+}
+
+.reveal .slides section.level2 > h2:first-child,
+.reveal .slides section.level3 > h3:first-child {
+  margin-bottom: 0.6em;
+}
+
+// Persistent chrome: gradient rule + logo. Drawn on the slide itself (rather than
+// fixed to the viewport) so it scales with reveal's canvas transform and so a
+// per-slide colourway class reaches it.
+@mixin bd-chrome {
+  &::before {
+    content: "";
+    position: absolute;
+    left: $bd-footer-rule-left;
+    width: $bd-footer-rule-width;
+    top: $bd-footer-rule-top;
+    height: $bd-footer-rule-height;
+    background: var(--bd-gradient);
+    pointer-events: none;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: $bd-footer-logo-left;
+    top: $bd-footer-rule-top + 12px;
+    width: $bd-footer-logo-width;
+    aspect-ratio: 2186 / 560;   // the logo's own bbox in the source artwork
+    background-image: $bd-logo-full;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    pointer-events: none;
+  }
+}
+
+// Content slides carry the chrome. Full-bleed slides and anything explicitly
+// opted out do not - excluded in the selector rather than reset afterwards, so
+// `.bd-overlay` is free to use ::before for its scrim.
+.reveal .slides section.slide.level2:not(.bd-fullbleed):not(.bd-no-chrome):not(.bd-section):not(.bd-closing),
+.reveal .slides section.slide.level3:not(.bd-fullbleed):not(.bd-no-chrome):not(.bd-section):not(.bd-closing),
+.reveal .slides section.slide.level1.bd-chrome:not(.bd-closing) {
+  @include bd-chrome;
+}
+
+// ===========================================================================
+// SECTION DIVIDERS  (# Heading -> level1)
+// ---------------------------------------------------------------------------
+// Source: slideLayout2/3/4 "Section Start <colour>" - 36pt accent title at
+// x 8.7% / y 32.6%, 20pt body under it, and a full-width gradient bar filling
+// the bottom 12.96% of the slide.
+// ===========================================================================
+
+// Quarto adds a `.center` class to level-1 header slides, but reveal's centring is
+// switched off deck-wide (center: false in _extension.yml) to keep content slides
+// top-aligned, so the divider's vertical position is set explicitly from the source:
+// title at y 32.6%, body at 56.8%.
+.reveal .slides section.slide.level1:not(.bd-chrome):not(.bd-fullbleed):not(.bd-no-chrome):not(.bd-closing),
+.reveal .slides section.slide.bd-section:not(.bd-fullbleed):not(.bd-closing) {
+  padding-top: $bd-slide-height * 0.326;
+  padding-bottom: $bd-section-bar-height + 24px;
+
+  > h1, > h2 {
+    font-size: $presentation-h1-font-size;
+    color: var(--bd-accent);
+  }
+
+  // Logo, top left. Source: slideLayout2/3/4 place it at x 3.29%, y 5.87%,
+  // 27.32% wide - larger than the one on content slides.
+  &::before {
+    content: "";
+    position: absolute;
+    left: $bd-slide-width * 0.0329;
+    top: $bd-slide-height * 0.0587;
+    width: $bd-slide-width * 0.2732;
+    aspect-ratio: 2186 / 560;
+    background-image: $bd-logo-full;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    pointer-events: none;
+  }
+
+  // The full-width gradient bar across the bottom 12.96% of the slide.
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: $bd-section-bar-height;
+    background: var(--bd-gradient);
+    pointer-events: none;
+  }
+
+  // The source puts a white 12pt URL on the bar; the slide number takes that slot
+  // and so has to invert against the colour.
+  ~ .slide-number,
+  &.present ~ .slide-number { color: $bd-paper; }
+}
+
+// The slide number sits on the divider's colour bar, so it inverts there.
+.reveal:has(.slides section.slide.level1.present:not(.bd-chrome)) .slide-number {
+  color: $bd-paper;
+}
+
+// ===========================================================================
+// TITLE SLIDE
+// ---------------------------------------------------------------------------
+// Source construction (ppt/slides/slide1.xml): a photograph sits underneath a
+// full-bleed overlay PNG (ppt/media/image8.png) that is opaque everywhere except
+// a knocked-out region shaped like the Biodiversa+ logo mark - the photo shows
+// through the mark's contours. That is inverted here: the photo is masked *to*
+// the mark's silhouette and laid over the same white ground, which is visually
+// identical and lets the photograph be swapped per deck.
+// ===========================================================================
+
+.reveal .slides section#title-slide {
+  height: 100%;
+  padding: 0;
+  text-align: left;
+  background: $bd-paper;
+}
+
+.bd-title-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+// The colour field: a full-slide gradient masked to the field's traced outline.
+// That outline already contains the straight top edge under the white header band,
+// the sweep around the logo mark, and the small wedge that reappears in the
+// bottom-right corner - so the whole composition is one element, and switching
+// colourway is just a change of gradient.
+.bd-title-field {
+  position: absolute;
+  inset: 0;
+  background: var(--bd-gradient);
+
+  mask-image: $bd-title-field;
+  -webkit-mask-image: $bd-title-field;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+// The photograph, masked to the logo mark.
+// The mask SVG carries a slide-space viewBox (0 0 8000 4500) with the silhouette
+// already in position, so it is stretched across the whole slide and needs no
+// offset maths. `mask-size: 100% 100%` is exact for the 16:9 canvas this theme
+// targets; `contain` would keep the circle round on a different aspect ratio but
+// would move the mark away from its designed position.
+.bd-title-mask {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  mask-image: $bd-logo-mask;
+  -webkit-mask-image: $bd-logo-mask;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+// Fallback when no `title-image` is set: the mark reads as a solid brand shape
+// in the logo's own navy-to-teal, so a deck without a photograph still renders.
+.bd-title-mask--fallback {
+  background-image: linear-gradient(135deg, $bd-navy 0%, $bd-turquoise-from 100%);
+}
+
+// Full-colour logo in the white header band. Source: x 3.33%, y 5.93%, w 41.48%.
+.bd-title-logo {
+  position: absolute;
+  left: $bd-slide-width * 0.0333;
+  top: $bd-slide-height * 0.0593;
+  width: $bd-slide-width * 0.4148;
+  aspect-ratio: 2186 / 560;
+  background-image: $bd-logo-full;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
+  pointer-events: none;
+}
+
+// Title block. Source: title at x 12.5% / y 40.1%, 30pt bold white; a 2pt white
+// rule at x 13.4% / y 67.5%; date at 20pt white.
+.bd-title-text {
+  position: absolute;
+  left: 12.5%;
+  top: 40.1%;
+  width: 52%;
+  color: $bd-paper;
+
+  .title {
+    font-size: $bd-title-font-size;
+    font-weight: 700;
+    color: $bd-paper;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: $bd-subtitle-font-size;
+    color: $bd-paper;
+    margin: 0.4em 0 0 0;
+    opacity: 0.95;
+  }
+
+  .bd-title-rule {
+    width: $bd-slide-width * 0.06;
+    height: 2px;
+    margin: 1.1em 0 1.1em 0;
+    border: 0;
+    background: $bd-paper;
+    opacity: 1;
+  }
+
+  .author,
+  .institute,
+  .date {
+    font-size: $bd-subtitle-font-size;
+    color: $bd-paper;
+    margin: 0 0 0.2em 0;
+    line-height: 1.3;
+  }
+
+  .institute { font-size: $bd-h5-font-size; opacity: 0.9; }
+}
+
+// The title slide carries no footer chrome.
+.reveal .slides section#title-slide::before,
+.reveal .slides section#title-slide::after { content: none; }
+
+// ===========================================================================
+// CLOSING SLIDE  (## Heading {.bd-closing})
+// ---------------------------------------------------------------------------
+// Source: ppt/slides/slide11.xml, drawn free-hand on the "Blank" layout rather
+// than from a reusable layout - which is why it is a slide class here and not a
+// heading level. It is built like the title slide (photograph under a full-bleed
+// overlay knocked out in the shape of the logo mark) with three differences:
+//
+//   1. the colour field runs edge to edge below the header band instead of
+//      stopping at the mark, so the mark reads as a hole in the field with its
+//      own white outline - that outline is part of assets/closing-field.svg;
+//   2. the mark is smaller and sits fully inside the slide horizontally;
+//   3. the header band carries the EU co-funding lockup next to the logo.
+//
+// Unlike the title slide, the photograph here is *not* masked to the mark. It is
+// the slide's own background-image, and two stacked layers are masked over it:
+// ::before covers everything except the mark (white band, logo, EU lockup, the
+// mark's halo) and ::after lays the gradient field on top of that. The reason is
+// URL resolution: this stylesheet is generated into
+// <doc>_files/libs/revealjs/dist/theme/, so any relative url() the theme itself
+// consumes - including one arriving through a custom property - resolves against
+// that directory and 404s. A url() in the author's own inline style resolves
+// against the document, which is what makes this work:
+//
+//   ## Thank you! {.bd-closing style="background-image: url('images/x.jpg')"}
+//
+// Layout is flowed, not fixed: the message block starts at the source's y, and
+// the contact block is pushed to the foot of the slide, where it lands on the
+// source's baseline for the three lines the deck has and grows upwards rather
+// than off the slide for a deck that has more.
+// ===========================================================================
+
+.reveal .slides section.slide.bd-closing {
+  height: 100%;
+  padding: $bd-closing-text-top $bd-closing-text-right $bd-closing-foot-bottom $bd-closing-text-left;
+  box-sizing: border-box;
+
+  // The photograph. An author's `style="background-image: url(...)"` overrides
+  // just the image and inherits the framing below, so a deck with no photograph
+  // still renders - the mark fills with the same navy-to-teal fallback the title
+  // slide uses.
+  background-image: linear-gradient(135deg, $bd-navy 0%, $bd-turquoise-from 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  // Everything except the mark: the white ground, the header band's logo and EU
+  // lockup, and the mark's white halo. The photograph shows through where this
+  // layer is cut away. border-box origin so the lockup offsets are measured from
+  // the slide edge rather than from inside the padding.
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: $bd-paper;
+    background-image: $bd-logo-eu, $bd-logo-full;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: $bd-closing-eu-left $bd-closing-eu-top,
+                         $bd-slide-width * 0.0333 $bd-slide-height * 0.0593;
+    background-size: $bd-closing-eu-width auto,
+                     $bd-slide-width * 0.4148 auto;
+    mask-image: $bd-closing-cut;
+    -webkit-mask-image: $bd-closing-cut;
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    pointer-events: none;
+  }
+
+  // The colour field, masked to its traced outline and laid over the white
+  // ground. Switching colourway is a change of gradient, as on the title slide.
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--bd-gradient);
+    mask-image: $bd-closing-field;
+    -webkit-mask-image: $bd-closing-field;
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    pointer-events: none;
+  }
+
+  // ::after follows the content in tree order, so the content has to be lifted
+  // onto its own stacking level or the field paints over it.
+  > * { position: relative; z-index: 1; }
+
+  // Everything on this slide is white: the field is behind all of it.
+  h1, h2, h3, h4, h5, h6, p, li, strong, cite { color: $bd-paper; }
+
+  > h1, > h2 {
+    // 30pt bold, the title-slide size rather than the 28pt content title.
+    font-size: $bd-title-font-size;
+    font-weight: 700;
+    margin-bottom: $presentation-block-margin;
+  }
+
+  // 18pt bold for the message, matching the source's runs.
+  > p {
+    font-size: $presentation-h3-font-size;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  a {
+    color: $bd-paper;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    &:hover { color: $bd-paper; border-bottom-color: $bd-paper; }
+  }
+
+  // Contact block: the slide's last list, pinned to the foot of the slide by
+  // `margin-top: auto` in the column flexbox below. 18pt regular with hanging
+  // icons in the source's own three glyphs - globe by default, the envelope for
+  // a `mailto:` link, the social mark for anything marked `.bd-social`.
+  //
+  // The white rule above it is drawn by the list rather than written as a `---`
+  // in the markdown, because pandoc reads a horizontal rule as a slide break and
+  // would split the closing slide in two.
+  > ul:last-child {
+    margin: auto 0 0 $bd-closing-foot-indent;
+    padding-left: $bd-closing-icon-gap;
+    list-style: none;
+
+    li {
+      font-size: $presentation-h3-font-size;
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: $bd-closing-line-gap;
+      &:last-child { margin-bottom: 0; }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -$bd-closing-icon-gap;
+        top: 0;
+        width: $bd-closing-icon-size;
+        height: $bd-closing-icon-size;
+        background-image: $bd-icon-web;
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+      }
+
+      &:has(a[href^="mailto:"])::before { background-image: $bd-icon-mail; }
+      &:has(.bd-social)::before { background-image: $bd-icon-social; }
+    }
+
+    // The source's 2pt white rule, 2.46% of slide height above the first contact
+    // line. It hangs off that line rather than off the list box: the list box's
+    // top edge sits ~9px above its first line here, so measuring from the list
+    // would put the rule that much too high.
+    li:first-child::after {
+      content: "";
+      position: absolute;
+      left: -$bd-closing-icon-gap;
+      top: -$bd-closing-rule-gap;
+      width: $bd-closing-rule-width;
+      height: 2px;
+      background: $bd-paper;
+    }
+  }
+}
+
+// reveal writes `display: block` inline onto the current slide, and an inline
+// declaration outranks any selector - so the flex switch has to be !important and
+// scoped to `.present`, or slides that are not current lose reveal's `display:
+// none` and stay visible. Same reasoning as `.bd-fullbleed.bd-centre` above.
+.reveal .slides section.slide.bd-closing.present {
+  display: flex !important;
+  flex-direction: column;
+}
+
+// The slide number would otherwise sit dark-on-gradient at the foot of the field.
+.reveal:has(.slides section.slide.bd-closing.present) .slide-number { color: $bd-paper; }
+
+// Decks that are not EU co-funded drop the lockup and keep the logo.
+.reveal .slides section.slide.bd-closing.bd-no-eu::before {
+  background-image: $bd-logo-full;
+  background-position: $bd-slide-width * 0.0333 $bd-slide-height * 0.0593;
+  background-size: $bd-slide-width * 0.4148 auto;
+}
+
+// ===========================================================================
+// TWO-COLUMN LAYOUT
+// ---------------------------------------------------------------------------
+// Source: slideLayout5/6/7 "Content columns <colour>" - text at x 6.7% and
+// x 60.8%, i.e. two ~35% columns with a wide gutter, headed by an 18pt accent
+// header over 12pt body.
+// ===========================================================================
+
+.reveal .columns {
+  display: flex;
+  gap: $bd-slide-width * 0.045;
+  align-items: flex-start;
+}
+
+.reveal .column {
+  flex: 1 1 0;
+  min-width: 0;
+
+  > h3:first-child,
+  > h4:first-child {
+    margin-top: 0;
+    color: var(--bd-accent);
+    font-size: $presentation-h3-font-size;
+    font-weight: 400;
+  }
+}
+
+// ===========================================================================
+// FULL-BLEED IMAGE BACKGROUND
+// ---------------------------------------------------------------------------
+// Used with reveal's own background attributes:
+//   ## {background-image="photo.jpg" .bd-fullbleed .bd-overlay}
+// `.bd-overlay` lays a brand-navy scrim over the photo so white text holds up.
+// ===========================================================================
+
+.reveal .slides section.bd-fullbleed {
+  padding: $bd-margin-top $bd-margin-x;
+
+  h1, h2, h3, h4, p, li { color: $bd-paper; }
+  h1, h2 { text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45); }
+  a { color: $bd-paper; border-bottom-color: rgba(255, 255, 255, 0.5); }
+  ul li::before { color: $bd-paper; }
+
+  // Inline code inverts here - the navy-on-wash treatment used on white slides
+  // disappears against a photograph.
+  p > code, li > code {
+    color: $bd-paper;
+    background: rgba(255, 255, 255, 0.18);
+  }
+}
+
+.reveal .slides section.bd-overlay {
+  // The scrim sits above the slide background image but below the text, so the
+  // children are lifted onto their own stacking level rather than the scrim being
+  // pushed behind the slide with a negative z-index (which would hide it entirely).
+  > * { position: relative; z-index: 1; }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(13, 47, 77, 0.82) 0%, rgba(13, 47, 77, 0.45) 60%, rgba(13, 47, 77, 0.2) 100%);
+    z-index: 0;
+    pointer-events: none;
+  }
+}
+
+// A centred variant for a photo-led statement slide.
+// reveal's JS writes `style="display: block"` directly onto the active slide, and
+// an inline declaration outranks any selector - so the flex switch has to be
+// !important, and scoped to `.present` so that slides which are *not* current keep
+// reveal's `display: none` and stay hidden.
+.reveal .slides section.bd-fullbleed.bd-centre.present {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// ===========================================================================
+// TABLES
+// ---------------------------------------------------------------------------
+// The source deck contains no table, so this is the brand applied to Quarto's
+// table markup rather than a reproduction: accent header rule, navy wash stripe,
+// hairlines in the navy tint instead of a foreign grey.
+// ===========================================================================
+
+.reveal table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+  margin: $presentation-block-margin 0;
+}
+
+.reveal table th {
+  text-align: left;
+  font-weight: 700;
+  color: $bd-navy;
+  padding: 0.45em 0.7em;
+  border-bottom: 2px solid var(--bd-accent);
+  background: none;
+}
+
+.reveal table td {
+  padding: 0.45em 0.7em;
+  border-bottom: 1px solid $bd-rule;
+}
+
+.reveal table tbody tr:nth-child(even) { background: $bd-wash; }
+.reveal table caption,
+.reveal caption,
+.reveal .quarto-figure figcaption {
+  caption-side: bottom;
+  font-size: $bd-footer-font-size;
+  color: $bd-muted;
+  padding-top: 0.5em;
+  text-align: left;
+}
+
+// ===========================================================================
+// BLOCKQUOTE
+// ===========================================================================
+
+.reveal blockquote {
+  margin: $presentation-block-margin 0;
+  padding: 0.15em 0 0.15em 1.1em;
+  border-left: 4px solid var(--bd-accent);
+  background: none;
+  box-shadow: none;
+  font-style: normal;
+  color: $bd-navy;
+  width: auto;
+
+  p { line-height: 1.4; }
+  cite, footer {
+    display: block;
+    margin-top: 0.5em;
+    font-size: $bd-h6-font-size;
+    color: $bd-muted;
+    font-style: normal;
+  }
+}
+
+// ===========================================================================
+// CODE
+// ===========================================================================
+
+.reveal pre {
+  width: 100%;
+  box-shadow: none;
+  margin: 0;
+  font-size: 0.62em;      // reveal's default 0.55em is small against an 18px root
+  line-height: 1.4;
+}
+
+// Quarto wraps highlighted blocks in div.sourceCode and gives it its own border
+// and background. The accent bar goes on that wrapper, otherwise it is drawn
+// inside Quarto's box and reads as a stray line.
+.reveal div.sourceCode,
+.reveal div.cell-output pre {
+  background: $bd-wash;
+  border: none;
+  border-left: 3px solid var(--bd-accent);
+  border-radius: 0 3px 3px 0;
+  margin: $presentation-block-margin 0;
+  overflow: hidden;
+}
+
+.reveal div.cell-output pre { border-left-color: $bd-rule; }
+
+.reveal pre code {
+  display: block;
+  padding: 0.8em 1em;
+  background: transparent;
+  font-family: $font-family-monospace;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.reveal code {
+  font-family: $font-family-monospace;
+  color: $bd-navy;
+}
+
+// Inline code outside a block gets a light wash so it separates from body text.
+.reveal p > code,
+.reveal li > code,
+.reveal td > code {
+  background: $bd-wash;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+
+// ===========================================================================
+// FIGURES / CAPTIONS
+// ===========================================================================
+
+.reveal figure { margin: $presentation-block-margin 0; }
+.reveal figcaption,
+.reveal .figure-caption {
+  font-size: $bd-footer-font-size;
+  color: $bd-muted;
+  text-align: left;
+  margin-top: 0.4em;
+}
+.reveal img { max-width: 100%; }
+
+// ===========================================================================
+// SLIDE NUMBER + REVEAL UI
+// ---------------------------------------------------------------------------
+// The deck has no slide numbers; its content layouts carry a 9pt marker at the
+// bottom right ("www.biodiversa.org"). The slide number takes that position.
+// ===========================================================================
+
+.reveal .slide-number {
+  right: $bd-slide-width * 0.033;
+  bottom: $bd-slide-height * 0.045;
+  background: none;
+  color: $bd-muted;
+  font-family: $bd-font-family;
+  font-size: $bd-footer-font-size;
+  padding: 0;
+
+  a { color: inherit; border-bottom: none; }
+}
+
+// Quarto's `footer:` option, if used, sits on the same baseline as the logo.
+.reveal .footer {
+  font-size: $bd-footer-font-size;
+  color: $bd-muted;
+  bottom: $bd-slide-height * 0.045;
+}
+
+.reveal .controls { color: var(--bd-accent); }
+.reveal .progress { color: var(--bd-accent); height: 3px; }
+
+// ===========================================================================
+// PRINT / PDF EXPORT  (?print-pdf)
+// ---------------------------------------------------------------------------
+// CSS masking is honoured by Chrome's PDF pipeline, so the title slide exports
+// intact. Backgrounds and the gradient chrome need print-colour-adjust or they
+// are dropped from the PDF.
+// ===========================================================================
+
+@media print {
+  .reveal .slides section,
+  .bd-title-field,
+  .bd-title-disc,
+  .bd-title-mask,
+  .bd-title-logo,
+  .reveal .slides section::before,
+  .reveal .slides section::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

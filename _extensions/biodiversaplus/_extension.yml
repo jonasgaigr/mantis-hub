@@ -1,0 +1,37 @@
+title: Biodiversa+ reveal.js
+author: Biodiversa+ deck template
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    revealjs:
+      # 16:9, matching the source deck's 12192000 x 6858000 EMU (13.333in x 7.5in).
+      # 1280x720 makes the point sizes in the .pptx map to px at exactly 4/3,
+      # so every type size in theme.scss is the original value x 1.333.
+      # If you change these, update $bd-slide-width/$bd-slide-height in theme.scss too.
+      width: 1280
+      height: 720
+
+      # The brand layouts are top-aligned, not vertically centred.
+      center: false
+
+      # Margins are handled as slide padding in theme.scss so they can follow the
+      # measured percentages from the source layouts.
+      margin: 0
+
+      theme: [default, theme.scss]
+      template-partials:
+        - title-slide.html
+
+      slide-number: c/t
+      hash: true
+      history: true
+
+      # Arial is Monotype-licensed and cannot be bundled. Arimo is a metric-compatible
+      # clone (identical glyph widths), so decks fall back to it without reflowing on
+      # machines where Arial is absent. See the font stack in theme.scss.
+      include-in-header:
+        - text: |
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap">

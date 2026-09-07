@@ -1,0 +1,664 @@
+value,kind,context,section
+A1.1,activity,A1.1 - Developing a unified deployment registration system for automated monitoring schemes,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.1,activity,"Confirms existing AMI, CamAlien and acoustic deployment metadata (including TABMON) has been consolidated into a single Camtrap DP-compliant database, per A1.1.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.1,activity,"Confirms the decentralised, Camtrap DP-standardised registration system built on the master database (A1.1) is live and accepting partner data entry.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.1,activity,"MANTIS will build on the work that OneSTOP has done with the CamAlien system in terms of human verification of images (A1.2) and publishing of species occurrences to GBIF using the CamTrapDP metadata standard (A1.1, A2.2).",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.1,activity,MANTIS will interface directly with the InsectAI network to share protocols and datasets for human verification (A1.1) and AI benchmarking (A1.3).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.1,activity,The models used to classify and identify the taxa will be improved over the scope of the Pilot as part of the activity A1.1.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.1,activity,This activity will enable partners across the EU to actively participate in codesign and use of annotation systems and protocols developed in A1.1.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.2,activity,"A FAIR, expert-verified dataset of annotated images and sounds (insects, invasive plants, birds, bats, amphibians, plus NewtCam pond imagery/sound), combining outputs of A1.2 and A1.3.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.2,activity,A1.2 - Generating verified datasets for transnational quality control,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.2,activity,Confirms delivery of the first of two online workshops (A3.5) training partners in the image-verification protocols developed under A1.2/A1.3.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.2,activity,"Confirms the agreed per-partner allocation of upgraded acoustic recorders and CamAlien units (remote transfer, solar power) has been physically deployed, per A1.2's allocation process.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.2,activity,"Documents the annotation and verification protocols and systems built in A1.2 and scaled transnationally in A1.3, communicated in A3.5, feeding into the multi-country review process.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.2,activity,It will also undertake to generate a small set of representative annotations (see A1.2 for scaling opportunity).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.2,activity,"It will put into practice protocols and systems developed under A1.2, and offer opportunities for feedback and further development.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.2,activity,"MANTIS will build on the work that OneSTOP has done with the CamAlien system in terms of human verification of images (A1.2) and publishing of species occurrences to GBIF using the CamTrapDP metadata standard (A1.1, A2.2).",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.2,activity,"We will align the outputs of this activity with A1.2, ensuring that verified datasets follow FAIR principles.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.3,activity,"A FAIR, expert-verified dataset of annotated images and sounds (insects, invasive plants, birds, bats, amphibians, plus NewtCam pond imagery/sound), combining outputs of A1.2 and A1.3.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.3,activity,A1.3 - Scaling contributions to transnational verification,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.3,activity,A1.3 - Scaling contributions toward transnational verification,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.3,activity,Confirms delivery of the first of two online workshops (A3.5) training partners in the image-verification protocols developed under A1.2/A1.3.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.3,activity,"Documents the annotation and verification protocols and systems built in A1.2 and scaled transnationally in A1.3, communicated in A3.5, feeding into the multi-country review process.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.3,activity,MANTIS will directly reuse MAMBO's advanced AI models for our transnational benchmarking activities (A1.3).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.3,activity,MANTIS will interface directly with the InsectAI network to share protocols and datasets for human verification (A1.1) and AI benchmarking (A1.3).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.3,activity,"This library will be published under FAIR data principles and integrated into the broader AI benchmarking efforts (A1.3), providing a permanent, open-access resource for the global research community to train acoustic classification models.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.4,activity,A1.4 - Upgrade sensors in existing networks,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.4,activity,A1.4 - Upgrade sensors in existing schemes,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.4,activity,MANTIS will leverage eLTER’s existing physical infrastructure and institutional networks to support the deployment and sustained maintenance of upgraded sensors (A1.4).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.5,activity,A1.5 - Operationalizing underwater image-based monitoring of benthic invertebrates in ponds,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.5,activity,"Confirms each contributing partner has installed two NewtCam units at ponds co-located with BiodivPond sampling stations (A1.5), ready for the 2027 recording season.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.5,activity,"MANTIS complements BEAGLE by providing policy-relevant indicator concepts (A2.3) and scalable automated sensor protocols (A1.5, A1.6), preventing parallel, redundant efforts in sensor standardisation across EU frameworks.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.5,activity,"Reports on the NewtCam pilot (A1.5) and underwater acoustic pilot (A1.6), including deployment protocol, cost-efficacy comparison against eDNA/PAM/trapping, and contribution to the benthic invertebrate EBV.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.5,activity,The efforts include a specific focus on the NewtCam data (A1.5) since the hub is piloting its deployment at scale.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.5,activity,The standards and platform design will be coordinated and the two approaches will run side by side at BiodivPond ponds (A1.5) to document the complementarity.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.6,activity,A1.6 - Piloting underwater acoustic monitoring in ponds,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.6,activity,"MANTIS complements BEAGLE by providing policy-relevant indicator concepts (A2.3) and scalable automated sensor protocols (A1.5, A1.6), preventing parallel, redundant efforts in sensor standardisation across EU frameworks.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.6,activity,"Reports on the NewtCam pilot (A1.5) and underwater acoustic pilot (A1.6), including deployment protocol, cost-efficacy comparison against eDNA/PAM/trapping, and contribution to the benthic invertebrate EBV.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.7,activity,A1.7 - Scaling spatial coverage of existing sensor-based monitoring schemes,Annex 3. Reference list of relevant WP2 tasks and pilots
+A1.7,activity,A1.7 - Scaling spatial coverage of existing sensor-based schemes,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.1,activity,A2.1 - Transnational benchmarking of AI & pipeline refinement,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.1,activity,MANTIS will align its unified deployment registration system (A2.1) and acoustic indicators with TABMON's network.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.1,activity,"Reports model/taxon/region accuracy and bias assessments from A2.1, plus the resulting pipeline refinements (calibration, bias correction).",Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.2,activity,"A2.2 - Gold-standard implementation of standards for media, AI labels and annotations",Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.2,activity,MANTIS will build directly upon Safe and Sound’s foundational work to generate the gold-standard implementations for standardised media (A2.2).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.2,activity,"MANTIS will build on the work that OneSTOP has done with the CamAlien system in terms of human verification of images (A1.2) and publishing of species occurrences to GBIF using the CamTrapDP metadata standard (A1.1, A2.2).",Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.2,activity,"Publishes the standardised reference datasets and annotation formats from A2.2, aligned with Camtrap DP and its Safe and Sound acoustic extension.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.3,activity,"2.5.1 (Transnational governance): MANTIS will operate as a technical 'Thematic Hub', supplying indicator concepts (developed in A2.3) and capacity transfer to support the evidence-based governance of national coordination centres and the EBOCC pilot.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.3,activity,A2.3 - Workflows for policy relevant indicators based on novel technologies,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.3,activity,Confirms at least four indicators developed under A2.3/A2.4 are calculated and published live on the MANTIS dashboard (A3.1).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.3,activity,"Documents the indicator concepts developed in A2.3/A2.4, linked to NRR Art.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.3,activity,"It complements EBOCC’s mandate by delivering operationalised, sensor-based minimum requirements and policy-ready indicators (A2.3), ensuring our outputs are permanently embedded in the EU's biodiversity observation architecture.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.3,activity,"MANTIS complements BEAGLE by providing policy-relevant indicator concepts (A2.3) and scalable automated sensor protocols (A1.5, A1.6), preventing parallel, redundant efforts in sensor standardisation across EU frameworks.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.3,activity,This activity will resource engagement from partner countries in the codesign and selection of policy-relevant sensors in A2.3.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.4,activity,A2.4 - Scaling contributions toward transnational indicators,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.4,activity,Confirms at least four indicators developed under A2.3/A2.4 are calculated and published live on the MANTIS dashboard (A3.1).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.4,activity,Confirms delivery of the workshop (A2.4) at which partners select and agree the initial set of sensor-based indicators to be developed and tested.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.4,activity,"Documents the indicator concepts developed in A2.3/A2.4, linked to NRR Art.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.5,activity,A2.5 - Exemplary data-flow architecture for processing of transnational insect imagery,Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.5,activity,A2.5 - Exemplary data-flow architecture for processing transnational sensor data (AMI),Annex 3. Reference list of relevant WP2 tasks and pilots
+A2.5,activity,"An openly available, documented pipeline (A2.5) converting raw AMI images into structured detections/identifications with minimal setup.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.1,activity,A3.1 - Platform for project communication & signposting,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.1,activity,Confirms at least four indicators developed under A2.3/A2.4 are calculated and published live on the MANTIS dashboard (A3.1).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.1,activity,MANTIS is structurally designed to act as a technical 'Thematic Hub' that feeds directly into EBOCC (A3.1).,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.1,activity,"Reuse extends well beyond MANTIS's own partners: outputs are designed for uptake by any Biodiversa+ or national scheme deploying comparable sensor types, and the open platform (A3.1) is explicitly built to signpost and connect with adjacent European initiatives.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.1,activity,"The MANTIS platform (A3.1) is hosted on GitHub Pages with community-submitted updates via Pull Requests and version-controlled ""Living Protocols,"" requiring no post-project hosting budget.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.1,activity,"The public MANTIS platform (A3.1), hosting dashboards, Living Protocols and the signposting resources and fora.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.1,activity,"To guarantee long-term sustainability, the deployment protocols will be hosted as ""Living Protocols"" on the A3.1 platform, allowing the methodology to evolve transparently.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.2,activity,A3.2 - MANTIS Summer School,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.2,activity,A3.2 - MANTIS summer school,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.2,activity,"Confirms delivery of the week-long Aarhus summer school (A3.2) on automated monitoring design, data processing and quality control, with 20 early-career participants.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.3,activity,A3.3 - Designing and implementing a technical hub for image and sound,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.3,activity,A3.3 - Roadmap for a technical hub for novel technologies based on image and sound,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.3,activity,Confirms MANTIS has gathered feedback on the roadmap (A3.3) at the named Biodiversa+ and BEAGLE annual meetings.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.3,activity,"Confirms delivery of the workshop (A3.3) at Biodiversity Monitoring Week 2028 finalising the roadmap for the hub's continuation, including its positioning relative to EBOCC.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.3,activity,"Sets out the governance, funding and technical pathway for MANTIS's continuation as (or contribution to) an EBOCC Thematic Hub beyond 2028 (A3.3).",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.3,activity,The roadmap (A3.3) offers the coordinating function to the onward vehicles.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.4,activity,A3.4 - Establishing technical fora and curating user guidance,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.4,activity,A3.4 - Setting up technical fora and curating user guidance,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.4,activity,"Confirms the technical fora and user guidance resources (A3.4) are live on GitHub, covering the hardware/software tools used across the hub.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.5,activity,A3.5 - Online workshops on verification of biodiversity data in images and sounds,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.5,activity,A3.5 - Two online workshops on verification of biodiversity data in images and sounds,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.5,activity,Confirms delivery of the first of two online workshops (A3.5) training partners in the image-verification protocols developed under A1.2/A1.3.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.5,activity,"Confirms delivery of the second workshop (A3.5), extending verification training to acoustic data.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.5,activity,"Documents the annotation and verification protocols and systems built in A1.2 and scaled transnationally in A1.3, communicated in A3.5, feeding into the multi-country review process.",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.6,activity,"A3.6 - Four webinar events on automated monitoring with AMI, CamAlien, Audible and Ultrasound",Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.6,activity,A3.6 - Webinar series on monitoring automatically with novel technologies,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.6,activity,Confirms delivery of the four device-specific webinars (A3.6) introducing partners and external users to each hardware type covered by the hub.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.7,activity,A3.7 - Online workshops on visual and acoustic processing with AI,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.7,activity,A3.7 - Two online workshops on visual and acoustic processing with AI,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.7,activity,Confirms delivery of the first of two workshops (A3.7) training partners in AI-based visual (image) processing methods.,Annex 3. Reference list of relevant WP2 tasks and pilots
+A3.7,activity,"Confirms delivery of the second workshop (A3.7), extending AI-processing training to acoustic data.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2000,date,"Monitoring biodiversity within protected areas in terrestrial, freshwater and marine realms, including Natura 2000 sites",Annex 3. Reference list of relevant WP2 tasks and pilots
+2014,date,"10/EU-PoMS, the Habitats Directive, the Birds Directive or IAS Regulation 1143/2014, and auto-updating from GBIF",Annex 3. Reference list of relevant WP2 tasks and pilots
+2014,date,IAS Regulation 1143/2014,Annex 3. Reference list of relevant WP2 tasks and pilots
+2014,date,IAS Regulation 1143/2014 (Invasive Plants): Roads act as key vectors for the propagation of invasive alien species.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2026 Q4,date,2026 Q4,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,date,1 January 2027 to 30 September 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,date,"Confirms each contributing partner has installed two NewtCam units at ponds co-located with BiodivPond sampling stations (A1.5), ready for the 2027 recording season.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,date,"Following the formulation of a standardised sampling protocol, each participating partner will deploy two HydroMoth devices per site during the 2027 and 2028 sampling seasons.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,date,"For acoustics devices, this means upgrading to newer models such as the Wildlife Acoustics Song Meter 5 with rechargeable lithium batteries and solar panels, as well as cellular remote access accessories to be released for SM5 in 2027.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,date,Task 2.4.1 “Support the use of biodiversity monitoring data for policy” – the activity will build upon the results of the workshop series planned for 2027;,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027 Q1,date,2027 Q1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027 Q2,date,2027 Q2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027 Q3,date,2027 Q3,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027 Q4,date,2027 Q4,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,Implementation must end no later than 30 September 2028.,10. Timeline and milestones
+2028,date,1 January 2027 to 30 September 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,"Confirms delivery of the workshop (A3.3) at Biodiversity Monitoring Week 2028 finalising the roadmap for the hub's continuation, including its positioning relative to EBOCC.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,"Following the formulation of a standardised sampling protocol, each participating partner will deploy two HydroMoth devices per site during the 2027 and 2028 sampling seasons.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,Indicator workflows feed EU-PoMS and NRR Article 10 obligations that remain legally binding after 2028.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,M3.4 - Roadmap workshop at BioMonWeek 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,"Roadmap endorsed by at least two thirds of partners at the BioMonWeek 2028 workshop, naming at least 2 concrete funding or hosting pathways",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,Roadmap for a technical hub (BioMonWeek 2028),Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,Roadmap workshop at BioMonWeek 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,"Sets out the governance, funding and technical pathway for MANTIS's continuation as (or contribution to) an EBOCC Thematic Hub beyond 2028 (A3.3).",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,"The platform, Living Protocols, standard-compliant example datasets and processing pipelines are hosted on GitHub Pages, with dashboards refreshed by scheduled GitHub Actions, requiring no post-2028 hosting budget.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,date,"To begin this process we will hold stakeholder consultations across annual meetings of Biodiversa+ pilots, the BEAGLE project and other related platforms, and use feedback to generate content for a dedicated roadmap workshop to be held during the BioMonWeek conference in 2028.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028 Q1,date,2028 Q1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028 Q2,date,2028 Q2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028 Q3,date,2028 Q3,Annex 3. Reference list of relevant WP2 tasks and pilots
+2031,date,Aarhus University underwrites storage and curation of image and sound media in its Environmental Research Data Archive until 2031.,Annex 3. Reference list of relevant WP2 tasks and pilots
+30/6/2028,date,30/6/2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+30/9/2028,date,30/9/2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+31/12/2027,date,31/12/2027,Annex 3. Reference list of relevant WP2 tasks and pilots
+Apr 27,date,Apr 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+Apr 28,date,Apr 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+Aug 27,date,Aug 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+Dec 27,date,Dec 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+Jan 28,date,Jan 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+Jul 28,date,Jul 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+July 2026,date,"Camtrap DP and TDWG maintainers, including the Darwin Core public review of July 2026;",Annex 3. Reference list of relevant WP2 tasks and pilots
+July 2026,date,"Standards for biodiversity observations are mature but still evolving, as reflected in the ongoing Darwin Core public review (July 2026) .",Annex 3. Reference list of relevant WP2 tasks and pilots
+July 27,date,July 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+July 28,date,July 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+June 27,date,June 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+June 28,date,June 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+May 27,date,May 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+May 28,date,May 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+Oct 27,date,Oct 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+Sep 27,date,Sep 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+Sep 28,date,Sep 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.1,deliverable,D1.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.1,deliverable,D1.1 - Dataset of verified biodiversity records in images and sounds (including aquatic),Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.1,deliverable,"D1.1 - Dataset of verified biodiversity records in images and sounds (including aquatic), finalised under 1.3",Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.1,deliverable,"Depends on: 1.2/1.3 (verified dataset, D1.1);",Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.1,deliverable,"Feeds: 2.1 (finalised D1.1 dataset), 3.5 (protocol taught in workshops)",Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.1,deliverable,"Partners are expected to be able to annotate and verify media from the own systems during the workshop, preparing them for scalable contributions to D1.1.",Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.1,deliverable,"This activity corresponds to a considerable scaling up of D1.1, and will also ensure that each media item is reviewed by experts from multiple countries, for more accurate annotations with known uncertainty.",Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.2,deliverable,D1.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.2,deliverable,D1.2 - MANTIS report chapter: Protocols & systems to annotate organisms in images and sounds,Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.3,deliverable,D1.3,Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.3,deliverable,D1.3 - MANTIS report chapter: Operationalizing underwater monitoring with image and sound,Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.3,deliverable,D1.3 - MANTIS report chapter: Operationalizing underwater monitoring with image and sound (shared with 1.5),Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.3,deliverable,D1.3 jointly with 1.5,Annex 3. Reference list of relevant WP2 tasks and pilots
+D1.3,deliverable,D1.3 jointly with 1.6,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.1,deliverable,D2.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.1,deliverable,D2.1 - MANTIS report chapter: Transnational benchmarking of AI across technologies and taxa,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.2,deliverable,D2.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.2,deliverable,D2.2 - Gold standard dataset for each modality hosted on GitHub,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.3,deliverable,D2.3,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.3,deliverable,D2.3 - MANTIS platform online,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.4,deliverable,D2.4,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.4,deliverable,D2.4 - MANTIS report chapter: Selection and design of policy-relevant novel monitoring indicators,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.5,deliverable,"2.5 (pipeline, D2.5)",Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.5,deliverable,D2.5,Annex 3. Reference list of relevant WP2 tasks and pilots
+D2.5,deliverable,D2.5 - One-click AMI processing pipeline hosted on the MANTIS GitHub,Annex 3. Reference list of relevant WP2 tasks and pilots
+D3.1,deliverable,D3.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+D3.1,deliverable,D3.1 - MANTIS report chapter: Roadmap for a technical hub for novel technologies based on image and sound,Annex 3. Reference list of relevant WP2 tasks and pilots
+"€796,850.18",euro,"422,535.3 (leads) + ~374,314.88 (additional participants) = €796,850.18",Additional SCALABLE budget for participating partners
+"€796,850.18",euro,"€796,850.18",Annex 3. Reference list of relevant WP2 tasks and pilots
+€800,euro,"Conversely, the NewtCam system requires an initial capital expenditure of €800 per site, but significantly reduces ongoing OpEx, yielding cumulative cost savings over time compared to alternative methods.",Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.1,milestone,M1.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.1,milestone,M1.1 - Master deployment database assembled,Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.2,milestone,M1.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.2,milestone,M1.2 - 9 Acoustics and 1 CamAlien devices upgraded per partner,Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.3,milestone,M1.3,Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.3,milestone,M1.3 - Unified deployment registration system online,Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.4,milestone,M1.4,Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.4,milestone,M1.4 - 2 NewtCams deployed per partner in BiodivPond,Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.5,milestone,M1.5,Annex 3. Reference list of relevant WP2 tasks and pilots
+M1.5,milestone,M1.5 - 1 new AMI & 1 new Acoustics (fully upgraded) deployed per partner,Annex 3. Reference list of relevant WP2 tasks and pilots
+M2.1,milestone,M2.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+M2.1,milestone,M2.1 - Online workshop on indicator selection and design based on automated methods,Annex 3. Reference list of relevant WP2 tasks and pilots
+M2.2,milestone,"2.3 (indicator dashboard, M2.2);",Annex 3. Reference list of relevant WP2 tasks and pilots
+M2.2,milestone,"Feeds: 3.1 (finalised indicators shown on the platform, M2.2);",Annex 3. Reference list of relevant WP2 tasks and pilots
+M2.2,milestone,M2.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+M2.2,milestone,M2.2 - MANTIS platform features four or more finalised indicators,Annex 3. Reference list of relevant WP2 tasks and pilots
+M2.2,milestone,"This activity will also enable partners to prepare for, participate in, and enact outcomes of, M2.2 on indicator design and selection.",Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.1,milestone,M3.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.1,milestone,M3.1 - MANTIS summer school for 20 participants,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.2,milestone,M3.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.2,milestone,M3.2 - GitHub-based fora for a range of hardware and software tools online,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.3,milestone,M3.3,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.3,milestone,M3.3 - Stakeholder consultation at Biodiversa+ & BEAGLE annual meetings,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.4,milestone,M3.4,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.4,milestone,M3.4 - Roadmap workshop at BioMonWeek 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.5,milestone,M3.5,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.5,milestone,M3.5 - Year 1 workshop on verification of biodiversity data in images,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.6,milestone,M3.6,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.6,milestone,M3.6 - Year 2 workshop on verification of biodiversity data in sounds,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.7,milestone,M3.7,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.7,milestone,"M3.7 - Four webinar events completed on automated monitoring with AMI, CamAlien, Audible and Ultrasound",Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.8,milestone,M3.8,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.8,milestone,M3.8 - Year 1 online workshop on visual processing with AI,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.9,milestone,M3.9,Annex 3. Reference list of relevant WP2 tasks and pilots
+M3.9,milestone,M3.9 - Year 2 online workshop on acoustic processing with AI,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,1.,1. General information
+1,number,"1) Set the time frame for the objective (e.g. ""After 4 months…"", ""At the end of the pilot study…"")",4.2 SMART objectives
+1,number,Annex 1.,Annex 1. Core Activity reference
+1,number,1 January 2027 to 30 September 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,1 new AMI & 1 new Acoustics (fully upgraded) deployed per partner,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,25 summer-school participants from minimum of 12 countries; organisations attending; at least 20 distinct organisations attending ≥1 of the 8 online events,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,9 Acoustics and 1 CamAlien devices upgraded per partner,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,CA2 is addressed through Package 1: Scheme improvement.,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Commission firm vendor quotes and lock in unit costs during month-1 procurement; hold a contingency reserve within the approved equipment line; default to off-the-shelf underwater housings paired with the existing classification pipeline if bespoke hardware costs exceed quotes.,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Core Activity 1,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Core Activity 1: Coordinating and analysing existing monitoring schemes,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Depends on: outputs across Packages 1 and 2 as evidence base,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,"It will connect data acquisition by aligning protocols, deployments, and annotations, including new sensor deployments for increased spatial and taxonomic coverage (Package 1).",Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,M1.2 - 9 Acoustics and 1 CamAlien devices upgraded per partner,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,M1.5 - 1 new AMI & 1 new Acoustics (fully upgraded) deployed per partner,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,M3.5 - Year 1 workshop on verification of biodiversity data in images,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,M3.8 - Year 1 online workshop on visual processing with AI,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Owner: Package 1 lead (AU).,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Package 1: Scheme improvement,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Package 1: Scheme improvement (CA2),Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,"The workshop in year 1 will focus on insect processing with flatbug and hierarchical classifiers, while the acoustics workshop in year 2 will cover acoustics processing with BirdNet and batdetect2 models.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,"This activity will leverage new and existing verifications and annotations, including those from activity 1.1, to establish, for the current state-of-the-art models across bird, bat, insect and invasive plant detection and classification, (1) which taxa can be reliably identified, and (2) in which regions or contexts performance holds.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,"This is exactly the comparability problem the Terms of Reference identify as central to Option 1: ""assessing the comparability, scalability and cross-country applicability of monitoring methods."" Shared, transnational verified annotation datasets produce something no single country's dataset can: evidence of where AI models genuinely generalise across biogeographic contexts, and where they don't.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Workshop 1 will focus on hierarchical labelling of insects in images from AMI systems.,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Year 1 online workshop on visual processing with AI,Annex 3. Reference list of relevant WP2 tasks and pilots
+1,number,Year 1 workshop on verification of biodiversity data in images,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,1.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,"Activities 1.1–1.7 deliver documented, measurable improvements to existing monitoring schemes through shared verification and annotation protocols, transnational AI benchmarking, sensor upgrades that convert manual-visit devices to remote/self-sufficient operation, operationalizing underwater imaging for benthic invertebrates and piloting underwater acoustics, and expanded spatial coverage of existing sensor networks.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,"Depends on: 1.1, 2.2, 2.5, 3.1 (documentation of the registry, standards and pipeline, online platform)",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,"Depends on: 1.1, 2.6.5 ABMS existing annotations;",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,Feeds: 1.1 (new sites registered),Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,"Feeds: 1.1 (updated device metadata), 1.7 (coordinated equipment rollout), 2.1 (more reliable data transfer)",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,Hosts: 1.1 (registry dashboards);,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,"Partners' existing sensor networks use inconsistent hardware generations and formats, slowing integration into the unified registration system and master database (1.1) beyond the time budgeted.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,"Sequence integration by device type, starting with the most standardised (AMI/CamAlien) before acoustics; hold contingency time within 1.1's schedule; assign a dedicated data-integration point of contact per partner.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.1,number,"This activity will leverage new and existing verifications and annotations, including those from activity 1.1, to establish, for the current state-of-the-art models across bird, bat, insect and invasive plant detection and classification, (1) which taxa can be reliably identified, and (2) in which regions or contexts performance holds.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.2,number,1.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.2,number,App4Cam and NewtCam developers Feeds: 1.2/1.3 (imagery for annotation);,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.2,number,Depends on: 1.2 (initial verification protocol),Annex 3. Reference list of relevant WP2 tasks and pilots
+1.2,number,Depends on: 1.2/1.3 (protocol being communicated),Annex 3. Reference list of relevant WP2 tasks and pilots
+1.2,number,Depends on: 1.2/1.3 (verification protocol) and 2.1 (benchmarking results) as course content,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.2,number,"Depends on: 1.2/1.3 (verified dataset, D1.1);",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.2,number,Feeds: 1.2/1.3 (acoustic recordings for annotation);,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.2,number,"Package 2 and 3 activities (2.1, 2.3, 3.6, 3.7) depend on the verified dataset from 1.2/1.3; delays in annotation and verification cascade through the rest of the timeline.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.3,number,1.3,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.3,number,1.3 + 2.4 (scaling contributions);,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.3,number,2 (1.3) +2 (2.4) = 4,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.3,number,"D1.1 - Dataset of verified biodiversity records in images and sounds (including aquatic), finalised under 1.3",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.3,number,"Feeds: 1.3 (protocol to scale), 2.1 (verified data for benchmarking), 2.2 (annotation format for the gold-standard dataset)",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.3,number,Maintain a one-quarter schedule buffer between 1.3's dataset finalisation and 2.1's start; track annotation throughput against O1/O2 targets at every reporting period and reallocate annotation effort across partners if a bottleneck emerges.,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.4,number,1.4,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.4,number,"1.4 + 1.5 + 1.6 + 1.7 (upgrading, operationalizing/piloting new sensors, increasing spatial covering of existing sensors schemes)",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.4,number,"13,104.8 (1.4) + 1400 (1.5) + 180 (1.6) + 6,401.6 (1.7) = 21,086.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.4,number,"Confirms each partner has at least one fully upgraded (remote-transfer, self-powered) AMI trap and acoustic recorder actively deployed, per 1.4.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.4,number,Depends on: 1.4/1.7 (upgraded and newly deployed devices) and 1.5/1.6 (pond pilots) as case-study content,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.4,number,"Feeds: 1.4, 1.7 (device metadata registered on upgrade/deployment);",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.4,number,"Fewer participating partners join than the 6-12 assumed for SCALABLE-tier activities, leaving per-partner deployments (1.4, 1.7) under-resourced relative to their targets.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.5,number,"1.4 + 1.5 + 1.6 + 1.7 (upgrading, operationalizing/piloting new sensors, increasing spatial covering of existing sensors schemes)",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.5,number,1.5,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.5,number,"13,104.8 (1.4) + 1400 (1.5) + 180 (1.6) + 6,401.6 (1.7) = 21,086.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.5,number,D1.3 - MANTIS report chapter: Operationalizing underwater monitoring with image and sound (shared with 1.5),Annex 3. Reference list of relevant WP2 tasks and pilots
+1.5,number,D1.3 jointly with 1.5,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.5,number,Depends on: 1.4/1.7 (upgraded and newly deployed devices) and 1.5/1.6 (pond pilots) as case-study content,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.5,number,Depends on: 1.5 (shared pond sites and partners),Annex 3. Reference list of relevant WP2 tasks and pilots
+1.5,number,"Equipment costs run over budget, particularly for the novel in-situ NewtCam and underwater acoustic devices (1.5, 1.6), where unit pricing is not yet proven at scale.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.5,number,In-situ underwater imaging (1.5) and acoustic monitoring (1.6) of benthic invertebrates use immature methods for this taxon group; detection accuracy for cryptic taxa is unproven.,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.6,number,"1.4 + 1.5 + 1.6 + 1.7 (upgrading, operationalizing/piloting new sensors, increasing spatial covering of existing sensors schemes)",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.6,number,1.6,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.6,number,"13,104.8 (1.4) + 1400 (1.5) + 180 (1.6) + 6,401.6 (1.7) = 21,086.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.6,number,D1.3 jointly with 1.6,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.6,number,"Equipment costs run over budget, particularly for the novel in-situ NewtCam and underwater acoustic devices (1.5, 1.6), where unit pricing is not yet proven at scale.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.6,number,In-situ underwater imaging (1.5) and acoustic monitoring (1.6) of benthic invertebrates use immature methods for this taxon group; detection accuracy for cryptic taxa is unproven.,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.7,number,"1.4 + 1.5 + 1.6 + 1.7 (upgrading, operationalizing/piloting new sensors, increasing spatial covering of existing sensors schemes)",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.7,number,1.7,Annex 3. Reference list of relevant WP2 tasks and pilots
+1.7,number,"13,104.8 (1.4) + 1400 (1.5) + 180 (1.6) + 6,401.6 (1.7) = 21,086.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.7,number,"Activities 1.1–1.7 deliver documented, measurable improvements to existing monitoring schemes through shared verification and annotation protocols, transnational AI benchmarking, sensor upgrades that convert manual-visit devices to remote/self-sufficient operation, operationalizing underwater imaging for benthic invertebrates and piloting underwater acoustics, and expanded spatial coverage of existing sensor networks.",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.7,number,"Feeds: 1.1 (updated device metadata), 1.7 (coordinated equipment rollout), 2.1 (more reliable data transfer)",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.7,number,"Feeds: 1.4, 1.7 (device metadata registered on upgrade/deployment);",Annex 3. Reference list of relevant WP2 tasks and pilots
+1.7,number,"Fewer participating partners join than the 6-12 assumed for SCALABLE-tier activities, leaving per-partner deployments (1.4, 1.7) under-resourced relative to their targets.",Annex 3. Reference list of relevant WP2 tasks and pilots
+10,number,10.,10. Timeline and milestones
+10,number,"10), the Birds and Habitats Directives, and the IAS Regulation;",Annex 3. Reference list of relevant WP2 tasks and pilots
+10,number,"10/EU-PoMS, the Habitats Directive, the Birds Directive or IAS Regulation 1143/2014, and auto-updating from GBIF",Annex 3. Reference list of relevant WP2 tasks and pilots
+10,number,"10/EU-PoMS, the Habitats and Birds Directives, and the IAS Regulation.",Annex 3. Reference list of relevant WP2 tasks and pilots
+10,number,10;,Annex 3. Reference list of relevant WP2 tasks and pilots
+10,number,EUPoMS & NRR Article 10 (Insects): The EU Pollinator Monitoring Scheme (EUPoMS) and the NRR mandate to reverse pollinator decline currently rely heavily on standard manual methods and transects.,Annex 3. Reference list of relevant WP2 tasks and pilots
+10,number,Indicator workflows feed EU-PoMS and NRR Article 10 obligations that remain legally binding after 2028.,Annex 3. Reference list of relevant WP2 tasks and pilots
+10,number,"Policy relevance is enhanced by targeting established EU priorities, including support for the EU Pollinator Monitoring Scheme (EU-PoMS) under NRR Article 10, and by contributing methodological groundwork toward the ""Community composition of freshwater benthic invertebrates"" EBV named under Option 4.",Annex 3. Reference list of relevant WP2 tasks and pilots
+10,number,"The Biodiversa+ pilots: the Automated Biodiversity Monitoring Stations (ABMS) pilot (2.6.5) deployed AMI traps and acoustic recorders in three habitat types across 11 countries, and the Invasive Alien Species (IAS) pilot (2.6.2) utilises an AMI trap and a CamAlien unit in 10 countries.",Annex 3. Reference list of relevant WP2 tasks and pilots
+"10,400",number,"10,400",Annex 3. Reference list of relevant WP2 tasks and pilots
+100,number,State the high-level result the activity will deliver. [100-150 words],4.1 Overall aim
+100,number,"100% of active AMI, CamAlien and acoustic deployments (≥[N] devices) across ≥8 partner countries registered and machine-readable",Annex 3. Reference list of relevant WP2 tasks and pilots
+11,number,11.,11. Budget and funding composition
+11,number,"The Biodiversa+ pilots: the Automated Biodiversity Monitoring Stations (ABMS) pilot (2.6.5) deployed AMI traps and acoustic recorders in three habitat types across 11 countries, and the Invasive Alien Species (IAS) pilot (2.6.2) utilises an AMI trap and a CamAlien unit in 10 countries.",Annex 3. Reference list of relevant WP2 tasks and pilots
+"11,580",number,"11,580",Annex 3. Reference list of relevant WP2 tasks and pilots
+"11,580",number,"77,200 + 11,580 = 88,780",Annex 3. Reference list of relevant WP2 tasks and pilots
+11.1,number,11.1 Budget summary by organisation,11.1 Budget summary by organisation
+1143,number,"10/EU-PoMS, the Habitats Directive, the Birds Directive or IAS Regulation 1143/2014, and auto-updating from GBIF",Annex 3. Reference list of relevant WP2 tasks and pilots
+1143,number,IAS Regulation 1143/2014,Annex 3. Reference list of relevant WP2 tasks and pilots
+1143,number,IAS Regulation 1143/2014 (Invasive Plants): Roads act as key vectors for the propagation of invasive alien species.,Annex 3. Reference list of relevant WP2 tasks and pilots
+12,number,12.,"12. Risk, compliance and feasibility"
+12,number,25 summer-school participants from minimum of 12 countries; organisations attending; at least 20 distinct organisations attending ≥1 of the 8 online events,Annex 3. Reference list of relevant WP2 tasks and pilots
+12,number,"After 12 months, expert-verified reference dataset exists for benchmarking automated identification across the target taxa.",Annex 3. Reference list of relevant WP2 tasks and pilots
+12,number,"Fewer participating partners join than the 6-12 assumed for SCALABLE-tier activities, leaving per-partner deployments (1.4, 1.7) under-resourced relative to their targets.",Annex 3. Reference list of relevant WP2 tasks and pilots
+12,number,"Run the pilot in stages with a defined go/no-go checkpoint around month 12, scoped initially to a defined subset of conspicuous taxa; benchmark continuously against kick-net/morphological ID as ground truth; reallocate pond-pilot effort toward whichever modality (imaging or acoustic) is performing better at the checkpoint.",Annex 3. Reference list of relevant WP2 tasks and pilots
+12,number,TOTAL @ 12 additional participating partners,Annex 3. Reference list of relevant WP2 tasks and pilots
+"126,518.4",number,"41,172.8 (for leads) + 126,518.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+13,number,13,Annex 3. Reference list of relevant WP2 tasks and pilots
+"13,104.8",number,"13,104.8 (1.4) + 1400 (1.5) + 180 (1.6) + 6,401.6 (1.7) = 21,086.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+"13,800",number,"13,800",Annex 3. Reference list of relevant WP2 tasks and pilots
+1400,number,"13,104.8 (1.4) + 1400 (1.5) + 180 (1.6) + 6,401.6 (1.7) = 21,086.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+"144,000",number,"~144,000",Annex 3. Reference list of relevant WP2 tasks and pilots
+15,number,Indirect (15% flat rate),Annex 3. Reference list of relevant WP2 tasks and pilots
+150,number,"Explain the substantive link with the selected primary Core Activity and, where relevant, the distinct contribution to the secondary Core Activity. [150-250 words]",2.1 Justification of Core Activity fit
+150,number,State the high-level result the activity will deliver. [100-150 words],4.1 Overall aim
+150,number,Avoid listing tasks without explaining the interaction. [150-250 words],"5.2 Links with WP2 tasks, pilots and structures"
+150,number,"Explain the broad strategy to determine who will maintain the outputs or capacities, what resources or mandate will support them, how other countries or schemes can take them up, and any realistic continuation or scaling pathway. [150-250 words]","7.3 Maintenance, transfer and future prospects"
+"177,192",number,"177,192",Annex 3. Reference list of relevant WP2 tasks and pilots
+18,number,18,Annex 3. Reference list of relevant WP2 tasks and pilots
+18,number,"After 18 months, partner organisations can independently deploy and process data from novel image and sound sensors.",Annex 3. Reference list of relevant WP2 tasks and pilots
+180,number,"13,104.8 (1.4) + 1400 (1.5) + 180 (1.6) + 6,401.6 (1.7) = 21,086.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,2.,2. Strategic classification
+2,number,"2) Set the target and its associated threshold (e.g. ""all partners involved…"", ""75% of European biogeographical regions…"")",4.2 SMART objectives
+2,number,Annex 2.,Annex 2. Biodiversa+ monitoring priorities
+2,number,2 (1.3) +2 (2.4) = 4,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,2 NewtCams deployed per partner in BiodivPond,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"2,300 (2 in person attendances)",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"At least 5000 expert-verified annotations published under FAIR principles, including ≥ 2,000 NewtCam annotations; ≥20% of items reviewed by experts from ≥2 countries",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"CA3 is our primary CA, addressed through Package 2: Data flows.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,Core Activity 2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,Core Activity 2: Improving monitoring schemes,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,Depends on: outputs across Packages 1 and 2 as evidence base,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"It will connect and harmonize the datasets and metadata generated by novel methods, ensuring a seamless, quality-controlled flow from images and sounds to indicators — including transnational benchmarking of AI models (Package 2).",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,M1.4 - 2 NewtCams deployed per partner in BiodivPond,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,M3.6 - Year 2 workshop on verification of biodiversity data in sounds,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,M3.9 - Year 2 online workshop on acoustic processing with AI,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,Owner: Package 2 lead.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"Package 2 also has clear connections to CA5, but our core focus is on developing and testing workflows and CA3's mandate to enhance ""management and harmonising of collected data"", and its named synergy with the EBOCC preparatory action.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"Package 2 and 3 activities (2.1, 2.3, 3.6, 3.7) depend on the verified dataset from 1.2/1.3; delays in annotation and verification cascade through the rest of the timeline.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,Package 2: Data flows,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,Package 2: Data flows (CA3),Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"Roadmap endorsed by at least two thirds of partners at the BioMonWeek 2028 workshop, naming at least 2 concrete funding or hosting pathways",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"The workshop in year 1 will focus on insect processing with flatbug and hierarchical classifiers, while the acoustics workshop in year 2 will cover acoustics processing with BirdNet and batdetect2 models.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"This activity will leverage new and existing verifications and annotations, including those from activity 1.1, to establish, for the current state-of-the-art models across bird, bat, insect and invasive plant detection and classification, (1) which taxa can be reliably identified, and (2) in which regions or contexts performance holds.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,"Workshop 2 will focus on acoustic signals, especially birds and bats.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,Year 2 online workshop on acoustic processing with AI,Annex 3. Reference list of relevant WP2 tasks and pilots
+2,number,Year 2 workshop on verification of biodiversity data in sounds,Annex 3. Reference list of relevant WP2 tasks and pilots
+"2,000",number,"At least 5000 expert-verified annotations published under FAIR principles, including ≥ 2,000 NewtCam annotations; ≥20% of items reviewed by experts from ≥2 countries",Annex 3. Reference list of relevant WP2 tasks and pilots
+"2,000",number,"To standardise the outputs and mitigate geographical AI bias on identifications, experts from the NCA (CZ) will manually review the generated imagery to create at least 2,000 taxonomic annotations.",Annex 3. Reference list of relevant WP2 tasks and pilots
+"2,300",number,"2,300 (2 in person attendances)",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,2.1 Justification of Core Activity fit,2.1 Justification of Core Activity fit
+2.1,number,"For each selected link in section 2.1, describe the concrete cooperation that will apply: joint workshops, technical input, shared methods, data connections, capacity transfer, indicator development or use of pilot outputs.","5.2 Links with WP2 tasks, pilots and structures"
+2.1,number,2.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,"2.1's benchmarking evaluates multiple device/model options throughout, never a single vendor; procurement decisions are reviewed by a partner not involved in the relevant relationship.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,"AI models benchmarked in 2.1 show geographic or taxonomic bias when applied outside their original training context, undermining cross-country comparability.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,Activities 2.1–2.5 build the data infrastructure and standards layer needed for automated monitoring information systems to become transnationally scalable.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,Depends on: 1.2/1.3 (verification protocol) and 2.1 (benchmarking results) as course content,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,Depends on: 2.1 (benchmarked models);,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,"Depends on: 2.1 (benchmarking results), 2.5 (pipeline) as course content",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,Depends on: 2.1 (reliable AI outputs);,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,"Feeds: 1.1 (updated device metadata), 1.7 (coordinated equipment rollout), 2.1 (more reliable data transfer)",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,"Feeds: 1.3 (protocol to scale), 2.1 (verified data for benchmarking), 2.2 (annotation format for the gold-standard dataset)",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,Feeds: 2.1 (benchmarking substrate);,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,"Feeds: 2.1 (finalised D1.1 dataset), 3.5 (protocol taught in workshops)",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,Maintain a one-quarter schedule buffer between 1.3's dataset finalisation and 2.1's start; track annotation throughput against O1/O2 targets at every reporting period and reallocate annotation effort across partners if a bottleneck emerges.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,"Package 2 and 3 activities (2.1, 2.3, 3.6, 3.7) depend on the verified dataset from 1.2/1.3; delays in annotation and verification cascade through the rest of the timeline.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,Pin the specific standard/model versions in use at project start and maintain an internal archived copy; monitor upstream releases quarterly; hold contingency time in 2.1/2.2/2.5's schedule to adapt if a breaking change occurs.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1,number,"Run bias correction and confidence calibration continuously through 2.1, not as a one-off step; report accuracy transparently per region and taxon; retrain or exclude specific model/region combinations that fail the documented reliability threshold.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1.1,number,2.1.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.1.1,number,Task 2.1.1 (shared priorities and EBVs),Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2,number,2.2 Structural change in one sentence,2.2 Structural change in one sentence
+2.2,number,2.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2,number,2.2 (data standards),Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2,number,2.2 (gold-standard datasets);,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2,number,"2.2 (labelling standard), BirdNET, batdetect2 and flatbug developer communities;",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2,number,"Depends on: 1.1, 2.2, 2.5, 3.1 (documentation of the registry, standards and pipeline, online platform)",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2,number,"Feeds: 1.3 (protocol to scale), 2.1 (verified data for benchmarking), 2.2 (annotation format for the gold-standard dataset)",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2.1,number,2.2.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2.1,number,"2.2.1 (Harmonise protocols): MANTIS will provide direct technical input by publishing version-controlled ""Living Protocols"" on our platform.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2.1,number,"2.2.1 Protocol harmonisation, 2.5.1 Transnational governance, 2.6.2.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2.1,number,"Consistent with the Thematic Hubs concept developed under sub-task 2.2.1, MANTIS establishes no new operational structure; it leaves behind maintained resources and an active community of practice.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2.2,number,2.2.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2.2,number,2.2.2 (data interoperability);,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.2.2,number,Depends on: Task 2.2.2 (Identify and promote best practices to involve citizens in biodiversity monitoring schemes),Annex 3. Reference list of relevant WP2 tasks and pilots
+2.3,number,2.3,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.3,number,"2.3 (indicator dashboard, M2.2);",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.3,number,Depends on: 2.3 (draft indicator concepts to discuss),Annex 3. Reference list of relevant WP2 tasks and pilots
+2.3,number,Feeds: 2.3 (finalisation);,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.3,number,"Package 2 and 3 activities (2.1, 2.3, 3.6, 3.7) depend on the verified dataset from 1.2/1.3; delays in annotation and verification cascade through the rest of the timeline.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.3.1,number,2.3.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.3.2,number,2.3.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.4,number,1.3 + 2.4 (scaling contributions);,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.4,number,2 (1.3) +2 (2.4) = 4,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.4,number,2.4,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.4,number,2.4 (partner-agreed indicator priorities);,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.4.1,number,2.4.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.4.1,number,Habitats Directive (Annex I Habitats & Bats): The activity will directly utilise lessons learned from the incoming workshop series on habitat condition assessment for policy use (2.4.1 “Support the use of biodiversity monitoring data for policy”).,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.4.1,number,Task 2.4.1 “Support the use of biodiversity monitoring data for policy” – the activity will build upon the results of the workshop series planned for 2027;,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.4.2,number,2.4.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5,number,2.5,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5,number,"2.5 (pipeline, D2.5)",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5,number,2.5 (standardised inputs for the pipeline),Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5,number,Activities 2.1–2.5 build the data infrastructure and standards layer needed for automated monitoring information systems to become transnationally scalable.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5,number,"Depends on: 1.1, 2.2, 2.5, 3.1 (documentation of the registry, standards and pipeline, online platform)",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5,number,"Depends on: 2.1 (benchmarking results), 2.5 (pipeline) as course content",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5,number,Feeds: 2.5 (refined models for the data-flow architecture);,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5.1,number,"2.2.1 Protocol harmonisation, 2.5.1 Transnational governance, 2.6.2.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5.1,number,2.5.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5.1,number,"2.5.1 (Transnational governance): MANTIS will operate as a technical 'Thematic Hub', supplying indicator concepts (developed in A2.3) and capacity transfer to support the evidence-based governance of national coordination centres and the EBOCC pilot.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5.2,number,2.5.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5.3,number,The full eligibility boundaries and examples are defined in the Task 2.5.3 Terms of Reference.,Annex 1. Core Activity reference
+2.5.3,number,"2.5.3 - Proposed hub on (e)DNA methods for Biodiversity Monitoring: MANTIS covers sensor-based approaches while the (e)DNA hub covers molecular methods, a division that reflects genuine methodological complementarity. eDNA is best suited to screening and mapping distributions, image and sound to intensive long-term observation of permanent sites.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5.3,number,"Taken together, MANTIS contributions provide infrastructures for monitoring itself rather than to any single technology or taxon's dataset, which is a distinguishing feature Biodiversa+ asks of a Task 2.5.3 activity as opposed to a conventional research grant.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.5.3,number,The primary Core Activity should identify the main contribution of the activity to task 2.5.3 objectives.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.10,number,2.6.10,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.2,number,"2.2.1 Protocol harmonisation, 2.5.1 Transnational governance, 2.6.2.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.2,number,2.6.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.2,number,"2.6.2 (IAS Pilot): We will host a joint online workshop to align our AI benchmarking targets, specifically sharing methods and data connections for detecting invasive alien plants via vehicle-mounted sensors.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.2,number,2.6.2 and 2.6.5 media archives,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.2,number,Depends on: 2.6.2 IAS and 2.6.5 ABMS deployment records to ingest;,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.2,number,"Depends on: Protocols from 2.6.2, 2.6.5, 2.6.8; partners in coverage-gap countries; eLTER sites",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.2,number,"The Biodiversa+ pilots: the Automated Biodiversity Monitoring Stations (ABMS) pilot (2.6.5) deployed AMI traps and acoustic recorders in three habitat types across 11 countries, and the Invasive Alien Species (IAS) pilot (2.6.2) utilises an AMI trap and a CamAlien unit in 10 countries.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.2,number,"The registration system, benchmarking results and Camtrap DP implementations transfer to BiodivPond (2.6.8), ABMS (2.6.5) and the IAS pilot (2.6.2), which retain their own partners and field networks.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.3,number,2.6.3,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,2.6.2 and 2.6.5 media archives,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,2.6.5,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,2.6.5 (ABMS Pilot): Cooperation involves direct hardware and software support.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,"Depends on: 1.1, 2.6.5 ABMS existing annotations;",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,Depends on: 2.6.2 IAS and 2.6.5 ABMS deployment records to ingest;,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,"Depends on: Protocols from 2.6.2, 2.6.5, 2.6.8; partners in coverage-gap countries; eLTER sites",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,External: built on the Camtrap DP standard; interfaces with TABMON's acoustic deployments and the ABMS pilot (2.6.5),Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,"IAS Pilot, 2.6.5.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,"The Biodiversa+ pilots: the Automated Biodiversity Monitoring Stations (ABMS) pilot (2.6.5) deployed AMI traps and acoustic recorders in three habitat types across 11 countries, and the Invasive Alien Species (IAS) pilot (2.6.2) utilises an AMI trap and a CamAlien unit in 10 countries.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.5,number,"The registration system, benchmarking results and Camtrap DP implementations transfer to BiodivPond (2.6.8), ABMS (2.6.5) and the IAS pilot (2.6.2), which retain their own partners and field networks.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.6,number,2.6.6,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.7,number,2.6.7,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.8,number,2.6.8,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.8,number,2.6.8 (BiodivPond Pilot): We will seamlessly integrate our aquatic sensors by co-locating NewtCams and HydroMoths at their existing sampling stations.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.8,number,"ABMS Pilot, 2.6.8.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.8,number,"Depends on: 2.6.8 BiodivPond sampling stations, protocols, partner network and eDNA/umbrella-trap comparison;",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.8,number,"Depends on: Protocols from 2.6.2, 2.6.5, 2.6.8; partners in coverage-gap countries; eLTER sites",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.8,number,"The registration system, benchmarking results and Camtrap DP implementations transfer to BiodivPond (2.6.8), ABMS (2.6.5) and the IAS pilot (2.6.2), which retain their own partners and field networks.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2.6.9,number,2.6.9,Annex 3. Reference list of relevant WP2 tasks and pilots
+20,number,25 summer-school participants from minimum of 12 countries; organisations attending; at least 20 distinct organisations attending ≥1 of the 8 online events,Annex 3. Reference list of relevant WP2 tasks and pilots
+20,number,"At least 5000 expert-verified annotations published under FAIR principles, including ≥ 2,000 NewtCam annotations; ≥20% of items reviewed by experts from ≥2 countries",Annex 3. Reference list of relevant WP2 tasks and pilots
+20,number,"Confirms delivery of the week-long Aarhus summer school (A3.2) on automated monitoring design, data processing and quality control, with 20 early-career participants.",Annex 3. Reference list of relevant WP2 tasks and pilots
+20,number,M3.1 - MANTIS summer school for 20 participants,Annex 3. Reference list of relevant WP2 tasks and pilots
+20,number,MANTIS summer school for 20 participants,Annex 3. Reference list of relevant WP2 tasks and pilots
+200,number,"Provide concrete evidence of current coverage, methods, limitations, capacities or data accessibility against which improvement can be assessed. [200-300 words]",3.2 Baseline and supporting evidence
+200,number,"Explain why this is a shared problem across countries, regions, schemes or infrastructures; what can be achieved through alignment or coordination that cannot be achieved by an isolated national action; and who will be able to reuse the results. [200-300 words]",3.3 Transnational problem and added value
+200,number,"Describe the expected effect on monitoring practice, coordination, data availability or policy use; the intended users; and how outputs, capacities or working arrangements will continue after the funded period. [200-300 words]",4.3 Expected impact and sustainability
+200,number,"Explain how the proposal makes monitoring more coordinated, comparable, interoperable, accessible, capable or policy-relevant, and how it contributes to stronger long-term transnational monitoring. [200-300 words]",5.1 Contribution to Biodiversa+ goals
+2000,number,"Monitoring biodiversity within protected areas in terrestrial, freshwater and marine realms, including Natura 2000 sites",Annex 3. Reference list of relevant WP2 tasks and pilots
+2026,number,2026 Q4,Annex 3. Reference list of relevant WP2 tasks and pilots
+2026,number,"Camtrap DP and TDWG maintainers, including the Darwin Core public review of July 2026;",Annex 3. Reference list of relevant WP2 tasks and pilots
+2026,number,"Standards for biodiversity observations are mature but still evolving, as reflected in the ongoing Darwin Core public review (July 2026) .",Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,number,1 January 2027 to 30 September 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,number,2027 Q1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,number,2027 Q2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,number,2027 Q3,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,number,2027 Q4,Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,number,"Confirms each contributing partner has installed two NewtCam units at ponds co-located with BiodivPond sampling stations (A1.5), ready for the 2027 recording season.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,number,"Following the formulation of a standardised sampling protocol, each participating partner will deploy two HydroMoth devices per site during the 2027 and 2028 sampling seasons.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,number,"For acoustics devices, this means upgrading to newer models such as the Wildlife Acoustics Song Meter 5 with rechargeable lithium batteries and solar panels, as well as cellular remote access accessories to be released for SM5 in 2027.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2027,number,Task 2.4.1 “Support the use of biodiversity monitoring data for policy” – the activity will build upon the results of the workshop series planned for 2027;,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,Implementation must end no later than 30 September 2028.,10. Timeline and milestones
+2028,number,1 January 2027 to 30 September 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,2028 Q1,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,2028 Q2,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,2028 Q3,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,"Confirms delivery of the workshop (A3.3) at Biodiversity Monitoring Week 2028 finalising the roadmap for the hub's continuation, including its positioning relative to EBOCC.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,"Following the formulation of a standardised sampling protocol, each participating partner will deploy two HydroMoth devices per site during the 2027 and 2028 sampling seasons.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,Indicator workflows feed EU-PoMS and NRR Article 10 obligations that remain legally binding after 2028.,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,M3.4 - Roadmap workshop at BioMonWeek 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,"Roadmap endorsed by at least two thirds of partners at the BioMonWeek 2028 workshop, naming at least 2 concrete funding or hosting pathways",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,Roadmap for a technical hub (BioMonWeek 2028),Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,Roadmap workshop at BioMonWeek 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,"Sets out the governance, funding and technical pathway for MANTIS's continuation as (or contribution to) an EBOCC Thematic Hub beyond 2028 (A3.3).",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,"The platform, Living Protocols, standard-compliant example datasets and processing pipelines are hosted on GitHub Pages, with dashboards refreshed by scheduled GitHub Actions, requiring no post-2028 hosting budget.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2028,number,"To begin this process we will hold stakeholder consultations across annual meetings of Biodiversa+ pilots, the BEAGLE project and other related platforms, and use feedback to generate content for a dedicated roadmap workshop to be held during the BioMonWeek conference in 2028.",Annex 3. Reference list of relevant WP2 tasks and pilots
+2031,number,Aarhus University underwrites storage and curation of image and sound media in its Environmental Research Data Archive until 2031.,Annex 3. Reference list of relevant WP2 tasks and pilots
+"21,086.4",number,"13,104.8 (1.4) + 1400 (1.5) + 180 (1.6) + 6,401.6 (1.7) = 21,086.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+"216,392",number,"216,392 + 32,458.8 = 248,850.8",Annex 3. Reference list of relevant WP2 tasks and pilots
+"229,192",number,"229,192",Annex 3. Reference list of relevant WP2 tasks and pilots
+24,number,24,Annex 3. Reference list of relevant WP2 tasks and pilots
+"24,000",number,"TBC (estimating 24,000)",Annex 3. Reference list of relevant WP2 tasks and pilots
+"248,850.8",number,"216,392 + 32,458.8 = 248,850.8",Annex 3. Reference list of relevant WP2 tasks and pilots
+25,number,25 summer-school participants from minimum of 12 countries; organisations attending; at least 20 distinct organisations attending ≥1 of the 8 online events,Annex 3. Reference list of relevant WP2 tasks and pilots
+250,number,"Explain the substantive link with the selected primary Core Activity and, where relevant, the distinct contribution to the secondary Core Activity. [150-250 words]",2.1 Justification of Core Activity fit
+250,number,"Describe the problem for a non-specialist reader: what is missing or not working, who is affected, and why the issue should be addressed now. [250-350 words]",3.1 Context and monitoring need
+250,number,Avoid listing tasks without explaining the interaction. [150-250 words],"5.2 Links with WP2 tasks, pilots and structures"
+250,number,"Explain the broad strategy to determine who will maintain the outputs or capacities, what resources or mandate will support them, how other countries or schemes can take them up, and any realistic continuation or scaling pathway. [150-250 words]","7.3 Maintenance, transfer and future prospects"
+"251,022",number,"251,022",Annex 3. Reference list of relevant WP2 tasks and pilots
+"253,036.8",number,"41,172.8 (for leads) + 253,036.8",Annex 3. Reference list of relevant WP2 tasks and pilots
+27,number,"AI model calibration, sensor connectivity retrofits, and annotation protocol design are not country-specific technical problems; they should not be addressed redundantly across up to 27 Member States.",Annex 3. Reference list of relevant WP2 tasks and pilots
+27,number,Apr 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+27,number,Aug 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+27,number,Dec 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+27,number,July 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+27,number,June 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+27,number,May 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+27,number,Oct 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+27,number,Sep 27,Annex 3. Reference list of relevant WP2 tasks and pilots
+"27,600",number,"27,600",Annex 3. Reference list of relevant WP2 tasks and pilots
+28,number,Apr 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+28,number,Jan 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+28,number,Jul 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+28,number,July 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+28,number,June 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+28,number,May 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+28,number,Sep 28,Annex 3. Reference list of relevant WP2 tasks and pilots
+"288,000",number,"~288,000",Annex 3. Reference list of relevant WP2 tasks and pilots
+"290,222",number,"290,222 + 43,533.3 = 333,755.3",Annex 3. Reference list of relevant WP2 tasks and pilots
+3,number,3.,"3. Problem, baseline and additionality"
+3,number,"3) Set the desired outcome (e.g. ""have received an AMI trap."", ""are covered by a monitoring site."" ).",4.2 SMART objectives
+3,number,"Define 3 to 5 SMART objectives (SMART objectives are Specific, Measurable, Achievable, Relevant and Timebound, and allow you to precisely assess if objectives are met).",4.2 SMART objectives
+3,number,"3 months before the pilot’s end, a governance and funding pathway for continuing the hub beyond Biodiversa+ is agreed with partners.",Annex 3. Reference list of relevant WP2 tasks and pilots
+3,number,Annex 3.,Annex 3. Reference list of relevant WP2 tasks and pilots
+3,number,CA4 is addressed through Package 3: Capacity building.,Annex 3. Reference list of relevant WP2 tasks and pilots
+3,number,Core Activity 3,Annex 3. Reference list of relevant WP2 tasks and pilots
+3,number,Core Activity 3: Improving biodiversity data flows,Annex 3. Reference list of relevant WP2 tasks and pilots
+3,number,"It will connect the community of users of novel technologies and resulting data - both with one another, and with the skills and resources to sustain a transnational automated monitoring effort (Package 3).",Annex 3. Reference list of relevant WP2 tasks and pilots
+3,number,"Package 2 and 3 activities (2.1, 2.3, 3.6, 3.7) depend on the verified dataset from 1.2/1.3; delays in annotation and verification cascade through the rest of the timeline.",Annex 3. Reference list of relevant WP2 tasks and pilots
+3,number,Package 3: Capacity building,Annex 3. Reference list of relevant WP2 tasks and pilots
+3,number,Package 3: Capacity building (CA4),Annex 3. Reference list of relevant WP2 tasks and pilots
+3.1,number,3.1 Context and monitoring need,3.1 Context and monitoring need
+3.1,number,3.1,Annex 3. Reference list of relevant WP2 tasks and pilots
+3.1,number,"Activities 3.1–3.7 build lasting capacity by creating a communication platform, a summer school, technical fora, verification and AI-processing workshops, and thematic webinars.",Annex 3. Reference list of relevant WP2 tasks and pilots
+3.1,number,"Depends on: 1.1, 2.2, 2.5, 3.1 (documentation of the registry, standards and pipeline, online platform)",Annex 3. Reference list of relevant WP2 tasks and pilots
+3.1,number,"Feeds: 3.1 (finalised indicators shown on the platform, M2.2);",Annex 3. Reference list of relevant WP2 tasks and pilots
+3.2,number,3.2 Baseline and supporting evidence,3.2 Baseline and supporting evidence
+3.2,number,3.2,Annex 3. Reference list of relevant WP2 tasks and pilots
+3.2,number,Feeds: 3.2 (ongoing support for summer-school alumni),Annex 3. Reference list of relevant WP2 tasks and pilots
+3.3,number,3.3 Transnational problem and added value,3.3 Transnational problem and added value
+3.3,number,3.3,Annex 3. Reference list of relevant WP2 tasks and pilots
+3.3,number,3.3 (roadmap draws on indicator concepts),Annex 3. Reference list of relevant WP2 tasks and pilots
+3.3,number,3.3 (roadmap),Annex 3. Reference list of relevant WP2 tasks and pilots
+3.4,number,3.4,Annex 3. Reference list of relevant WP2 tasks and pilots
+3.4,number,3.4 (fora reference the registry),Annex 3. Reference list of relevant WP2 tasks and pilots
+3.4,number,Feeds: 3.4 (fora as follow-up support),Annex 3. Reference list of relevant WP2 tasks and pilots
+3.4,number,Feeds: 3.4 (fora as post-course support),Annex 3. Reference list of relevant WP2 tasks and pilots
+3.4,number,Feeds: 3.4 (pipeline documentation),Annex 3. Reference list of relevant WP2 tasks and pilots
+3.5,number,3.5,Annex 3. Reference list of relevant WP2 tasks and pilots
+3.5,number,"Feeds: 2.1 (finalised D1.1 dataset), 3.5 (protocol taught in workshops)",Annex 3. Reference list of relevant WP2 tasks and pilots
+3.6,number,3.6,Annex 3. Reference list of relevant WP2 tasks and pilots
+3.6,number,3.6/3.7 (benchmarking results as workshop/webinar content),Annex 3. Reference list of relevant WP2 tasks and pilots
+3.6,number,"Package 2 and 3 activities (2.1, 2.3, 3.6, 3.7) depend on the verified dataset from 1.2/1.3; delays in annotation and verification cascade through the rest of the timeline.",Annex 3. Reference list of relevant WP2 tasks and pilots
+3.7,number,3.7,Annex 3. Reference list of relevant WP2 tasks and pilots
+3.7,number,"Activities 3.1–3.7 build lasting capacity by creating a communication platform, a summer school, technical fora, verification and AI-processing workshops, and thematic webinars.",Annex 3. Reference list of relevant WP2 tasks and pilots
+3.7,number,"Package 2 and 3 activities (2.1, 2.3, 3.6, 3.7) depend on the verified dataset from 1.2/1.3; delays in annotation and verification cascade through the rest of the timeline.",Annex 3. Reference list of relevant WP2 tasks and pilots
+30,number,Implementation must end no later than 30 September 2028.,10. Timeline and milestones
+30,number,1 January 2027 to 30 September 2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+30,number,30/6/2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+30,number,30/9/2028,Annex 3. Reference list of relevant WP2 tasks and pilots
+30,number,"For example, TABMON has deployed autonomous acoustic sensors across four countries demonstrating the use of standardised passive acoustic monitoring at a continental scale, while the Horizon Europe project MAMBO and several related projects have collectively deployed AI-based insect camera traps in over 30 countries.",Annex 3. Reference list of relevant WP2 tasks and pilots
+300,number,"Provide concrete evidence of current coverage, methods, limitations, capacities or data accessibility against which improvement can be assessed. [200-300 words]",3.2 Baseline and supporting evidence
+300,number,"Explain why this is a shared problem across countries, regions, schemes or infrastructures; what can be achieved through alignment or coordination that cannot be achieved by an isolated national action; and who will be able to reuse the results. [200-300 words]",3.3 Transnational problem and added value
+300,number,"Describe the expected effect on monitoring practice, coordination, data availability or policy use; the intended users; and how outputs, capacities or working arrangements will continue after the funded period. [200-300 words]",4.3 Expected impact and sustainability
+300,number,"Explain how the proposal makes monitoring more coordinated, comparable, interoperable, accessible, capable or policy-relevant, and how it contributes to stronger long-term transnational monitoring. [200-300 words]",5.1 Contribution to Biodiversa+ goals
+31,number,31/12/2027,Annex 3. Reference list of relevant WP2 tasks and pilots
+"314,630.8",number,"314,630.8",Annex 3. Reference list of relevant WP2 tasks and pilots
+"32,458.8",number,"216,392 + 32,458.8 = 248,850.8",Annex 3. Reference list of relevant WP2 tasks and pilots
+"32,458.8",number,"32,458.8",Annex 3. Reference list of relevant WP2 tasks and pilots
+"323,022",number,"323,022",Annex 3. Reference list of relevant WP2 tasks and pilots
+"325,491.2",number,"325,491.2 + 48,823.68 = 374,314.88",Annex 3. Reference list of relevant WP2 tasks and pilots
+"333,755.3",number,"290,222 + 43,533.3 = 333,755.3",Annex 3. Reference list of relevant WP2 tasks and pilots
+34,number,34,Annex 3. Reference list of relevant WP2 tasks and pilots
+"34,000",number,"34,000",Annex 3. Reference list of relevant WP2 tasks and pilots
+"34,000",number,"34,000 (summer school)",Annex 3. Reference list of relevant WP2 tasks and pilots
+350,number,"Describe the problem for a non-specialist reader: what is missing or not working, who is affected, and why the issue should be addressed now. [250-350 words]",3.1 Context and monitoring need
+37,number,37,Annex 3. Reference list of relevant WP2 tasks and pilots
+"374,314.88",number,"422,535.3 (leads) + ~374,314.88 (additional participants) = €796,850.18",Additional SCALABLE budget for participating partners
+"374,314.88",number,"325,491.2 + 48,823.68 = 374,314.88",Annex 3. Reference list of relevant WP2 tasks and pilots
+4,number,4.,"4. Aim, objectives and expected change"
+4,number,"1) Set the time frame for the objective (e.g. ""After 4 months…"", ""At the end of the pilot study…"")",4.2 SMART objectives
+4,number,2 (1.3) +2 (2.4) = 4,Annex 3. Reference list of relevant WP2 tasks and pilots
+4,number,"5,200 (4 in person attendances)",Annex 3. Reference list of relevant WP2 tasks and pilots
+4,number,"At least 4 finalised indicators are calculated and live on the MANTIS dashboard, each explicitly mapped to NRR Art.",Annex 3. Reference list of relevant WP2 tasks and pilots
+4,number,Core Activity 4,Annex 3. Reference list of relevant WP2 tasks and pilots
+4,number,"Core Activity 4 identifies a clear need for capacity building in data management, quality assurance and novel technologies.",Annex 3. Reference list of relevant WP2 tasks and pilots
+4,number,Core Activity 4: Capacity building for coordination and improvement or harmonisation of monitoring schemes,Annex 3. Reference list of relevant WP2 tasks and pilots
+4,number,"Policy relevance is enhanced by targeting established EU priorities, including support for the EU Pollinator Monitoring Scheme (EU-PoMS) under NRR Article 10, and by contributing methodological groundwork toward the ""Community composition of freshwater benthic invertebrates"" EBV named under Option 4.",Annex 3. Reference list of relevant WP2 tasks and pilots
+4.1,number,4.1 Overall aim,4.1 Overall aim
+4.2,number,4.2 SMART objectives,4.2 SMART objectives
+4.3,number,4.3 Expected impact and sustainability,4.3 Expected impact and sustainability
+"41,038.8",number,"41,038.8",Annex 3. Reference list of relevant WP2 tasks and pilots
+"41,172.8",number,"41,172.8 (for leads) + 126,518.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+"41,172.8",number,"41,172.8 (for leads) + 253,036.8",Annex 3. Reference list of relevant WP2 tasks and pilots
+"422,535.3",number,"422,535.3 (leads) + ~374,314.88 (additional participants) = €796,850.18",Additional SCALABLE budget for participating partners
+"422,535.3",number,"422,535.3",Annex 3. Reference list of relevant WP2 tasks and pilots
+"43,533.3",number,"290,222 + 43,533.3 = 333,755.3",Annex 3. Reference list of relevant WP2 tasks and pilots
+"43,533.3",number,"43,533.3",Annex 3. Reference list of relevant WP2 tasks and pilots
+"47,386.4",number,"47,386.4 + 7,107.96 = 54,494.36",Annex 3. Reference list of relevant WP2 tasks and pilots
+48,number,48,Annex 3. Reference list of relevant WP2 tasks and pilots
+"48,823.68",number,"325,491.2 + 48,823.68 = 374,314.88",Annex 3. Reference list of relevant WP2 tasks and pilots
+"48,823.68",number,"48,823.68",Annex 3. Reference list of relevant WP2 tasks and pilots
+5,number,"Define 3 to 5 SMART objectives (SMART objectives are Specific, Measurable, Achievable, Relevant and Timebound, and allow you to precisely assess if objectives are met).",4.2 SMART objectives
+5,number,5.,5. Relevance and positioning within Biodiversa+ WP2
+5,number,Core Activity 5,Annex 3. Reference list of relevant WP2 tasks and pilots
+5,number,Core Activity 5: Capacity building towards improved alignment with policy requirements,Annex 3. Reference list of relevant WP2 tasks and pilots
+5,number,"For acoustics devices, this means upgrading to newer models such as the Wildlife Acoustics Song Meter 5 with rechargeable lithium batteries and solar panels, as well as cellular remote access accessories to be released for SM5 in 2027.",Annex 3. Reference list of relevant WP2 tasks and pilots
+"5,200",number,"5,200 (4 in person attendances)",Annex 3. Reference list of relevant WP2 tasks and pilots
+5.1,number,5.1 Contribution to Biodiversa+ goals,5.1 Contribution to Biodiversa+ goals
+5.2,number,"5.2 Links with WP2 tasks, pilots and structures","5.2 Links with WP2 tasks, pilots and structures"
+5.3,number,5.3 Related initiatives and complementarity,5.3 Related initiatives and complementarity
+5000,number,"At least 5000 expert-verified annotations published under FAIR principles, including ≥ 2,000 NewtCam annotations; ≥20% of items reviewed by experts from ≥2 countries",Annex 3. Reference list of relevant WP2 tasks and pilots
+"52,000",number,"52,000",Annex 3. Reference list of relevant WP2 tasks and pilots
+"54,494.36",number,"47,386.4 + 7,107.96 = 54,494.36",Annex 3. Reference list of relevant WP2 tasks and pilots
+"55,113.3",number,"55,113.3",Annex 3. Reference list of relevant WP2 tasks and pilots
+"57,200",number,"57,200 + 8,580 = 65,780",Annex 3. Reference list of relevant WP2 tasks and pilots
+6,number,6.,6. Implementation
+6,number,CORE + ENHANCED + an expected 6 additional partners partaking in all SCALABLE activities:,Additional SCALABLE budget for participating partners
+6,number,"Confirm partner commitments and co-funding at consortium-agreement stage before work begins; if partner numbers fall short, descope SCALABLE deployments proportionally rather than stretching the budget thin; review actual partner numbers formally at the month-6 checkpoint.",Annex 3. Reference list of relevant WP2 tasks and pilots
+6,number,"Fewer participating partners join than the 6-12 assumed for SCALABLE-tier activities, leaving per-partner deployments (1.4, 1.7) under-resourced relative to their targets.",Annex 3. Reference list of relevant WP2 tasks and pilots
+6,number,TOTAL @ 6 additional participating partners,Annex 3. Reference list of relevant WP2 tasks and pilots
+"6,401.6",number,"13,104.8 (1.4) + 1400 (1.5) + 180 (1.6) + 6,401.6 (1.7) = 21,086.4",Annex 3. Reference list of relevant WP2 tasks and pilots
+6.1,number,6.1 Activity overview,6.1 Activity overview
+6.1,number,Copy the complete block below for every activity listed in Section 6.1.,Annex 3. Reference list of relevant WP2 tasks and pilots
+6.2,number,6.2 Detailed activity description - duplicate for each activity,6.2 Detailed activity description - duplicate for each activity
+"65,780",number,"57,200 + 8,580 = 65,780",Annex 3. Reference list of relevant WP2 tasks and pilots
+7,number,7.,"7. Outputs, outcomes and indicators"
+"7,107.96",number,"47,386.4 + 7,107.96 = 54,494.36",Annex 3. Reference list of relevant WP2 tasks and pilots
+"7,107.96",number,"7,107.96",Annex 3. Reference list of relevant WP2 tasks and pilots
+7.1,number,7.1 Deliverables,7.1 Deliverables
+7.2,number,7.2 Milestones,7.2 Milestones
+7.3,number,"7.3 Maintenance, transfer and future prospects","7.3 Maintenance, transfer and future prospects"
+"701,281.04",number,"701,281.04",Annex 3. Reference list of relevant WP2 tasks and pilots
+"72,000",number,"72,000",Annex 3. Reference list of relevant WP2 tasks and pilots
+75,number,"2) Set the target and its associated threshold (e.g. ""all partners involved…"", ""75% of European biogeographical regions…"")",4.2 SMART objectives
+"77,200",number,"77,200 + 11,580 = 88,780",Annex 3. Reference list of relevant WP2 tasks and pilots
+"796,850.18",number,"422,535.3 (leads) + ~374,314.88 (additional participants) = €796,850.18",Additional SCALABLE budget for participating partners
+"796,850.18",number,"€796,850.18",Annex 3. Reference list of relevant WP2 tasks and pilots
+8,number,"100% of active AMI, CamAlien and acoustic deployments (≥[N] devices) across ≥8 partner countries registered and machine-readable",Annex 3. Reference list of relevant WP2 tasks and pilots
+8,number,25 summer-school participants from minimum of 12 countries; organisations attending; at least 20 distinct organisations attending ≥1 of the 8 online events,Annex 3. Reference list of relevant WP2 tasks and pilots
+"8,580",number,"57,200 + 8,580 = 65,780",Annex 3. Reference list of relevant WP2 tasks and pilots
+"8,580",number,"8,580",Annex 3. Reference list of relevant WP2 tasks and pilots
+800,number,"Conversely, the NewtCam system requires an initial capital expenditure of €800 per site, but significantly reduces ongoing OpEx, yielding cumulative cost savings over time compared to alternative methods.",Annex 3. Reference list of relevant WP2 tasks and pilots
+"88,780",number,"77,200 + 11,580 = 88,780",Annex 3. Reference list of relevant WP2 tasks and pilots
+9,number,9 Acoustics and 1 CamAlien devices upgraded per partner,Annex 3. Reference list of relevant WP2 tasks and pilots
+9,number,M1.2 - 9 Acoustics and 1 CamAlien devices upgraded per partner,Annex 3. Reference list of relevant WP2 tasks and pilots
+"91,471.44",number,"91,471.44",Annex 3. Reference list of relevant WP2 tasks and pilots
+O1,objective,Maintain a one-quarter schedule buffer between 1.3's dataset finalisation and 2.1's start; track annotation throughput against O1/O2 targets at every reporting period and reallocate annotation effort across partners if a bottleneck emerges.,Annex 3. Reference list of relevant WP2 tasks and pilots
+O1,objective,O1,Annex 3. Reference list of relevant WP2 tasks and pilots
+O2,objective,Maintain a one-quarter schedule buffer between 1.3's dataset finalisation and 2.1's start; track annotation throughput against O1/O2 targets at every reporting period and reallocate annotation effort across partners if a bottleneck emerges.,Annex 3. Reference list of relevant WP2 tasks and pilots
+O2,objective,O2,Annex 3. Reference list of relevant WP2 tasks and pilots
+O3,objective,O3,Annex 3. Reference list of relevant WP2 tasks and pilots
+O4,objective,O4,Annex 3. Reference list of relevant WP2 tasks and pilots
+O5,objective,O5,Annex 3. Reference list of relevant WP2 tasks and pilots
+R1,risk,R1,Annex 3. Reference list of relevant WP2 tasks and pilots
+R10,risk,R10,Annex 3. Reference list of relevant WP2 tasks and pilots
+R11,risk,R11,Annex 3. Reference list of relevant WP2 tasks and pilots
+R2,risk,R2,Annex 3. Reference list of relevant WP2 tasks and pilots
+R3,risk,R3,Annex 3. Reference list of relevant WP2 tasks and pilots
+R4,risk,R4,Annex 3. Reference list of relevant WP2 tasks and pilots
+R5,risk,R5,Annex 3. Reference list of relevant WP2 tasks and pilots
+R6,risk,R6,Annex 3. Reference list of relevant WP2 tasks and pilots
+R7,risk,R7,Annex 3. Reference list of relevant WP2 tasks and pilots
+R8,risk,R8,Annex 3. Reference list of relevant WP2 tasks and pilots
+R9,risk,R9,Annex 3. Reference list of relevant WP2 tasks and pilots

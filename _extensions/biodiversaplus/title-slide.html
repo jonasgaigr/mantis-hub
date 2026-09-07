@@ -1,0 +1,42 @@
+$-- Biodiversa+ title slide.
+$--
+$-- Reproduces ppt/slides/slide1.xml, where a photograph sits under a full-bleed
+$-- overlay whose transparent region is shaped like the Biodiversa+ logo mark. Here
+$-- the photo is instead masked *to* that silhouette and laid over the same white
+$-- ground - visually identical, and it makes the photograph a per-deck YAML option.
+$--
+$-- YAML:
+$--   title-image:          path to the photograph shown through the logo mark
+$--   title-image-position: any CSS background-position (default: center)
+$--   title-slide-class:    extra classes, e.g. "blue" or "turquoise"
+<section id="$idprefix$title-slide" class="bd-title-slide$if(title-slide-class)$ $title-slide-class$$endif$"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+
+  <div class="bd-title-bg" aria-hidden="true">
+    <div class="bd-title-field"></div>
+$if(title-image)$
+    <div class="bd-title-mask" style="background-image: url('$title-image$');$if(title-image-position)$ background-position: $title-image-position$;$endif$"></div>
+$else$
+    <div class="bd-title-mask bd-title-mask--fallback"></div>
+$endif$
+  </div>
+
+  <div class="bd-title-logo" role="img" aria-label="Biodiversa+ - European Biodiversity Partnership"></div>
+
+  <div class="bd-title-text">
+    <h1 class="title">$title$</h1>
+$if(subtitle)$
+    <p class="subtitle">$subtitle$</p>
+$endif$
+    <hr class="bd-title-rule" aria-hidden="true">
+$for(author)$
+    <p class="author">$author$</p>
+$endfor$
+$for(institute)$
+    <p class="institute">$institute$</p>
+$endfor$
+$if(date)$
+    <p class="date">$date$</p>
+$endif$
+  </div>
+
+</section>
