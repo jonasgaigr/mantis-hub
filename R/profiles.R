@@ -7,6 +7,8 @@
 # cannot make itself unreadable on a slide by being written for A4.
 # ---------------------------------------------------------------------------
 
+`%||%` <- function(a, b) if (is.null(a)) b else a
+
 PROFILE_NAMES <- c("slide", "a4", "poster")
 
 #' The reserved hues. These three mean CORE / ENHANCED / SCALABLE and nothing
@@ -37,6 +39,9 @@ TIER_ORDER <- c("L1", "L2", "L3")
     canvas = c(1920, 1080),
     tiers  = "L1",
     min_font = 32,
+    # the deck puts the message in the slide title, so the figure must not
+    # repeat it; on paper there is no slide title and the figure carries it
+    draw_title = FALSE,
     font = c(title = 46, block = 34, gate = 34, caption = 34, note = 34, legend = 32)
   ),
   a4 = list(
@@ -88,6 +93,7 @@ get_profile <- function(name, orientation = c("landscape", "portrait")) {
       height      = height,
       tiers       = def$tiers,
       min_font    = def$min_font,
+      draw_title  = def$draw_title %||% TRUE,
       font        = def$font,
       stroke      = stroke,
       scale       = scale

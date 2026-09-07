@@ -1,0 +1,63 @@
+---
+title: "MANTIS proposal figures"
+subtitle: "Biodiversa+ Task 2.5.3 — A4 variants, with captions and alt text"
+format:
+  html:
+    toc: true
+    embed-resources: true
+    fig-align: center
+  pdf:
+    documentclass: article
+    papersize: a4
+    geometry: margin=25mm
+    fig-align: center
+---
+
+```{r}
+#| label: setup
+#| include: false
+for (f in c("profiles", "spec", "render", "checks", "document")) {
+  source(file.path("R", paste0(f, ".R")))
+}
+specs <- document_specs()
+fmt <- if (output_is_pdf()) "pdf" else "html"
+```
+
+Each figure below is the A4 variant of a spec in `figures/`. The same spec also
+produces a slide variant (L1 only) and a poster variant (L1, L2 and L3); all
+three are rebuilt together by `targets::tar_make()`.
+
+Captions and alt text are read from the spec at render time, not retyped here,
+so they cannot drift away from the figure they describe.
+
+```{r}
+#| label: figures
+#| output: asis
+for (spec in specs) {
+  cat(sprintf("\n## %s\n\n", spec$message))
+  cat(figure_block(spec, profile = "a4", fmt = fmt))
+  cat("\n")
+}
+```
+
+## What the figures are allowed to say
+
+Every numeric token and every milestone, deliverable, objective, risk or
+activity ID in the figures above appears in `data/facts.csv`, extracted from
+the proposal .docx. Anything the proposal does not supply is rendered as the
+literal `[TBC]` and listed in `MISSING-INPUTS.md`.
+
+```{r}
+#| label: tbc
+#| output: asis
+tbc <- unlist(lapply(specs, function(s) {
+  lab <- all_labels(s)
+  lab$text[grepl("[TBC]", lab$text, fixed = TRUE)]
+}))
+if (length(tbc)) {
+  cat("Labels currently carrying `[TBC]`:\n\n")
+  for (t in tbc) cat(sprintf("- %s\n", t))
+} else {
+  cat("No figure currently carries a `[TBC]`.\n")
+}
+```

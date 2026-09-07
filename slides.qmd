@@ -1,0 +1,40 @@
+---
+title: "MANTIS"
+subtitle: "One quality-controlled chain, three packages"
+format:
+  biodiversaplus-revealjs:
+    include-in-header:
+      text: |
+        <style>
+        /* A figure slide is the figure. The message is a full sentence, so it
+           is set as a running head rather than a display heading, and the
+           figure takes the rest of the slide. */
+        .reveal .figure-slide h2 {
+          font-size: 1.05em; line-height: 1.2; margin-bottom: 0.15em;
+        }
+        .reveal .figure-slide img {
+          margin: 0; border: none; box-shadow: none; background: none;
+        }
+        </style>
+---
+
+```{r}
+#| label: setup
+#| include: false
+for (f in c("profiles", "spec", "render", "checks", "document")) {
+  source(file.path("R", paste0(f, ".R")))
+}
+specs <- document_specs()
+```
+
+```{r}
+#| label: slides
+#| output: asis
+# One slide per figure, with the figure's own message as the slide title: if
+# the message does not work as a title, the figure does not have one message.
+for (spec in specs) {
+  cat(sprintf("\n## %s {.figure-slide}\n\n", spec$message))
+  cat(sprintf('![](%s){fig-alt="%s"}\n\n',
+              figure_path(spec, "slide"), spec$alt))
+}
+```

@@ -229,10 +229,15 @@ render_figure <- function(spec, profile) {
   margin <- 0.022 * p$width
 
   # --- title (the figure's message) ---------------------------------------
-  tb <- .text_block(spec$message, font_for(p, "title"), p$width * 0.94,
-                    x = 0.03 * p$width, y_top = 0.028 * p$height,
-                    anchor = "start", fill = INK[["ink0"]], weight = "bold")
-  addl(tb$items)
+  # Drawn only where nothing else is going to say it. In a deck the message is
+  # the slide title; repeating it inside the figure says the same sentence
+  # twice on one screen.
+  if (isTRUE(p$draw_title)) {
+    tb <- .text_block(spec$message, font_for(p, "title"), p$width * 0.94,
+                      x = 0.03 * p$width, y_top = 0.028 * p$height,
+                      anchor = "start", fill = INK[["ink0"]], weight = "bold")
+    addl(tb$items)
+  }
 
   # --- brackets ------------------------------------------------------------
   for (b in spec$brackets) {

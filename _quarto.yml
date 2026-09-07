@@ -1,0 +1,11 @@
+project:
+  title: "MANTIS proposal figures"
+  render:
+    - figures.qmd
+    - slides.qmd
+
+execute:
+  freeze: false
+  echo: false
+  warning: false
+  message: false
