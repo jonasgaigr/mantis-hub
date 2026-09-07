@@ -10,3 +10,7 @@ execute:
   echo: false
   warning: false
   message: false
+
+format:
+  revealjs:
+    embed-resources: true
