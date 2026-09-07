@@ -1,0 +1,48 @@
+{
+  // radian as the R terminal: readline editing, syntax highlight, real history
+  "r.rterm.windows": "radian",
+  "r.rterm.mac": "/usr/local/bin/radian",
+  "r.rterm.linux": "/usr/local/bin/radian",
+  "r.rterm.option": ["--no-save", "--no-restore"],
+
+  // radian needs bracketed paste to receive multi-line code intact
+  "r.bracketedPaste": true,
+  "r.alwaysUseActiveTerminal": true,
+
+  // plots in a real graphics device rather than a static PNG panel
+  "r.plot.useHttpgd": true,
+
+  // Quarto previews inside the editor, not in an external browser
+  "quarto.render.previewType": "internal",
+
+  "[r]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "REditorSupport.r",
+    "editor.rulers": [80],
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[quarto]": {
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "on"
+  },
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  // the build writes here; keep it out of search and the explorer
+  "files.watcherExclude": {
+    "**/_targets/**": true,
+    "**/renv/library/**": true
+  },
+  "search.exclude": {
+    "out/**": true,
+    "_targets/**": true,
+    "renv/library/**": true,
+    "data/facts.csv": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n"
+}

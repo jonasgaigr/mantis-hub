@@ -3,6 +3,10 @@
 # from tests/testthat itself, sources R/, and renders every spec once so the
 # rules below all read the same SVG.
 
+# Declared so renv sees it: the suite is normally started from the command
+# line, where nothing in the project's own sources mentions testthat.
+library(testthat)
+
 find_root <- function(start = getwd()) {
   d <- normalizePath(start, winslash = "/", mustWork = FALSE)
   for (i in 1:6) {

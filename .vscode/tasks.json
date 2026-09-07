@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build figures",
+      "type": "shell",
+      "command": "Rscript",
+      "args": ["-e", "targets::tar_make()"],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "detail": "Extract facts from the .docx and render every spec to out/*.svg"
+    },
+    {
+      "label": "Test rules",
+      "type": "shell",
+      "command": "Rscript",
+      "args": ["-e", "testthat::test_dir(\"tests/testthat\")"],
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "detail": "Check every spec against the nine rules"
+    },
+    {
+      "label": "Build and test",
+      "dependsOrder": "sequence",
+      "dependsOn": ["Build figures", "Test rules"],
+      "problemMatcher": [],
+      "detail": "What CI runs"
+    },
+    {
+      "label": "Render documents",
+      "type": "shell",
+      "command": "quarto",
+      "args": ["render"],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "detail": "figures.qmd (html + pdf) and slides.qmd (revealjs)"
+    },
+    {
+      "label": "Show the build graph",
+      "type": "shell",
+      "command": "Rscript",
+      "args": ["-e", "targets::tar_visnetwork()"],
+      "problemMatcher": [],
+      "detail": "Which targets are out of date and why"
+    }
+  ]
+}

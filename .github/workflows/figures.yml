@@ -1,0 +1,67 @@
+name: figures
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "4.3"
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-renv@v2
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      # rsvg-convert keeps the text live when the A4 figures go into the PDF.
+      # Without it svg_to_pdf() would fall back to a headless browser; on CI we
+      # want the converter the project actually prefers.
+      - name: Install librsvg
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+
+      - name: Build the figures
+        run: Rscript -e 'targets::tar_make()'
+
+      # The proposal contradicts itself about the tier of A1.5 and A1.6; the
+      # build prints that rather than resolving it. Surface it in the log.
+      - name: Report unresolved inputs
+        run: |
+          echo "::group::MISSING-INPUTS.md"
+          cat MISSING-INPUTS.md
+          echo "::endgroup::"
+
+      - name: Check every spec against the nine rules
+        run: Rscript -e 'testthat::test_dir("tests/testthat")'
+
+      - name: Render the document and the deck
+        run: quarto render
+
+      - name: Fail if the build left the SVGs dirty
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            echo "Extraction changed data/ but the change was not committed:"
+            git --no-pager diff -- data/
+            exit 1
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: figures
+          path: |
+            out/
+            figures.html
+            figures.pdf
+            slides.html
+          if-no-files-found: error
