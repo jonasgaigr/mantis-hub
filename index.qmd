@@ -68,7 +68,7 @@ for (f in c("profiles", "spec", "render", "checks", "document")) {
 }
 ```
 
-# Why a hub for sensor-baser biodiversity monitoring, and why now {.turquoise}
+# Why a hub for sensor-based biodiversity monitoring, and why now {.turquoise}
 
 ::: {.notes}
 Nine minutes at a comfortable pace, with a minute in hand. If you are held to
