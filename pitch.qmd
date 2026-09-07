@@ -15,8 +15,11 @@
 # first.
 # ---------------------------------------------------------------------------
 title: "MANTIS"
-subtitle: "A hub for monitoring with automated and novel technologies based on image and sound"
-author: "Jamie Alison, Aarhus University \n Jonas Gaigr, Nature Conservation Agency CZ"
+subtitle: "A Hub for Monitoring with Automated and Novel Technologies Based on Image and Sound"
+author:
+- name: Jamie Alison, Aarhus University
+- name: Jonas Gaigr, Nature Conservation Agency CZ
+  affiliation: Nature Conservation Agency CZ
 institute: "Biodiversa+ WP2 · Task 2.5.3 additional activity"
 title-image: images/20250703024959-snapshot.jpg
 format:
@@ -65,7 +68,7 @@ for (f in c("profiles", "spec", "render", "checks", "document")) {
 }
 ```
 
-# Why a hub, and why now {.turquoise}
+# Why a hub for sensor-baser biodiversity monitoring, and why now {.turquoise}
 
 ::: {.notes}
 Nine minutes at a comfortable pace, with a minute in hand. If you are held to
@@ -73,16 +76,17 @@ seven, cut "Three bottlenecks" to its first line and give the packages slide
 its three column headers only.
 :::
 
-## The sensors are already in the ground. The system around them is not.
+## The sensors are already in the ground, yet the system is incomplete
 
 ::: {.columns}
 ::: {.column}
 #### Deployed, at scale, today
 
-- **TABMON** — autonomous acoustic sensors across **four countries**, showing standardised passive acoustic monitoring at continental scale
-- **MAMBO** and related projects — AI-based insect camera traps in **over 30 countries**
-- **ABMS pilot (2.6.5)** — AMI traps and acoustic recorders in three habitat types across **11 countries**
-- **IAS pilot (2.6.2)** — an AMI trap and a CamAlien unit in **10 countries**
+- **ABMS pilot (2.6.5)** – AMI traps and acoustic recorders in three habitat types across **11 countries**
+- **IAS pilot (2.6.2)** – an AMI trap and a CamAlien unit in **10 countries**
+- **BiodivPond pilot (2.6.8)** –acoustic recorders in **ten countries**, showing standardised pond monitoring at continental scale
+- **MAMBO** and related projects – AI-based insect camera traps in **over 30 countries**
+- **TABMON** – autonomous acoustic sensors across **four countries**, showing standardised passive acoustic monitoring at continental scale
 :::
 
 ::: {.column}
@@ -90,12 +94,12 @@ its three column headers only.
 
 - Ad hoc methods for annotation, verification and AI model selection, project by project
 - Interoperability bottlenecks between devices, national databases and European infrastructures
-- Few cross-country verified reference datasets, and those that exist are scattered and poorly curated
+- Few cross-country verified reference datasets, and those that exist are scattered and often poorly curated
 - Hardware maintained country by country, needing more transnational support than expected
 :::
 :::
 
-[Partners have free access to their own data — but not the tools or capacity to use it for policy-relevant insight.]{.small}
+[Partners have free access to their own data – but not the tools or capacity to use it for policy-relevant insight.]{.small}
 
 ::: {.notes}
 75 seconds. The point of this slide is that MANTIS asks nobody to believe in an
@@ -104,33 +108,33 @@ has already paid for a good share of them. What does not exist is anything
 joining them up.
 :::
 
-## Three bottlenecks — and not one of them is national
+## Three bottlenecks – and not one of them is national
 
 1. **Verification cannot keep up.** The volume of image and sound data has grown faster than the community's capacity to verify it, calibrate the AI models processing it, and make the outputs comparable across countries and taxa.
 2. **AI accuracy is unknown outside its training context.** Moth classifiers trained on Danish and UK expert-verified images performed poorly in Slovakia, Croatia, Bulgaria and Israel. TABMON names the same annotation bottleneck as its principal constraint on scaling.
 3. **Sensors still need field visits.** A substantial share of deployed acoustic recorders require manual retrieval rather than remote transfer, limiting temporal coverage and cost-efficiency.
 
-> Left unaddressed, these problems risk automated monitoring becoming a source of fragmented, incomparable, or even unprocessed national data — repeating, at greater cost and complexity, the exact coordination problem transnational monitoring should be designed to solve.
+> Left unaddressed, these problems risk automated monitoring becoming a source of fragmented, incomparable, or even unprocessed national data – repeating, at greater cost and complexity, the exact coordination problem transnational monitoring should be designed to solve.
 
 ::: {.notes}
 90 seconds, and this is the slide that has to land. Model calibration, sensor
 connectivity and annotation protocol design are not country-specific technical
 problems, so they should not be solved redundantly across up to 27 Member
-States. Read the quote out — it is the proposal's own sentence.
+States. Read the quote out – it is the proposal's own sentence.
 :::
 
 ## The aim: connective tissue, not another project
 
-- **Connect data acquisition** — align protocols, deployments and annotations, and extend spatial and taxonomic coverage with new sensor deployments.  [Package 1]{.small}
-- **Connect the data** — harmonise datasets and metadata into a seamless, quality-controlled flow from images and sounds to indicators, including transnational benchmarking of AI models.  [Package 2]{.small}
-- **Connect the community** — link the users of these technologies to one another, and to the skills and resources that sustain a transnational effort.  [Package 3]{.small}
+- **Connect data acquisition** – align protocols, deployments and annotations, and extend spatial and taxonomic coverage with new sensor deployments.  [Package 1]{.small}
+- **Connect the data** – harmonise datasets and metadata into a seamless, quality-controlled flow from images and sounds to indicators, including transnational benchmarking of AI models.  [Package 2]{.small}
+- **Connect the community** – link the users of these technologies to one another, and to the skills and resources that sustain a transnational effort.  [Package 3]{.small}
 
 [MANTIS positions itself as a progenitor for a Thematic Hub associated with an EBOCC. Core Activity 3 primary; Core Activities 2 and 4 secondary.]{.small}
 
 ::: {.notes}
 60 seconds. "Connective tissue" is the proposal's own phrase and the one image
 worth repeating. MANTIS builds infrastructure for monitoring itself, not
-another technology or another taxon's dataset — the feature Biodiversa+ asks of
+another technology or another taxon's dataset – the feature Biodiversa+ asks of
 a Task 2.5.3 activity as opposed to a conventional research grant.
 :::
 
@@ -140,7 +144,7 @@ a Task 2.5.3 activity as opposed to a conventional research grant.
 
 > …national automated monitoring efforts using image and sound technologies will function as a **connected, transnational system** rather than isolated national deployments.
 
-**Because MANTIS will have —**
+**Because MANTIS will have –**
 
 - aligned data acquisition protocols and coverage across partners;
 - harmonised the resulting datasets and metadata into a quality-controlled flow from raw sensor output to indicators;
@@ -148,7 +152,7 @@ a Task 2.5.3 activity as opposed to a conventional research grant.
 
 ::: {.notes}
 45 seconds. The structural change in one sentence, verbatim from the proposal.
-Pause after "rather than isolated national deployments" — the three clauses
+Pause after "rather than isolated national deployments" – the three clauses
 under it map one-to-one onto the three packages, and onto the next slide.
 :::
 
@@ -191,7 +195,7 @@ depends on, and at O5 as the one that decides whether this outlives the money.
 
 ::: {.columns}
 ::: {.column}
-#### Package 1 — Scheme improvement
+#### Package 1 – Scheme improvement
 [Core Activity 2 · seven activities]{.small}
 
 - Unified deployment registration system [A1.1]{.small}
@@ -204,7 +208,7 @@ depends on, and at O5 as the one that decides whether this outlives the money.
 :::
 
 ::: {.column}
-#### Package 2 — Data flows
+#### Package 2 – Data flows
 [Core Activity 3, primary · five activities]{.small}
 
 - Transnational benchmarking of AI, and pipeline refinement [A2.1]{.small}
@@ -215,7 +219,7 @@ depends on, and at O5 as the one that decides whether this outlives the money.
 :::
 
 ::: {.column}
-#### Package 3 — Capacity building
+#### Package 3 – Capacity building
 [Core Activity 4 · seven activities]{.small}
 
 - Platform for communication and signposting [A3.1]{.small}
@@ -234,24 +238,24 @@ depends on, and at O5 as the one that decides whether this outlives the money.
 75 seconds. Do not read nineteen activity titles. Give one sentence per column:
 Package 1 improves the schemes that feed the chain, Package 2 carries the data
 through it, Package 3 builds the capacity that keeps it running. Then name the
-three outputs a decision maker will actually look for — the registration system
+three outputs a decision maker will actually look for – the registration system
 online (M1.3, Aug 27), four indicators live on the dashboard (M2.2, Jul 28),
 and the roadmap (D3.1, Sep 28).
 :::
 
 ## Built to scale with the number of partners who join
 
-- **CORE** — everything the two lead partners deliver regardless: registration system, verified datasets, AI benchmarking, standards, indicators, platform, summer school, roadmap. [**€314,630.80**]{.small}
-- **CORE + ENHANCED** — adds the underwater acoustic pilot, the one-click AMI pipeline, technical fora, verification and AI-processing workshops, and the device webinars. [**€422,535.30**]{.small}
-- **SCALABLE** — priced per participating partner: scaled contributions to verification and to indicators, sensor upgrades, and new deployments in coverage-gap countries. [**≈€54,494.36 each** — 4 person-months, 2 in-person attendances, €21,086.40 of equipment]{.small}
+- **CORE** – everything the two lead partners deliver regardless: registration system, verified datasets, AI benchmarking, standards, indicators, platform, summer school, roadmap. [**€314,630.80**]{.small}
+- **CORE + ENHANCED** – adds the underwater acoustic pilot, the one-click AMI pipeline, technical fora, verification and AI-processing workshops, and the device webinars. [**€422,535.30**]{.small}
+- **SCALABLE** – priced per participating partner: scaled contributions to verification and to indicators, sensor upgrades, and new deployments in coverage-gap countries. [**≈€54,494.36 each** – 4 person-months, 2 in-person attendances, €21,086.40 of equipment]{.small}
 
-**Total requested: €796,850.18** — CORE + ENHANCED for the leads, plus six additional participating partners. At twelve participating partners the scalable line reaches €701,281.04.
+**Total requested: €796,850.18** – CORE + ENHANCED for the leads, plus six additional participating partners. At twelve participating partners the scalable line reaches €701,281.04.
 
 ::: {.notes}
 60 seconds, and it serves two rooms at once. For Biodiversa+: the activity
-descopes cleanly rather than failing — fewer partners means proportionally
+descopes cleanly rather than failing – fewer partners means proportionally
 fewer scaled deployments, not a thinner version of everything. For a partner
-weighing whether to join: the tail of the third bullet is the commitment —
+weighing whether to join: the tail of the third bullet is the commitment –
 four person-months, two trips, and equipment that stays with you.
 
 If asked: the SCALABLE tier is where the proposal's own shading and its budget
@@ -261,7 +265,7 @@ per-partner personnel figure is still marked TBC in section 11.1, so it is not
 quoted separately here.
 :::
 
-## What survives 2028
+## Sustainable past 2028
 
 [Maintenance rests on three layers, none of which requires continued project funding.]{.lede}
 
@@ -269,7 +273,7 @@ quoted separately here.
 2. **The outputs cost nothing to keep running.** Platform, Living Protocols, standard-compliant example datasets and processing pipelines sit on GitHub Pages, with dashboards refreshed by scheduled GitHub Actions. Curation is decentralised through pull requests and moderated technical fora, so effort scales with the user community rather than with a central team.
 3. **Uptake runs through schemes that continue anyway.** The registration system, benchmarking results and Camtrap DP implementations transfer to BiodivPond (2.6.8), ABMS (2.6.5) and the IAS pilot (2.6.2). Upgraded sensors are hosted at eLTER sites. Indicator workflows feed EU-PoMS and NRR Article 10 obligations that remain legally binding after 2028.
 
-[MANTIS establishes no new operational structure. It leaves behind maintained resources and an active community of practice — and a roadmap (D3.1) offering the coordinating function to whatever vehicle carries it on, an EBOCC Thematic Hub above all.]{.small}
+[MANTIS establishes no new operational structure. It leaves behind maintained resources and an active community of practice – and a roadmap (D3.1) offering the coordinating function to whatever vehicle carries it on, an EBOCC Thematic Hub above all.]{.small}
 
 ::: {.notes}
 60 seconds. The question behind every funding decision is what happens when the
@@ -279,17 +283,19 @@ obliged to keep doing this.
 :::
 
 ## Thank you {.bd-closing style="background-image: url('images/20250703024959-snapshot.jpg')"}
+MANTIS: A Hub for Monitoring with Automated and Novel Technologies Based on Image and Sound
 
-€796,850.18, from 1 January 2027 to 30 September 2028, to make automated monitoring across Europe function as a connected transnational system rather than isolated national deployments.
 
-- Jamie Alison, Aarhus University — <jalison@ecos.au.dk>
-- Jonas Gaigr, Nature Conservation Agency CZ — co-lead
-- MANTIS platform — live from April 2027 (D2.3)
+For more information, contact:
+
+- Jamie Alison, Aarhus University – <jalison@ecos.au.dk>
+- Jonas Gaigr, Nature Conservation Agency CZ – <jonas.gaigr@aopk.gov.cz>
+- MANTIS platform – live from April 2027 (D2.3)
 
 ::: {.notes}
 20 seconds, then questions. The likeliest three: why not leave this to the
 pilots (they have no mandate or budget to work across each other); what if
-fewer partners join (risk R2 — descope the scalable tier proportionally); and
-what happens if verification runs late (risk R3 — a one-quarter buffer between
+fewer partners join (risk R2 – descope the scalable tier proportionally); and
+what happens if verification runs late (risk R3 – a one-quarter buffer between
 1.3 and 2.1, with annotation effort reallocated across partners).
 :::
