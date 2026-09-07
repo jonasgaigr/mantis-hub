@@ -15,9 +15,11 @@ _book/
 _site/
 figures_files/
 slides_files/
+pitch_files/
 figures.html
 figures.pdf
 slides.html
+pitch.html
 
 /.quarto/
 **/*.quarto_ipynb

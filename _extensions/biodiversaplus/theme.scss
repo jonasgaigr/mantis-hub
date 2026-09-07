@@ -678,7 +678,12 @@ $presentation-title-slide-text-align: left !default;
   // The white rule above it is drawn by the list rather than written as a `---`
   // in the markdown, because pandoc reads a horizontal rule as a slide break and
   // would split the closing slide in two.
-  > ul:last-child {
+  //
+  // `:last-of-type`, not `:last-child`: a `::: {.notes}` block on this slide
+  // becomes an `<aside class="notes">` after the list, which would leave the
+  // contact block unstyled. The aside is `display: none` outside speaker view,
+  // so it costs the list neither its icons nor its `margin-top: auto`.
+  > ul:last-of-type {
     margin: auto 0 0 $bd-closing-foot-indent;
     padding-left: $bd-closing-icon-gap;
     list-style: none;

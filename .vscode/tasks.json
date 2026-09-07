@@ -35,7 +35,7 @@
       "args": ["render"],
       "problemMatcher": [],
       "presentation": { "reveal": "always", "panel": "dedicated" },
-      "detail": "figures.qmd (html + pdf) and slides.qmd (revealjs)"
+      "detail": "figures.qmd (html + pdf), slides.qmd and pitch.qmd (revealjs)"
     },
     {
       "label": "Show the build graph",

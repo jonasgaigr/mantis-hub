@@ -36,7 +36,8 @@ R/
 tests/testthat/   one file per rule
 _targets.R        the build graph
 figures.qmd       A4 variants, captions, alt text (html + pdf)
-slides.qmd        revealjs, L1 only
+slides.qmd        revealjs, L1 only -- every figure, one slide each
+pitch.qmd         revealjs, the 7-10 minute pitch for decision makers
 ```
 
 ## Prerequisites
@@ -71,7 +72,8 @@ point of emitting real `<text>`.
    parameterised over every spec in `figures/`, so the new figure is checked
    the moment it exists — you do not write a test for it.
 4. It appears in `figures.qmd` and `slides.qmd` automatically; both read
-   `figures/` at render time.
+   `figures/` at render time. `pitch.qmd` does not — it is an argument rather
+   than a catalogue, and names the one figure it wants by id.
 
 If the figure needs a fact the proposal does not contain, write the literal
 `[TBC]` and add an entry to `MISSING-INPUTS.md` naming the figure and label
