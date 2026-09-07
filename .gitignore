@@ -1,4 +1,8 @@
-out/
+# out/ holds generated figures. The SVGs are part of the published site --
+# index.html loads out/fig01-slide.svg and Pages serves the repo as-is -- so they
+# are tracked and CI checks them for drift. The PDFs are build products only.
+out/*
+!out/*.svg
 .Rproj.user/
 .Rhistory
 .RData
