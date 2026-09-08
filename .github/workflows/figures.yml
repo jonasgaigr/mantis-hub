@@ -32,6 +32,12 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
 
       - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          # figures.qmd declares an html *and* a pdf format, so `quarto render`
+          # always shells out to LaTeX. The runner has no TeX installation and
+          # Quarto does not install one on its own -- it stops with "No TeX
+          # installation was detected", which is what failed the render step.
+          tinytex: true
 
       # rsvg-convert keeps the text live when the A4 figures go into the PDF.
       # Without it svg_to_pdf() would fall back to a headless browser; on CI we
