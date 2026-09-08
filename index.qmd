@@ -15,6 +15,12 @@
 # The chain figure is not retyped here: its caption and alt text are read out
 # of figures/fig01-connective-tissue.yml at render time. It needs
 # out/fig01-a4.svg -- run targets::tar_make() first.
+#
+# The gallery loads images/gallery/*.jpg, not the originals in images/. This
+# page embeds its resources, so every byte of a photograph is base64 in
+# index.html: the gallery files are 1100 px derivatives of originals that run
+# to 10 MB each. Regenerate them with tools/make-gallery.ps1 after replacing a
+# source photograph.
 # ---------------------------------------------------------------------------
 # No `title:`. The hero below is the title block, and Quarto would otherwise
 # print a second, unstyled "MANTIS" heading above it.
@@ -109,6 +115,39 @@ cat(figure_block(spec, profile = "a4", fmt = "html"))
 | **O3** Data to benchmark AI against | ≥5,000 expert-verified annotations published under FAIR principles, including ≥2,000 NewtCam annotations; ≥20% reviewed by experts from ≥2 countries | 31 Dec 2027 |
 | **O4** Partners can run this themselves | 25 summer-school participants from ≥12 countries; ≥20 distinct organisations attending ≥1 of the 8 online events | 30 Jun 2028 |
 | **O5** A pathway beyond Biodiversa+ | Roadmap endorsed by ≥2/3 of partners at BioMonWeek 2028, naming ≥2 concrete funding or hosting pathways | 30 Jun 2028 |
+
+## The devices, in the field
+
+[Three device families run through every activity: AMI traps for nocturnal insects, acoustic recorders for birds, bats and amphibians, and the vehicle-mounted CamAlien for invasive plants along roads. These are partner deployments as they stand today -- the sensors MANTIS registers, upgrades and benchmarks rather than replaces.]{.section-lede}
+
+```{=html}
+<div class="gallery">
+<figure class="gallery__item">
+<img class="gallery__media" src="images/gallery/ami-trap-grassland.jpg" alt="An AMI trap deployed in dry grassland: a white weatherproof enclosure and a solar panel standing inside a fenced enclosure of tall grass.">
+<figcaption><span class="gallery__kicker">AMI trap</span>A camera trap for nocturnal insects, running unattended on solar power in dry grassland. Activity 1.4 retrofits deployments like this one with modems and SIM cards so health checks and image transfer happen remotely instead of by field visit.</figcaption>
+</figure>
+<figure class="gallery__item">
+<img class="gallery__media" src="images/gallery/ami-sheet-night.jpg" alt="A close view of an illuminated white sheet covered with dozens of moths, craneflies and small insects photographed by an automated camera at night.">
+<figcaption><span class="gallery__kicker">One frame, one night</span>What the trap actually returns: an illuminated sheet, photographed at intervals through the night. The volume of images like this is what has outgrown the community's capacity to verify them – the bottleneck the hub exists to address.</figcaption>
+</figure>
+<figure class="gallery__item">
+<img class="gallery__media" src="images/gallery/acoustic-recorders.jpg" alt="Two olive-green Wildlife Acoustics Song Meter recorders strapped to the trunk of a fruit tree at the edge of an open meadow.">
+<figcaption><span class="gallery__kicker">Acoustic recorders</span>Song Meter units at a meadow edge, recording audible and ultrasound. A substantial share of deployed recorders still need a manual visit to retrieve data; Activity 1.2 upgrades them for solar power and cellular remote access.</figcaption>
+</figure>
+<figure class="gallery__item">
+<img class="gallery__media" src="images/gallery/camalien-vehicle.jpg" alt="A white estate car parked on a roadside verge with a camera rig mounted above its rear roofline, a lorry and sunflower field behind.">
+<figcaption><span class="gallery__kicker">CamAlien</span>A high-speed, car-mounted camera system with automated image capture and GPS processing. Roads are a principal vector for invasive alien species, so mapping them from a moving vehicle is early detection under IAS Regulation 1143/2014.</figcaption>
+</figure>
+<figure class="gallery__item">
+<img class="gallery__media" src="images/gallery/camalien-camera.jpg" alt="Close view of the CamAlien rig: a lens in a black housing beside a white weatherproof control box, strapped to a roof bar.">
+<figcaption><span class="gallery__kicker">The rig up close</span>Lens, housing and control box on the roof bar. Activity 1.2 installs new onboard computers and GPS so images are classified in real time on the vehicle, shortening the gap between observation and actionable knowledge.</figcaption>
+</figure>
+<figure class="gallery__item">
+<img class="gallery__media gallery__media--fit" src="images/gallery/ai-verification-ui.jpg" alt="A screenshot of an annotation interface: a scatterplot of insect crops, a list of taxonomic labels such as Araneae and Coleoptera, and a gallery panel showing two moths enlarged for review.">
+<figcaption><span class="gallery__kicker">Expert verification</span>The other half of the chain. Experts review AI-proposed identifications to build the reference dataset that benchmarking depends on – at least 5,000 verified annotations, a fifth of them checked in two countries, by the end of 2027.</figcaption>
+</figure>
+</div>
+```
 
 ## Related initiatives
 

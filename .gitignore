@@ -23,6 +23,20 @@ figures_files/
 slides.html
 slides_files/
 
+# The gallery's source photographs. index.qmd embeds its resources, so what
+# the page actually carries is images/gallery/ -- 1100 px derivatives built by
+# tools/make-gallery.ps1 -- and those are tracked, which is what lets CI render
+# index.html from a clean clone. The originals below are 6000 px camera and
+# phone files of 29 MB between them, read by nothing but that script, and they
+# are not worth putting in a repository GitHub Pages serves as-is. They are
+# therefore NOT backed up here: keep them wherever the project's other raw
+# photographs live. images/kamera_web.jpg and images/20250703024959-snapshot.jpg
+# are already small enough to track, and the hero loads the latter directly.
+images/ami_system_PSX_*.jpg
+images/nahravace_PSX_*.jpg
+images/Obr_2_CamAlien_*.JPG
+images/abms_ai_interface.png
+
 .Rproj.user/
 .Rhistory
 .RData

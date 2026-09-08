@@ -236,6 +236,67 @@ h2 {
 .cards--links .card__kicker { color: $bd-green-from; }
 
 // ---------------------------------------------------------------------------
+// GALLERY
+// The photographs of the devices. Same grid as .cards, so the page has one
+// rhythm rather than two: tiles of equal height, a kicker, a caption. The
+// images are cropped to a common 3:2 by the frame rather than by the file, so
+// the sources stay whole and any of them can be swapped without re-cropping.
+// ---------------------------------------------------------------------------
+.gallery {
+  display: grid;
+  gap: 1.25rem 1rem;
+  margin-top: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+// Quarto tags a raw <figure> as .figure and its <img> as .figure-img on the
+// way out, which pulls in the chain figure's rules below. The grid supplies
+// the spacing here, so the margin those rules add has to go; the selectors are
+// written long enough to outrank `figure.figure`.
+.gallery figure.gallery__item {
+  margin: 0;
+}
+
+.gallery img.gallery__media {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 1px solid $bd-rule;
+  background: $bd-wash;
+}
+
+// The annotation screenshot is a user interface, not a photograph: cropping it
+// to the common ratio would cut off the panels that make it legible.
+.gallery img.gallery__media--fit {
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+// figcaption is centred and narrowed for the chain figure above; inside the
+// grid it is a left-aligned block the width of its tile.
+.gallery figcaption {
+  max-width: none;
+  margin-inline: 0;
+  margin-top: 0.6rem;
+  font-size: 0.87rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.gallery__kicker {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $bd-green-from;
+  margin-bottom: 0.3rem;
+}
+
+// ---------------------------------------------------------------------------
 // FIGURE
 // The chain figure is the argument. It gets the full measure, no frame.
 // ---------------------------------------------------------------------------
