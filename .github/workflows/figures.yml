@@ -79,6 +79,9 @@ jobs:
           name: figures
           path: |
             out/
+            index.html
+            core-pitch.html
+            full-pitch.html
             figures.html
             figures.pdf
             slides.html

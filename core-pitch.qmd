@@ -1,0 +1,167 @@
+---
+# ---------------------------------------------------------------------------
+# core-pitch.qmd -- the core message in five slides: an opening, three slides
+# that carry the argument, and a close.
+#
+# It is a distillation of full-pitch.qmd, not a second argument: every claim
+# here also appears there, and every number, name and claim in both comes from
+# documentation/MANTIS_Additional_Activity_Proposal_T2.5.3.docx.md, under the
+# rule the figures obey -- the proposal .docx is the only permitted source of
+# facts.
+#
+# Slide 3 is the chain figure, and it is the reason this deck exists at all:
+# the whole argument is one picture with a sentence either side of it. Its
+# heading and alt text are read out of figures/fig01-connective-tissue.yml at
+# render time, so they cannot drift away from the figure. It needs
+# out/fig01-slide.svg -- run targets::tar_make() first.
+# ---------------------------------------------------------------------------
+title: "MANTIS"
+subtitle: "The core of the proposal, in three slides"
+author:
+- name: Jamie Alison, Aarhus University
+- name: Jonas Gaigr, Nature Conservation Agency CZ
+  affiliation: Nature Conservation Agency CZ
+institute: "Biodiversa+ WP2 · Task 2.5.3 additional activity"
+title-image: images/20250703024959-snapshot.jpg
+format:
+  biodiversaplus-revealjs:
+    navigation-mode: linear
+    include-in-header:
+      text: |
+        <style>
+        /* A figure slide is the figure. The message is a full sentence, so it
+           is set as a running head rather than a display heading -- the same
+           treatment full-pitch.qmd and slides.qmd use. */
+        .reveal .figure-slide h2 {
+          font-size: 1.05em; line-height: 1.2; margin-bottom: 0.15em;
+        }
+        .reveal .figure-slide img {
+          margin: 0; border: none; box-shadow: none; background: none;
+        }
+        /* The chain is the middle of the three core slides and the only figure
+           in the deck, so it gets the whole canvas: the slide drops the footer
+           chrome (.bd-no-chrome on the heading) and the padding that reserved
+           room for it, which lets Quarto's auto-stretch size the figure from
+           the full slide height rather than from what the footer left over. */
+        .reveal .slides section.slide.figure-slide {
+          padding: 35px 40px 32px 40px;
+        }
+        .reveal .lede { font-size: 1.111em; }
+        /* Slides 2 and 4 each carry a short list under a lede and above a
+           footer line; tighter leading keeps both clear of the footer rule at
+           the deck's 12pt body size without scrolling. */
+        .reveal .tight li { margin-bottom: 0.35em; line-height: 1.3; }
+        </style>
+---
+
+```{r}
+#| label: setup
+#| include: false
+for (f in c("profiles", "spec", "render", "checks", "document")) {
+  source(file.path("R", paste0(f, ".R")))
+}
+```
+
+## A hub for sensor-based biodiversity monitoring {.turquoise}
+
+[MANTIS will form the **connective tissue** for automated monitoring with novel technologies based on image and sound across Europe.]{.lede}
+
+::: {.tight}
+- **Connect data acquisition** – align protocols, deployments and annotations, and extend spatial and taxonomic coverage.  [Package 1]{.small}
+- **Connect the data** – harmonise datasets and metadata into a quality-controlled flow from images and sounds to indicators, including transnational benchmarking of AI models.  [Package 2]{.small}
+- **Connect the community** – link the users of these technologies to one another, and to the skills and resources that sustain a transnational effort.  [Package 3]{.small}
+:::
+
+[Aarhus University with the Nature Conservation Agency CZ · 1 January 2027 – 30 September 2028 · Core Activity 3 primary, Core Activities 2 and 4 secondary · a progenitor for a Thematic Hub associated with an EBOCC.]{.small}
+
+::: {.notes}
+45 seconds. Say what kind of thing MANTIS is before saying what it does:
+infrastructure for monitoring itself, not another technology and not another
+taxon's dataset. "Connective tissue" is the proposal's own phrase and the one
+image worth repeating; the three bullets are the three packages, and they
+return on the figure two slides from now.
+:::
+
+## Building a system for the European sensors {.blue}
+
+[The devices are in the ground already – AMI traps and acoustic recorders across **13 countries** in the ABMS pilot (2.6.5), an AMI trap and a CamAlien unit in **12 countries** in the IAS pilot (2.6.2), acoustic recorders in **10 countries** in BiodivPond (2.6.8), **four countries** in TABMON, and insect camera traps in **over 30 countries** through MAMBO and related projects. They are operated as independent national efforts, and three bottlenecks follow – not one of them national.]{.lede}
+
+::: {.tight}
+1. **Verification cannot keep up.** Image and sound data has grown faster than the community's capacity to verify it, calibrate the AI models processing it, and make the outputs comparable across countries and taxa.
+2. **AI accuracy is unknown outside its training context.** Moth classifiers trained on Danish and UK expert-verified images performed poorly in Slovakia, Croatia, Bulgaria and Israel.
+3. **Sensors still need field visits.** A substantial share of deployed acoustic recorders require manual retrieval rather than remote transfer, limiting temporal coverage and cost-efficiency.
+:::
+
+> Left unaddressed, these problems risk automated monitoring becoming a source of fragmented, incomparable, or even unprocessed national data – repeating, at greater cost and complexity, the exact coordination problem transnational monitoring should be designed to solve.
+
+::: {.notes}
+90 seconds, and this is the slide that has to land. First half: nobody is being
+asked to believe in an unproven technology, and Biodiversa+ has already paid
+for a good share of these deployments. Second half: model calibration, sensor
+connectivity and annotation protocol design are not country-specific technical
+problems, so they should not be solved redundantly across up to 27 Member
+States. Read the quote out – it is the proposal's own sentence.
+:::
+
+```{r}
+#| label: chain
+#| output: asis
+# The chain figure, with its heading and alt text read out of the spec rather
+# than retyped -- there is one copy of each, in the spec.
+spec <- Filter(function(s) identical(s$id, "fig01"), document_specs())[[1]]
+cat(sprintf("\n## %s {.figure-slide .bd-no-chrome}\n\n", spec$message))
+cat(sprintf('![](%s){fig-alt="%s"}\n\n', figure_path(spec, "slide"), spec$alt))
+cat("::: {.notes}\n",
+    "90 seconds, and this is the deck. Walk the chain left to right once, then\n",
+    "stop on the numbered gates: deployment registration, expert verification,\n",
+    "AI benchmarking, standards conformance. The gates are the activity. Almost\n",
+    "everything either side of them already exists somewhere in Europe, which is\n",
+    "why this is a hub rather than a new monitoring scheme.\n",
+    ":::\n\n", sep = "")
+```
+
+## Sustaining the System {.green}
+
+> …national and regional automated monitoring efforts using image and sound technologies will function as a **connected, transnational system** rather than isolated national deployments.
+
+::: {.tight}
+- **One place every deployment is registered** – 100% of active AMI, CamAlien and acoustic deployments across ≥8 partner countries, machine-readable and Camtrap DP-compliant.  [O1 · 30 Sep 2028]{.small}
+- **Sensor data reaching policy without bespoke analysis** – ≥4 indicators live on the MANTIS dashboard, each mapped to NRR Art. 10 / EU-PoMS, the Habitats or Birds Directive or IAS Regulation 1143/2014, auto-updating from GBIF.  [O2 · 30 Sep 2028]{.small}
+- **Data to benchmark AI against** – ≥5,000 expert-verified annotations published under FAIR principles, ≥20% reviewed by experts from ≥2 countries.  [O3 · 31 Dec 2027]{.small}
+- **Partners who can run this themselves** – 25 summer-school participants from ≥12 countries.  [O4 · 30 Jun 2028]{.small}
+- **A pathway beyond Biodiversa+** – a roadmap endorsed by ≥2/3 of partners, naming ≥2 concrete funding or hosting pathways.  [O5 · 30 Jun 2028]{.small}
+:::
+
+[**€796,850.18 requested** – CORE + ENHANCED for the two leads (€422,535.30), plus ≈€54,494.36 for each of six additional participating partners. The activity descopes cleanly: fewer partners means proportionally fewer scaled deployments, not a thinner version of everything. Nothing here needs continued funding to survive 2028 – GitHub Pages and GBIF carry the outputs, and statutory Habitats and Birds Directive duties carry the verification capacity.]{.small}
+
+::: {.notes}
+90 seconds, and it serves two rooms at once. Every objective carries a date and
+a threshold, so at the end of the activity you can tell whether it was met
+without holding a discussion about it: O3 is the one everything else depends
+on, O5 the one that decides whether this outlives the money. For a partner
+weighing whether to join, the commitment behind the per-partner figure is four
+person-months, two in-person attendances, and equipment that stays with you.
+If asked about maintenance: no new secretariat and no hosting bill – NCA CZ
+holds the reference datasets under its reporting duties, Aarhus underwrites
+media storage to 2031, and the registration system and benchmarking transfer
+to BiodivPond, ABMS and the IAS pilot.
+:::
+
+## Thank you {.bd-closing style="background-image: url('images/20250703024959-snapshot.jpg')"}
+MANTIS: A Hub for Monitoring with Automated and Novel Technologies Based on Image and Sound
+
+
+For more information, contact:
+
+- Jamie Alison, Aarhus University – <jalison@ecos.au.dk>
+- Jonas Gaigr, Nature Conservation Agency CZ – <jonas.gaigr@aopk.gov.cz>
+- The full pitch, the figures and the proposal summary – <https://jonasgaigr.github.io/mantis-hub/>
+
+::: {.notes}
+20 seconds, then questions. The likeliest three: why not leave this to the
+pilots (they have no mandate or budget to work across each other); what if
+fewer partners join (risk R2 – descope the scalable tier proportionally); and
+what happens if verification runs late (risk R3 – a one-quarter buffer between
+1.3 and 2.1, with annotation effort reallocated across partners). The long
+version of any answer is in the full pitch on the hub site.
+:::

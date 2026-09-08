@@ -35,10 +35,35 @@ R/
   document.R      glue between the built SVGs and the Quarto documents
 tests/testthat/   one file per rule
 _targets.R        the build graph
+index.qmd         html, the site's front page -- the proposal in brief, the
+                  figure, and signposts to the decks and related initiatives
+site.scss         the front page's theme; deck palette, page layout
+core-pitch.qmd    revealjs, the core message in five slides
+full-pitch.qmd    revealjs, the 7-10 minute pitch for decision makers
 figures.qmd       A4 variants, captions, alt text (html + pdf)
 slides.qmd        revealjs, L1 only -- every figure, one slide each
-pitch.qmd         revealjs, the 7-10 minute pitch for decision makers
 ```
+
+## The published site
+
+GitHub Pages serves this repository as-is (`.github/workflows/static.yml`), so
+the rendered pages are committed rather than built on deploy:
+
+```
+index.html                          the front page, resources embedded
+core-pitch.html  core-pitch_files/  the five-slide deck and its assets
+full-pitch.html  full-pitch_files/  the long deck and its assets
+out/*.svg                           the figures both decks and the page load
+```
+
+Re-render with `quarto render` and commit whatever changed. `figures.html`,
+`figures.pdf` and `slides.html` are working documents rather than pages of the
+site: nothing links to them and they stay untracked.
+
+Only `index.qmd` sets `embed-resources` — one page with one photograph is worth
+self-containing. The decks do not: embedding reveal.js and the title photograph
+into each produced 5.4 MB files that would be rewritten in full on every
+render.
 
 ## Prerequisites
 
@@ -72,8 +97,9 @@ point of emitting real `<text>`.
    parameterised over every spec in `figures/`, so the new figure is checked
    the moment it exists — you do not write a test for it.
 4. It appears in `figures.qmd` and `slides.qmd` automatically; both read
-   `figures/` at render time. `pitch.qmd` does not — it is an argument rather
-   than a catalogue, and names the one figure it wants by id.
+   `figures/` at render time. `index.qmd`, `core-pitch.qmd` and
+   `full-pitch.qmd` do not — each is an argument rather than a catalogue, and
+   names the one figure it wants by id.
 
 If the figure needs a fact the proposal does not contain, write the literal
 `[TBC]` and add an entry to `MISSING-INPUTS.md` naming the figure and label
