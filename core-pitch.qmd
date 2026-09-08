@@ -16,7 +16,7 @@
 # out/fig01-slide.svg -- run targets::tar_make() first.
 # ---------------------------------------------------------------------------
 title: "MANTIS"
-subtitle: "The core of the proposal, in three slides"
+subtitle: "A Hub for Monitoring with Automated and Novel Technologies Based on Image and Sound"
 author:
 - name: Jamie Alison, Aarhus University
 - name: Jonas Gaigr, Nature Conservation Agency CZ
