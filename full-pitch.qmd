@@ -83,9 +83,9 @@ its three column headers only.
 ::: {.column}
 #### Deployed, at scale, today
 
-- **ABMS pilot (2.6.5)** – AMI traps and acoustic recorders in three habitat types across **13 countries**
-- **IAS pilot (2.6.2)** – an AMI trap and a CamAlien unit in **12 countries**
-- **BiodivPond pilot (2.6.8)** – acoustic recorders in **10 countries**, showing standardised pond monitoring at continental scale
+- **ABMS pilot (2.6.5)** – AMI traps and acoustic recorders in three habitat types across **11 countries**
+- **IAS pilot (2.6.2)** – an AMI trap and a CamAlien unit in **10 countries**
+- **BiodivPond pilot (2.6.8)** – acoustic recorders in **ten countries**, showing standardised pond monitoring at continental scale
 - **MAMBO** and related projects – AI-based insect camera traps in **over 30 countries**
 - **TABMON** – autonomous acoustic sensors across **four countries**, showing standardised passive acoustic monitoring at continental scale
 :::

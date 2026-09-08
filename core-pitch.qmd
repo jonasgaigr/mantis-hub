@@ -84,7 +84,7 @@ return on the figure two slides from now.
 
 ## Building a system for the European sensors {.blue}
 
-[The devices are in the ground already – AMI traps and acoustic recorders across **13 countries** in the ABMS pilot (2.6.5), an AMI trap and a CamAlien unit in **12 countries** in the IAS pilot (2.6.2), acoustic recorders in **10 countries** in BiodivPond (2.6.8), **four countries** in TABMON, and insect camera traps in **over 30 countries** through MAMBO and related projects. They are operated as independent national efforts, and three bottlenecks follow – not one of them national.]{.lede}
+[The devices are in the ground already – AMI traps and acoustic recorders across **11 countries** in the ABMS pilot (2.6.5), an AMI trap and a CamAlien unit in **10 countries** in the IAS pilot (2.6.2), acoustic recorders in **ten countries** in BiodivPond (2.6.8), **four countries** in TABMON, and insect camera traps in **over 30 countries** through MAMBO and related projects. They are operated as independent national efforts, and three bottlenecks follow – not one of them national.]{.lede}
 
 ::: {.tight}
 1. **Verification cannot keep up.** Image and sound data has grown faster than the community's capacity to verify it, calibrate the AI models processing it, and make the outputs comparable across countries and taxa.

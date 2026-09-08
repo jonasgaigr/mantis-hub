@@ -124,17 +124,17 @@ cat(figure_block(spec, profile = "a4", fmt = "html"))
 <a class="card" href="https://www.biodiversa.eu/biodiversity-monitoring/pilots/ias-pilot/" target="_blank" rel="noopener">
 <span class="card__kicker">Pilot 2.6.2</span>
 <span class="card__title">IAS pilot</span>
-<span class="card__body">Image-based monitoring of invasive alien species – an AMI trap and a CamAlien unit in 12 countries. Takes on the registration system and the Camtrap DP implementations.</span>
+<span class="card__body">Image-based monitoring of invasive alien species – an AMI trap and a CamAlien unit in ten countries. Takes on the registration system and the Camtrap DP implementations.</span>
 </a>
 <a class="card" href="https://www.biodiversa.eu/biodiversity-monitoring/pilots/abms-pilot/" target="_blank" rel="noopener">
 <span class="card__kicker">Pilot 2.6.5</span>
 <span class="card__title">ABMS pilot</span>
-<span class="card__body">Automated Biodiversity Monitoring Stations – AMI traps and acoustic recorders in three habitat types across 13 countries.</span>
+<span class="card__body">Automated Biodiversity Monitoring Stations – AMI traps and acoustic recorders in three habitat types across eleven countries.</span>
 </a>
 <a class="card" href="https://biodivpond.github.io/" target="_blank" rel="noopener">
 <span class="card__kicker">Pilot 2.6.8</span>
 <span class="card__title">BiodivPond</span>
-<span class="card__body">Standardised pond monitoring at continental scale, with acoustic recorders in 10 countries. The underwater acoustic pilot and the NewtCam annotations connect here.</span>
+<span class="card__body">Standardised pond monitoring at continental scale, with acoustic recorders in ten countries. The underwater acoustic pilot and the NewtCam annotations connect here.</span>
 </a>
 <a class="card" href="https://www.mambo-project.eu/" target="_blank" rel="noopener">
 <span class="card__kicker">Horizon Europe</span>
