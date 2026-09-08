@@ -1,0 +1,283 @@
+/*-- scss:defaults --*/
+
+// ===========================================================================
+// site.scss -- the theme for index.qmd, the hub's front page.
+//
+// The palette, the font stack and the gradients are the ones the deck uses,
+// taken from _extensions/biodiversaplus/theme.scss rather than re-picked, so
+// the page and the presentations it signposts read as one thing. If the deck
+// palette changes, change it there first and mirror it here.
+// ===========================================================================
+
+$bd-green:       #98C01E !default;
+$bd-turquoise:   #02A3A7 !default;
+$bd-navy:        #103B60 !default;
+
+$bd-green-from:      #749E28 !default;
+$bd-navy-from:       #0D2F4D !default;
+$bd-turquoise-from:  #00918F !default;
+$bd-turquoise-mid:   #52B29A !default;
+$bd-turquoise-to:    #8ED1E7 !default;
+
+$bd-rule:  rgba(16, 59, 96, 0.22) !default;
+$bd-wash:  rgba(16, 59, 96, 0.05) !default;
+$bd-muted: rgba(0, 0, 0, 0.62) !default;
+
+// Arial is Monotype-licensed and cannot be bundled; Arimo is metric-compatible.
+// Same stack as the deck, so the page and the slides set identically.
+$font-family-sans-serif: Arial, Arimo, "Helvetica Neue", Helvetica, sans-serif !default;
+
+$body-color:  #000000 !default;
+$body-bg:     #FFFFFF !default;
+$link-color:  $bd-turquoise-from !default;
+$headings-color: $bd-navy !default;
+$headings-font-weight: 700 !default;
+
+$toc-color: $bd-navy !default;
+
+/*-- scss:rules --*/
+
+// The measure. Quarto's article column is narrower than this page wants: the
+// figure is a wide landscape chain and the cards want three across.
+main.content {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+// ---------------------------------------------------------------------------
+// HERO
+// The deck's title slide is a photograph under a navy wash with the wordmark
+// over it. This is that layout, reflowed for a page.
+// ---------------------------------------------------------------------------
+.hero {
+  margin: -1.5rem calc(50% - 50vw) 2.5rem;
+  padding: clamp(2.5rem, 7vw, 5rem) calc(50vw - 50%) clamp(2rem, 5vw, 3.5rem);
+  // The photograph and its navy wash arrive as an inline style on the element,
+  // the way the deck's closing slide takes its background: a url() written
+  // here would be resolved relative to the compiled theme CSS inside
+  // index_files/libs/, not relative to the page, and would 404 once deployed.
+  background-color: $bd-navy-from;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.hero__inner {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.hero__mark {
+  font-size: clamp(2.75rem, 8vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  margin: 0;
+  color: #fff;
+}
+
+.hero__title {
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 0.6rem 0 0;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 46ch;
+}
+
+.hero__lede {
+  font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+  line-height: 1.45;
+  margin: 1.6rem 0 0;
+  max-width: 58ch;
+
+  strong { color: $bd-turquoise-to; font-weight: 700; }
+}
+
+// The identifying facts, as one line the eye can skim: lead, dates, money,
+// classification. Same content as the deck's opening slide footer.
+.hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  margin: 1.9rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+
+  li {
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    border-radius: 999px;
+    padding: 0.28em 0.85em;
+    color: rgba(255, 255, 255, 0.94);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// SECTIONS
+// ---------------------------------------------------------------------------
+main.content > section,
+#quarto-document-content > section {
+  margin-block: 3.25rem;
+}
+
+h2 {
+  border-bottom: none;
+  font-size: 1.6rem;
+  margin-bottom: 0.35rem;
+  padding-bottom: 0;
+
+  // The deck marks a heading with a short gradient rule. Same device here.
+  &::after {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 4px;
+    margin-top: 0.55rem;
+    border-radius: 2px;
+    background: linear-gradient(90deg, $bd-turquoise-from 0%, $bd-turquoise-mid 55%, $bd-turquoise-to 100%);
+  }
+}
+
+.section-lede {
+  font-size: 1.1rem;
+  line-height: 1.55;
+  max-width: 68ch;
+  margin-top: 1.1rem;
+}
+
+.quiet { color: $bd-muted; font-size: 0.9rem; }
+
+// ---------------------------------------------------------------------------
+// CARDS
+// One grid, two weights: .cards--decks is the page's call to action, so it is
+// the heavier of the two; .cards--links is a directory.
+// ---------------------------------------------------------------------------
+.cards {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  display: block;
+  border: 1px solid $bd-rule;
+  border-radius: 10px;
+  padding: 1.15rem 1.25rem 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $bd-turquoise;
+    box-shadow: 0 6px 20px rgba(16, 59, 96, 0.12);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+}
+
+.card__kicker {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $bd-turquoise-from;
+  margin-bottom: 0.4rem;
+}
+
+// Every line inside a card is a <span>, laid out as a block here. It has to be:
+// pandoc's HTML reader closes an <a> the moment a <p> opens inside it, which
+// silently splits each card into two.
+.card__title {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: $bd-navy;
+  margin: 0 0 0.4rem;
+}
+
+.card__body {
+  display: block;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.card__meta {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 0.82rem;
+  color: $bd-muted;
+}
+
+// The two pitch decks lead the page.
+.cards--decks .card {
+  border-top: 4px solid $bd-turquoise;
+  background: $bd-wash;
+}
+
+// The related initiatives are a directory: lighter, denser, four across.
+.cards--links {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+  .card { padding: 0.95rem 1.05rem 1.05rem; }
+  .card__title { font-size: 1rem; }
+  .card__body { font-size: 0.87rem; }
+}
+
+.cards--links .card__kicker { color: $bd-green-from; }
+
+// ---------------------------------------------------------------------------
+// FIGURE
+// The chain figure is the argument. It gets the full measure, no frame.
+// ---------------------------------------------------------------------------
+figure.figure,
+.quarto-figure {
+  margin-block: 1.5rem;
+
+  img { width: 100%; height: auto; }
+}
+
+figcaption {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: $bd-muted;
+  max-width: 78ch;
+  margin-inline: auto;
+}
+
+// ---------------------------------------------------------------------------
+// OBJECTIVES TABLE
+// ---------------------------------------------------------------------------
+table {
+  font-size: 0.92rem;
+
+  th {
+    color: $bd-navy;
+    border-bottom: 2px solid $bd-rule;
+  }
+
+  td, th { padding: 0.5em 0.7em; vertical-align: top; }
+  tbody tr:nth-child(odd) { background: $bd-wash; }
+}
+
+// ---------------------------------------------------------------------------
+// FOOTER
+// ---------------------------------------------------------------------------
+div.site-foot {
+  margin-top: 3.5rem;
+  padding: 1.6rem 0 2.5rem;
+  border-top: 1px solid $bd-rule;
+  font-size: 0.9rem;
+  color: $bd-muted;
+
+  p { margin-bottom: 0.5rem; }
+}

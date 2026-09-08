@@ -1,8 +1,28 @@
 # out/ holds generated figures. The SVGs are part of the published site --
-# index.html loads out/fig01-slide.svg and Pages serves the repo as-is -- so they
-# are tracked and CI checks them for drift. The PDFs are build products only.
+# index.html and the decks load out/fig01-*.svg and Pages serves the repo as-is
+# -- so they are tracked and CI checks them for drift. The PDFs are build
+# products only.
 out/*
 !out/*.svg
+
+# The three pages the site publishes are tracked, and so are the two decks'
+# asset directories: Pages serves this repository as-is, so index.html,
+# core-pitch.html, full-pitch.html and core-pitch_files/, full-pitch_files/ are
+# the deployed site. Only index.html embeds its resources -- it is one page
+# with one photograph, and self-containing it costs a megabyte. The decks do
+# not: embedding reveal.js and the title photograph into each of them produced
+# 5.4 MB files that would be rewritten in full on every render.
+index_files/
+
+# figures.html/pdf and slides.html are working documents rather than pages of
+# the site: nothing on it links to them, and figures.html alone is over a
+# megabyte. They are rebuilt by `quarto render` and uploaded as CI artifacts.
+figures.html
+figures.pdf
+figures_files/
+slides.html
+slides_files/
+
 .Rproj.user/
 .Rhistory
 .RData
@@ -18,13 +38,6 @@ renv/sandbox/
 _book/
 _site/
 documentation/
-figures_files/
-slides_files/
-pitch_files/
-figures.html
-figures.pdf
-slides.html
-pitch.html
 
 /.quarto/
 **/*.quarto_ipynb

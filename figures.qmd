@@ -1,6 +1,6 @@
 ---
 title: "MANTIS proposal figures"
-subtitle: "Biodiversa+ Task 2.5.3 — A4 variants, with captions and alt text"
+subtitle: "Biodiversa+ Task 2.5.3 – A4 variants, with captions and alt text"
 format:
   html:
     toc: true

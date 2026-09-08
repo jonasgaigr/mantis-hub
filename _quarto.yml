@@ -1,9 +1,14 @@
 project:
-  title: "MANTIS proposal figures"
+  title: "MANTIS hub"
+  # index.qmd is the site's front page; the two decks and the figure documents
+  # are what it signposts. Everything renders to the repository root because
+  # GitHub Pages serves the repository as-is -- see .github/workflows/static.yml.
   render:
+    - index.qmd
+    - core-pitch.qmd
+    - full-pitch.qmd
     - figures.qmd
     - slides.qmd
-    - index.qmd
 
 execute:
   freeze: false

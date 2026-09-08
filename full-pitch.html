@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="full-pitch_files/libs/clipboard/clipboard.min.js"></script>
+<script src="full-pitch_files/libs/quarto-html/tabby.min.js"></script>
+<script src="full-pitch_files/libs/quarto-html/popper.min.js"></script>
+<script src="full-pitch_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="full-pitch_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="full-pitch_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="full-pitch_files/libs/quarto-html/quarto-syntax-highlighting-261f789220898115d1f0b2d66d52cc9d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Jamie Alison, Aarhus University">
+  <meta name="author" content="Jonas Gaigr, Nature Conservation Agency CZ">
+  <title>MANTIS</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="full-pitch_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="full-pitch_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="full-pitch_files/libs/revealjs/dist/theme/quarto-b47ef8c137d94451348180547226a453.css">
+  <link href="full-pitch_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="full-pitch_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="full-pitch_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="full-pitch_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap">
+  <style>
+  /* A figure slide is the figure. The message is a full sentence, so it
+     is set as a running head rather than a display heading -- the same
+     treatment slides.qmd uses. */
+  .reveal .figure-slide h2 {
+    font-size: 1.05em; line-height: 1.2; margin-bottom: 0.15em;
+  }
+  .reveal .figure-slide img {
+    margin: 0; border: none; box-shadow: none; background: none;
+  }
+  /* The chain is the core-message slide and this deck shows only one
+     figure, so it gets the whole canvas: the slide drops the footer
+     chrome (.bd-no-chrome on the heading) and the padding that reserved
+     room for it, which lets Quarto's auto-stretch size the figure from
+     the full slide height rather than from what the footer left over. */
+  .reveal .slides section.slide.figure-slide {
+    padding: 35px 40px 32px 40px;
+  }
+  /* The objectives table is five rows of real text; at the deck's 12pt
+     body size it clears the footer rule without scrolling. */
+  .reveal .compact table { font-size: 0.9em; }
+  .reveal .compact table th,
+  .reveal .compact table td { padding: 0.3em 0.6em; vertical-align: top; }
+  /* Nineteen activities across three columns: tighter leading so the
+     packages slide holds all of them above the footer rule, and a
+     two-line box for the column headers so one wrapping header does not
+     push its own bullets out of line with the other two columns. */
+  .reveal .packages li { margin-bottom: 0.2em; line-height: 1.25; }
+  .reveal .packages .column > h4:first-child { min-height: 2.2em; }
+  .reveal .lede { font-size: 1.111em; }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="bd-title-slide center">
+
+  <div class="bd-title-bg" aria-hidden="true">
+    <div class="bd-title-field"></div>
+    <div class="bd-title-mask" style="background-image: url('images/20250703024959-snapshot.jpg');"></div>
+  </div>
+
+  <div class="bd-title-logo" role="img" aria-label="Biodiversa+ - European Biodiversity Partnership"></div>
+
+  <div class="bd-title-text">
+    <h1 class="title">MANTIS</h1>
+    <p class="subtitle">A Hub for Monitoring with Automated and Novel Technologies Based on Image and Sound</p>
+    <hr class="bd-title-rule" aria-hidden="true">
+    <p class="author">Jamie Alison, Aarhus University</p>
+    <p class="author">Jonas Gaigr, Nature Conservation Agency CZ</p>
+    <p class="institute">Biodiversa+ WP2 · Task 2.5.3 additional activity</p>
+  </div>
+
+</section>
+<section>
+<section id="why-a-hub-for-sensor-based-biodiversity-monitoring-and-why-now" class="title-slide slide level1 turquoise center">
+<h1>Why a hub for sensor-based biodiversity monitoring, and why now</h1>
+<aside class="notes">
+<p>Nine minutes at a comfortable pace, with a minute in hand. If you are held to seven, cut “Three bottlenecks” to its first line and give the packages slide its three column headers only.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-sensors-are-already-in-the-ground-yet-the-system-is-incomplete" class="slide level2">
+<h2>The sensors are already in the ground, yet the system is incomplete</h2>
+<div class="columns">
+<div class="column">
+<h4 id="deployed-at-scale-today">Deployed, at scale, today</h4>
+<ul>
+<li><strong>ABMS pilot (2.6.5)</strong> – AMI traps and acoustic recorders in three habitat types across <strong>11 countries</strong></li>
+<li><strong>IAS pilot (2.6.2)</strong> – an AMI trap and a CamAlien unit in <strong>10 countries</strong></li>
+<li><strong>BiodivPond pilot (2.6.8)</strong> – acoustic recorders in <strong>ten countries</strong>, showing standardised pond monitoring at continental scale</li>
+<li><strong>MAMBO</strong> and related projects – AI-based insect camera traps in <strong>over 30 countries</strong></li>
+<li><strong>TABMON</strong> – autonomous acoustic sensors across <strong>four countries</strong>, showing standardised passive acoustic monitoring at continental scale</li>
+</ul>
+</div><div class="column">
+<h4 id="operated-as-independent-efforts">Operated as independent efforts</h4>
+<ul>
+<li>Ad hoc methods for annotation, verification and AI model selection, project by project</li>
+<li>Interoperability bottlenecks between devices, national databases and European infrastructures</li>
+<li>Few cross-country verified reference datasets, and those that exist are scattered and often poorly curated</li>
+<li>Hardware maintained country by country, needing more transnational support than expected</li>
+</ul>
+</div></div>
+<p><span class="small">Partners have free access to their own data – but not the tools or capacity to use it for policy-relevant insight.</span></p>
+<aside class="notes">
+<p>75 seconds. The point of this slide is that MANTIS asks nobody to believe in an unproven technology. The deployments exist, the devices work, and Biodiversa+ has already paid for a good share of them. What does not exist is anything joining them up.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="three-bottlenecks-and-not-one-of-them-is-national" class="slide level2">
+<h2>Three bottlenecks – and not one of them is national</h2>
+<ol type="1">
+<li><strong>Verification cannot keep up.</strong> The volume of image and sound data has grown faster than the community’s capacity to verify it, calibrate the AI models processing it, and make the outputs comparable across countries and taxa.</li>
+<li><strong>AI accuracy is unknown outside its training context.</strong> Moth classifiers trained on Danish and UK expert-verified images performed poorly in Slovakia, Croatia, Bulgaria and Israel. TABMON names the same annotation bottleneck as its principal constraint on scaling.</li>
+<li><strong>Sensors still need field visits.</strong> A substantial share of deployed acoustic recorders require manual retrieval rather than remote transfer, limiting temporal coverage and cost-efficiency.</li>
+</ol>
+<blockquote>
+<p>Left unaddressed, these problems risk automated monitoring becoming a source of fragmented, incomparable, or even unprocessed national data – repeating, at greater cost and complexity, the exact coordination problem transnational monitoring should be designed to solve.</p>
+</blockquote>
+<aside class="notes">
+<p>90 seconds, and this is the slide that has to land. Model calibration, sensor connectivity and annotation protocol design are not country-specific technical problems, so they should not be solved redundantly across up to 27 Member States. Read the quote out – it is the proposal’s own sentence.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-aim-connective-tissue" class="slide level2">
+<h2>The aim: connective tissue</h2>
+<ul>
+<li><strong>Connect data acquisition</strong> – align protocols, deployments and annotations, and extend spatial and taxonomic coverage with new sensor deployments. <span class="small">Package 1</span></li>
+<li><strong>Connect the data</strong> – harmonise datasets and metadata into a seamless, quality-controlled flow from images and sounds to indicators, including transnational benchmarking of AI models. <span class="small">Package 2</span></li>
+<li><strong>Connect the community</strong> – link the users of these technologies to one another, and to the skills and resources that sustain a transnational effort. <span class="small">Package 3</span></li>
+</ul>
+<p><span class="small">MANTIS positions itself as a progenitor for a Thematic Hub associated with an EBOCC. Core Activity 3 primary; Core Activities 2 and 4 secondary.</span></p>
+<aside class="notes">
+<p>60 seconds. “Connective tissue” is the proposal’s own phrase and the one image worth repeating. MANTIS builds infrastructure for monitoring itself, not another technology or another taxon’s dataset – the feature Biodiversa+ asks of a Task 2.5.3 activity as opposed to a conventional research grant.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="what-the-hub-changes" class="title-slide slide level1 blue center">
+<h1>What the hub changes</h1>
+
+</section>
+<section id="at-the-end-of-this-activity" class="slide level2">
+<h2>At the end of this activity…</h2>
+<blockquote>
+<p>…national and regional automated monitoring efforts using image and sound technologies will function as a <strong>connected, transnational system</strong> rather than isolated national deployments.</p>
+</blockquote>
+<p><strong>Because MANTIS will have –</strong></p>
+<ul>
+<li>aligned data acquisition protocols and coverage across partners;</li>
+<li>harmonised the resulting datasets and metadata into a quality-controlled flow from raw sensor output to indicators;</li>
+<li>built the community, skills and self-sustaining infrastructure needed to carry this connected effort beyond the funded period.</li>
+</ul>
+<aside class="notes">
+<p>45 seconds. The structural change in one sentence, verbatim from the proposal. Pause after “rather than isolated national deployments” – the three clauses under it map one-to-one onto the three packages, and onto the next slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="mantis-is-one-quality-controlled-chain-from-a-sensor-in-the-field-to-a-policy-indicator-and-the-three-packages-each-own-a-different-stretch-of-it." class="slide level2 figure-slide bd-no-chrome">
+<h2>MANTIS is one quality-controlled chain from a sensor in the field to a policy indicator, and the three packages each own a different stretch of it.</h2>
+
+<img data-src="out/fig01-slide.svg" alt="A left-to-right chain from field sensors through AI identification and benchmarking to published data and policy indicators, with numbered quality gates on the connectors. Brackets above mark Packages 1 and 2; a band below marks Package 3." class="r-stretch"><aside class="notes">
+<p>75 seconds. Walk it left to right once, then stop on the numbered gates: deployment registration, expert verification, AI benchmarking, standards conformance. The gates are the activity. Almost everything either side of them already exists somewhere in Europe.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="five-objectives-each-with-a-number-attached" class="slide level2 compact">
+<h2>Five objectives, each with a number attached</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Objective</th>
+<th style="text-align: left;">Target and indicator</th>
+<th style="text-align: left;">Deadline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>O1</strong> Every deployment registered, in one place</td>
+<td style="text-align: left;">100% of active AMI, CamAlien and acoustic deployments across ≥8 partner countries, registered and machine-readable in a Camtrap DP-compliant master database</td>
+<td style="text-align: left;">30 Sep 2028</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>O2</strong> Sensor data reaches policy without bespoke analysis</td>
+<td style="text-align: left;">≥4 finalised indicators live on the MANTIS dashboard, each mapped to NRR Art. 10 / EU-PoMS, the Habitats Directive, the Birds Directive or IAS Regulation 1143/2014, and auto-updating from GBIF</td>
+<td style="text-align: left;">30 Sep 2028</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>O3</strong> Data to benchmark AI against</td>
+<td style="text-align: left;">≥5,000 expert-verified annotations published under FAIR principles, including ≥2,000 NewtCam annotations; ≥20% reviewed by experts from ≥2 countries</td>
+<td style="text-align: left;">31 Dec 2027</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>O4</strong> Partners can run this themselves</td>
+<td style="text-align: left;">25 summer-school participants from ≥12 countries; ≥20 distinct organisations attending ≥1 of the 8 online events</td>
+<td style="text-align: left;">30 Jun 2028</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>O5</strong> A pathway beyond Biodiversa+</td>
+<td style="text-align: left;">Roadmap endorsed by ≥2/3 of partners at BioMonWeek 2028, naming ≥2 concrete funding or hosting pathways</td>
+<td style="text-align: left;">30 Jun 2028</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>75 seconds. Do not read the table. Say: every objective carries a date and a threshold, so at the end of the activity you can tell whether it was met without holding a discussion about it. Point at O3 as the one everything else depends on, and at O5 as the one that decides whether this outlives the money.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="how-it-gets-done" class="title-slide slide level1 green center">
+<h1>How it gets done</h1>
+
+</section>
+<section id="nineteen-activities-three-packages" class="slide level2 packages">
+<h2>Nineteen activities, three packages</h2>
+<div class="columns">
+<div class="column">
+<h4 id="package-1-scheme-improvement">Package 1 – Scheme improvement</h4>
+<p><span class="small">Core Activity 2 · seven activities</span></p>
+<ul>
+<li>Unified deployment registration system <span class="small">A1.1</span></li>
+<li>Verified datasets for transnational quality control <span class="small">A1.2</span></li>
+<li>Scaling contributions toward verification <span class="small">A1.3</span></li>
+<li>Sensor upgrades in existing networks <span class="small">A1.4</span></li>
+<li>Underwater imaging of benthic invertebrates <span class="small">A1.5</span></li>
+<li>Underwater acoustic pilot in ponds <span class="small">A1.6</span></li>
+<li>Scaling spatial coverage of existing schemes <span class="small">A1.7</span></li>
+</ul>
+</div><div class="column">
+<h4 id="package-2-data-flows">Package 2 – Data flows</h4>
+<p><span class="small">Core Activity 3, primary · five activities</span></p>
+<ul>
+<li>Transnational benchmarking of AI, and pipeline refinement <span class="small">A2.1</span></li>
+<li>Gold-standard implementation of media, label and annotation standards <span class="small">A2.2</span></li>
+<li>Workflows for policy-relevant indicators <span class="small">A2.3</span></li>
+<li>Scaling contributions toward transnational indicators <span class="small">A2.4</span></li>
+<li>Exemplary data-flow architecture for AMI <span class="small">A2.5</span></li>
+</ul>
+</div><div class="column">
+<h4 id="package-3-capacity-building">Package 3 – Capacity building</h4>
+<p><span class="small">Core Activity 4 · seven activities</span></p>
+<ul>
+<li>Platform for communication and signposting <span class="small">A3.1</span></li>
+<li>MANTIS summer school <span class="small">A3.2</span></li>
+<li>Roadmap for a technical hub <span class="small">A3.3</span></li>
+<li>Technical fora and curated user guidance <span class="small">A3.4</span></li>
+<li>Two workshops on verification <span class="small">A3.5</span></li>
+<li>Four device webinars <span class="small">A3.6</span></li>
+<li>Two workshops on AI processing <span class="small">A3.7</span></li>
+</ul>
+</div></div>
+<p><span class="small">Nine deliverables and sixteen milestones, between 1 January 2027 and 30 September 2028.</span></p>
+<aside class="notes">
+<p>75 seconds. Do not read nineteen activity titles. Give one sentence per column: Package 1 improves the schemes that feed the chain, Package 2 carries the data through it, Package 3 builds the capacity that keeps it running. Then name the three outputs a decision maker will actually look for – the registration system online (M1.3, Aug 27), four indicators live on the dashboard (M2.2, Jul 28), and the roadmap (D3.1, Sep 28).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="built-to-scale-with-the-number-of-partners-who-join" class="slide level2">
+<h2>Built to scale with the number of partners who join</h2>
+<ul>
+<li><strong>CORE</strong> – everything the two lead partners deliver regardless: registration system, verified datasets, AI benchmarking, standards, indicators, platform, summer school, roadmap. <span class="small"><strong>€314,630.80</strong></span></li>
+<li><strong>CORE + ENHANCED</strong> – adds the underwater acoustic pilot, the one-click AMI pipeline, technical fora, verification and AI-processing workshops, and the device webinars. <span class="small"><strong>€422,535.30</strong></span></li>
+<li><strong>SCALABLE</strong> – priced per participating partner: scaled contributions to verification and to indicators, sensor upgrades, and new deployments in coverage-gap countries. <span class="small"><strong>≈€54,494.36 each</strong> – 4 person-months, 2 in-person attendances, €21,086.40 of equipment</span></li>
+</ul>
+<p><strong>Total requested: €796,850.18</strong> – CORE + ENHANCED for the leads, plus six additional participating partners. At twelve participating partners the scalable line reaches €701,281.04.</p>
+<aside class="notes">
+<p>60 seconds, and it serves two rooms at once. For Biodiversa+: the activity descopes cleanly rather than failing – fewer partners means proportionally fewer scaled deployments, not a thinner version of everything. For a partner weighing whether to join: the tail of the third bullet is the commitment – four person-months, two trips, and equipment that stays with you.</p>
+<p>If asked: the SCALABLE tier is where the proposal’s own shading and its budget table disagree over A1.5 and A1.6, which is why this slide prices the tier by what it funds rather than by activity ID. See MISSING-INPUTS.md. The per-partner personnel figure is still marked TBC in section 11.1, so it is not quoted separately here.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="sustainable-past-2028" class="slide level2">
+<h2>Sustainable past 2028</h2>
+<p><span class="lede">Maintenance rests on three layers, none of which requires continued project funding.</span></p>
+<ol type="1">
+<li><strong>Permanent mandates own the outputs.</strong> NCA CZ maintains the verified reference datasets and annotation capacity under its statutory Habitats and Birds Directive reporting duties. Aarhus University underwrites storage and curation of media in its Environmental Research Data Archive until 2031. Records and datasets are published to GBIF and Zenodo, so the data survives independently of any single host.</li>
+<li><strong>The outputs cost nothing to keep running.</strong> Platform, Living Protocols, standard-compliant example datasets and processing pipelines sit on GitHub Pages, with dashboards refreshed by scheduled GitHub Actions. Curation is decentralised through pull requests and moderated technical fora, so effort scales with the user community rather than with a central team.</li>
+<li><strong>Uptake runs through schemes that continue anyway.</strong> The registration system, benchmarking results and Camtrap DP implementations transfer to BiodivPond (2.6.8), ABMS (2.6.5) and the IAS pilot (2.6.2). Upgraded sensors are hosted at eLTER sites. Indicator workflows feed EU-PoMS and NRR Article 10 obligations that remain legally binding after 2028.</li>
+</ol>
+<p><span class="small">MANTIS establishes no new operational structure. It leaves behind maintained resources and an active community of practice – and a roadmap (D3.1) offering the coordinating function to whatever vehicle carries it on, an EBOCC Thematic Hub above all.</span></p>
+<aside class="notes">
+<p>60 seconds. The question behind every funding decision is what happens when the money stops. The answer here is deliberately unglamorous: no new secretariat, no hosting bill, and outputs parked with institutions that are already legally obliged to keep doing this.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thank-you" class="slide level2 bd-closing" style="background-image: url('images/20250703024959-snapshot.jpg')">
+<h2>Thank you</h2>
+<p>MANTIS: A Hub for Monitoring with Automated and Novel Technologies Based on Image and Sound</p>
+<p>For more information, contact:</p>
+<ul>
+<li>Jamie Alison, Aarhus University – <a href="mailto:jalison@ecos.au.dk" class="email">jalison@ecos.au.dk</a></li>
+<li>Jonas Gaigr, Nature Conservation Agency CZ – <a href="mailto:jonas.gaigr@aopk.gov.cz" class="email">jonas.gaigr@aopk.gov.cz</a></li>
+<li>MANTIS platform – live from April 2027 (D2.3)</li>
+</ul>
+<aside class="notes">
+<p>20 seconds, then questions. The likeliest three: why not leave this to the pilots (they have no mandate or budget to work across each other); what if fewer partners join (risk R2 – descope the scalable tier proportionally); and what happens if verification runs late (risk R3 – a one-quarter buffer between 1.3 and 2.1, with annotation effort reallocated across partners).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="full-pitch_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="full-pitch_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="full-pitch_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="full-pitch_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="full-pitch_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="full-pitch_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="full-pitch_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="full-pitch_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="full-pitch_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="full-pitch_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
