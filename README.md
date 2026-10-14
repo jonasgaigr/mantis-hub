@@ -40,6 +40,8 @@ index.qmd         html, the site's front page -- the proposal in brief, the
 site.scss         the front page's theme; deck palette, page layout
 core-pitch.qmd    revealjs, the core message in five slides
 full-pitch.qmd    revealjs, the 7-10 minute pitch for decision makers
+extended-pitch.qmd  revealjs, the full pitch plus one slide per package
+                  on who leads each task and how partners contribute
 figures.qmd       A4 variants, captions, alt text (html + pdf)
 slides.qmd        revealjs, L1 only -- every figure, one slide each
 ```

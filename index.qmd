@@ -26,9 +26,9 @@
 # print a second, unstyled "MANTIS" heading above it.
 pagetitle: "MANTIS – a hub for monitoring with automated and novel technologies based on image and sound"
 description-meta: >-
-  MANTIS will form the connective tissue for automated monitoring with novel
-  technologies based on image and sound across Europe. A Biodiversa+ WP2 Task
-  2.5.3 additional activity, 2027-2028.
+  MANTIS aims to connect automated monitoring with novel technologies based
+  on image and sound across Europe. A Biodiversa+ WP2 Task 2.5.3 additional
+  activity, 2027-2028.
 format:
   html:
     theme: site.scss
@@ -53,7 +53,7 @@ spec <- Filter(function(s) identical(s$id, "fig01"), document_specs())[[1]]
 <div class="hero__inner">
 <p class="hero__mark">MANTIS</p>
 <p class="hero__title">A hub for Monitoring with Automated and Novel Technologies based on Image and Sound</p>
-<p class="hero__lede">Sensors are already in the ground across Europe. MANTIS builds the <strong>connective tissue</strong> that turns them into one connected, transnational monitoring system rather than isolated national deployments.</p>
+<p class="hero__lede">Sensors are already deployed across Europe. MANTIS aims to connect them into a transnational monitoring system, rather than isolated national deployments.</p>
 <ul class="hero__meta">
 <li>Biodiversa+ WP2 · Task 2.5.3 additional activity</li>
 <li>Aarhus University with the Nature Conservation Agency CZ</li>
@@ -75,7 +75,7 @@ spec <- Filter(function(s) identical(s$id, "fig01"), document_specs())[[1]]
 cat(figure_block(spec, profile = "a4", fmt = "html"))
 ```
 
-[The numbered gates on the connectors – deployment registration, expert verification, AI benchmarking, standards conformance – are the activity. Almost everything either side of them already exists somewhere in Europe, which is why MANTIS is a hub rather than a new monitoring scheme.]{.section-lede}
+[The numbered gates on the connectors – deployment registration, expert verification, AI benchmarking, standards conformance – are what MANTIS adds. Most of what lies either side of them already exists in Europe.]{.section-lede}
 
 ## Start here
 
@@ -84,13 +84,13 @@ cat(figure_block(spec, profile = "a4", fmt = "html"))
 <a class="card" href="core-pitch.html">
 <span class="card__kicker">5 slides · 5–6 minutes</span>
 <span class="card__title">Core pitch</span>
-<span class="card__body">The argument distilled: what MANTIS is, the problem it answers, the chain figure, and what exists at the end of the activity with what it costs.</span>
-<span class="card__meta">An opening, three slides, a close.</span>
+<span class="card__body">What MANTIS is, the problem it answers, the chain figure, what exists at the end of the activity, what it costs.</span>
+<span class="card__meta">A brief introduction.</span>
 </a>
-<a class="card" href="full-pitch.html">
-<span class="card__kicker">13 slides · 7–10 minutes</span>
-<span class="card__title">Full pitch</span>
-<span class="card__body">The whole case for decision makers: the deployments that already exist, the three bottlenecks, five objectives with dates and thresholds, nineteen activities, the budget tiers and the plan for after 2028.</span>
+<a class="card" href="extended-pitch.html">
+<span class="card__kicker">17 slides · 10–13 minutes</span>
+<span class="card__title">Extended pitch</span>
+<span class="card__body">Existing deployments and technologies, three bottlenecks, five objectives, nineteen activities, budget tiers, the plan for after 2028. One slide per package on how partners can contribute.</span>
 <span class="card__meta">Speaker notes on every slide.</span>
 </a>
 </div>
@@ -98,27 +98,27 @@ cat(figure_block(spec, profile = "a4", fmt = "html"))
 
 ## What the activity does
 
-**Connect data acquisition** – align protocols, deployments and annotations across partners, and extend spatial and taxonomic coverage with new sensor deployments. [Package 1 · seven activities · Core Activity 2]{.quiet}
+**Connect data acquisition** – align protocols, deployments and annotations across partners. Extend spatial and taxonomic coverage with new sensor deployments. [Package 1 · seven activities · Core Activity 2]{.quiet}
 
-**Connect the data** – harmonise datasets and metadata into a seamless, quality-controlled flow from images and sounds to indicators, including transnational benchmarking of AI models. [Package 2 · five activities · Core Activity 3, primary]{.quiet}
+**Connect the data** – harmonise datasets and metadata. Ensure flow from images and sounds to quality-controlled indicators, including transnational benchmarking of AI models. [Package 2 · five activities · Core Activity 3, primary]{.quiet}
 
 **Connect the community** – link the users of these technologies to one another, and to the skills and resources that sustain a transnational effort. [Package 3 · seven activities · Core Activity 4]{.quiet}
 
-[Nineteen activities in all, with nine deliverables and sixteen milestones between 1 January 2027 and 30 September 2028. MANTIS positions itself as a progenitor for a Thematic Hub associated with an EBOCC, and establishes no new operational structure: the outputs sit on GitHub Pages, GBIF and Zenodo, and the verification capacity rests on statutory Habitats and Birds Directive duties that continue anyway.]{.section-lede}
+[Nineteen activities in all, with nine deliverables and sixteen milestones between 1 January 2027 and 30 September 2028. MANTIS could develop into a Thematic Hub associated with an EBOCC. It sets up no new operational structure: outputs are hosted on GitHub Pages, GBIF and Zenodo, and verification capacity rests on statutory Habitats and Birds Directive duties.]{.section-lede}
 
-## What it delivers, and by when
+## Objectives and deadlines
 
 | | Target and indicator | Deadline |
 |:---|:---|:---|
-| **O1** Every deployment registered, in one place | 100% of active AMI, CamAlien and acoustic deployments across ≥8 partner countries, registered and machine-readable in a Camtrap DP-compliant master database | 30 Sep 2028 |
-| **O2** Sensor data reaches policy without bespoke analysis | ≥4 finalised indicators live on the MANTIS dashboard, each mapped to NRR Art. 10 / EU-PoMS, the Habitats Directive, the Birds Directive or IAS Regulation 1143/2014, and auto-updating from GBIF | 30 Sep 2028 |
-| **O3** Data to benchmark AI against | ≥5,000 expert-verified annotations published under FAIR principles, including ≥2,000 NewtCam annotations; ≥20% reviewed by experts from ≥2 countries | 31 Dec 2027 |
-| **O4** Partners can run this themselves | 25 summer-school participants from ≥12 countries; ≥20 distinct organisations attending ≥1 of the 8 online events | 30 Jun 2028 |
-| **O5** A pathway beyond Biodiversa+ | Roadmap endorsed by ≥2/3 of partners at BioMonWeek 2028, naming ≥2 concrete funding or hosting pathways | 30 Jun 2028 |
+| **O1** Deployment registration | 100% of active AMI, CamAlien and acoustic deployments across ≥8 partner countries, registered and machine-readable in a Camtrap DP-compliant master database | 30 Sep 2028 |
+| **O2** Policy-relevant indicators | ≥4 finalised indicators live on the MANTIS dashboard, each mapped to NRR Art. 10 / EU-PoMS, the Habitats Directive, the Birds Directive or IAS Regulation 1143/2014, and auto-updating from GBIF | 30 Sep 2028 |
+| **O3** Verified annotations | ≥5,000 expert-verified annotations published under FAIR principles, including ≥2,000 NewtCam annotations; ≥20% reviewed by experts from ≥2 countries | 31 Dec 2027 |
+| **O4** Training | 25 summer-school participants from ≥12 countries; ≥20 distinct organisations attending ≥1 of the 8 online events | 30 Jun 2028 |
+| **O5** Roadmap beyond 2028 | Roadmap endorsed by ≥2/3 of partners at BioMonWeek 2028, naming ≥2 concrete funding or hosting pathways | 30 Jun 2028 |
 
 ## The devices, in the field
 
-[Three device families run through every activity: AMI traps for nocturnal insects, acoustic recorders for birds, bats and amphibians, and the vehicle-mounted CamAlien for invasive plants along roads. These are partner deployments as they stand today -- the sensors MANTIS registers, upgrades and benchmarks rather than replaces.]{.section-lede}
+[Three device families: AMI traps for nocturnal insects, acoustic recorders for birds, bats and amphibians, and the vehicle-mounted CamAlien for invasive plants along roads. These are existing partner deployments, which MANTIS would register, upgrade and benchmark.]{.section-lede}
 
 ```{=html}
 <div class="gallery">
@@ -128,30 +128,30 @@ cat(figure_block(spec, profile = "a4", fmt = "html"))
 </figure>
 <figure class="gallery__item">
 <img class="gallery__media" src="images/gallery/ami-sheet-night.jpg" alt="A close view of an illuminated white sheet covered with dozens of moths, craneflies and small insects photographed by an automated camera at night.">
-<figcaption><span class="gallery__kicker">One frame, one night</span>What the trap actually returns: an illuminated sheet, photographed at intervals through the night. The volume of images like this is what has outgrown the community's capacity to verify them – the bottleneck the hub exists to address.</figcaption>
+<figcaption><span class="gallery__kicker">One frame, one night</span>An illuminated sheet, photographed at intervals through the night. The volume of images like this has outgrown the capacity to verify them.</figcaption>
 </figure>
 <figure class="gallery__item">
 <img class="gallery__media" src="images/gallery/acoustic-recorders.jpg" alt="Two olive-green Wildlife Acoustics Song Meter recorders strapped to the trunk of a fruit tree at the edge of an open meadow.">
-<figcaption><span class="gallery__kicker">Acoustic recorders</span>Song Meter units at a meadow edge, recording audible and ultrasound. A substantial share of deployed recorders still need a manual visit to retrieve data; Activity 1.2 upgrades them for solar power and cellular remote access.</figcaption>
+<figcaption><span class="gallery__kicker">Acoustic recorders</span>Song Meter units at a meadow edge, recording audible and ultrasound. Many deployed recorders still need a field visit to retrieve data. Activity 1.4 upgrades them for solar power and cellular remote access.</figcaption>
 </figure>
 <figure class="gallery__item">
 <img class="gallery__media" src="images/gallery/camalien-vehicle.jpg" alt="A white estate car parked on a roadside verge with a camera rig mounted above its rear roofline, a lorry and sunflower field behind.">
-<figcaption><span class="gallery__kicker">CamAlien</span>A high-speed, car-mounted camera system with automated image capture and GPS processing. Roads are a principal vector for invasive alien species, so mapping them from a moving vehicle is early detection under IAS Regulation 1143/2014.</figcaption>
+<figcaption><span class="gallery__kicker">CamAlien</span>A high-speed, car-mounted camera system with automated image capture and GPS processing. Roads are a key route for the spread of invasive alien species. Mapping plants along them supports early detection under IAS Regulation 1143/2014.</figcaption>
 </figure>
 <figure class="gallery__item">
 <img class="gallery__media" src="images/gallery/camalien-camera.jpg" alt="Close view of the CamAlien rig: a lens in a black housing beside a white weatherproof control box, strapped to a roof bar.">
-<figcaption><span class="gallery__kicker">The rig up close</span>Lens, housing and control box on the roof bar. Activity 1.2 installs new onboard computers and GPS so images are classified in real time on the vehicle, shortening the gap between observation and actionable knowledge.</figcaption>
+<figcaption><span class="gallery__kicker">The rig up close</span>Lens, housing and control box on the roof bar. Activity 1.4 installs new onboard computers and GPS, so images can be classified on the vehicle in real time.</figcaption>
 </figure>
 <figure class="gallery__item">
 <img class="gallery__media gallery__media--fit" src="images/gallery/ai-verification-ui.jpg" alt="A screenshot of an annotation interface: a scatterplot of insect crops, a list of taxonomic labels such as Araneae and Coleoptera, and a gallery panel showing two moths enlarged for review.">
-<figcaption><span class="gallery__kicker">Expert verification</span>The other half of the chain. Experts review AI-proposed identifications to build the reference dataset that benchmarking depends on – at least 5,000 verified annotations, a fifth of them checked in two countries, by the end of 2027.</figcaption>
+<figcaption><span class="gallery__kicker">Expert verification</span>Experts review AI-proposed identifications to build the reference dataset used for benchmarking – at least 5,000 verified annotations, a fifth of them checked in two countries, by the end of 2027.</figcaption>
 </figure>
 </div>
 ```
 
 ## Related initiatives
 
-[MANTIS connects work that already exists rather than repeating it. These are the schemes, projects and infrastructures its activities build on, feed into, or are designed to stay interoperable with.]{.section-lede}
+[Schemes, projects and infrastructures that MANTIS builds on, feeds into, or stays interoperable with.]{.section-lede}
 
 ```{=html}
 <div class="cards cards--links">
@@ -173,7 +173,7 @@ cat(figure_block(spec, profile = "a4", fmt = "html"))
 <a class="card" href="https://biodivpond.github.io/" target="_blank" rel="noopener">
 <span class="card__kicker">Pilot 2.6.8</span>
 <span class="card__title">BiodivPond</span>
-<span class="card__body">Standardised pond monitoring at continental scale, with acoustic recorders in ten countries. The underwater acoustic pilot and the NewtCam annotations connect here.</span>
+<span class="card__body">Standardised pond monitoring, with acoustic recorders in ten countries. The underwater acoustic pilot and the NewtCam annotations connect here.</span>
 </a>
 <a class="card" href="https://www.mambo-project.eu/" target="_blank" rel="noopener">
 <span class="card__kicker">Horizon Europe</span>
@@ -183,7 +183,7 @@ cat(figure_block(spec, profile = "a4", fmt = "html"))
 <a class="card" href="https://tabmon-eu.nina.no/" target="_blank" rel="noopener">
 <span class="card__kicker">Biodiversa+ project</span>
 <span class="card__title">TABMON</span>
-<span class="card__body">A pan-European passive acoustic monitoring network turning soundscapes into EBVs. Shared metadata structures and acoustic pipelines.</span>
+<span class="card__body">Passive acoustic monitoring across four countries, producing EBVs from soundscapes. Shared metadata structures and acoustic pipelines.</span>
 </a>
 <a class="card" href="https://cordis.europa.eu/project/id/101060639" target="_blank" rel="noopener">
 <span class="card__kicker">EU research results</span>
@@ -196,5 +196,5 @@ cat(figure_block(spec, profile = "a4", fmt = "html"))
 ::: {.site-foot}
 **Contact** – Jamie Alison, Aarhus University, <jalison@ecos.au.dk> · Jonas Gaigr, Nature Conservation Agency CZ, <jonas.gaigr@aopk.gov.cz>
 
-Every number and claim on this site is taken from the proposal document; the figure is generated from a declarative spec and checked against facts extracted from that document before it is allowed to build. Source and build pipeline: [github.com/jonasgaigr/mantis-hub](https://github.com/jonasgaigr/mantis-hub).
+Numbers and claims on this site are taken from the proposal document. The figure is generated from a declarative spec and checked against facts extracted from that document. Source and build pipeline: [github.com/jonasgaigr/mantis-hub](https://github.com/jonasgaigr/mantis-hub).
 :::
