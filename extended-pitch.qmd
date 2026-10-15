@@ -16,6 +16,10 @@
 #   contributor+  -> Partner-led (hub-supported)
 #   contributor   -> Partner-led  (A1.7's "supported by coordinator" is dropped
 #                    at the leads' request)
+# One later change from the leads (15 Oct 2026): A2.2 is shown as Hub-led
+# (partner-supported), although the table lists it as coordinator.
+# The "Ways to contribute" slide is shared with contribute.qmd through
+# _contribute-slide.qmd, so the deck and the one-page version cannot drift.
 # The "Get" and "Contribute" lines were written with the activity leads and
 # summarise Section 6.2; they are paraphrase, not quotation.
 #
@@ -463,11 +467,13 @@ How partners contribute
 Reliability scores for AI identifications, by taxon and region
 :::
 
-::: {.task .hub}
+::: {.task .hub-plus}
 [A2.2]{.tid} Data standards
-[Hub-led]{.role}
+[Hub-led (partner-supported)]{.role}
 
 Worked examples for publishing image and sound data to GBIF
+
+Contribute to standard development and data publication templates
 :::
 
 ::: {.task .hub}
@@ -497,8 +503,10 @@ A near one-click pipeline from AMI images to indicators
 [Partner-led tasks are where in-kind effort or EC top-up goes. Top-up does not unlock further EC funding, but helps bring the hub to life.]{.small .topup}
 
 ::: {.notes}
-45 seconds. Package 2 is mostly hub-led. The partner-led task is A2.4: partner
-expertise helps the indicators reflect national reporting needs.
+45 seconds. Package 2 is mostly hub-led. Partners can support A2.2 by
+contributing to standards and data publication templates. The partner-led task
+is A2.4: partner expertise helps the indicators reflect national reporting
+needs.
 :::
 
 ## Package 3 – Capacity building {.roles}
@@ -573,6 +581,8 @@ Skills/resources to run open-source AI models on your own data
 place to ask questions. Partners can support the two turquoise tasks – the fora
 draw on partners' experience, and the roadmap sets out what happens after 2028.
 :::
+
+{{< include _contribute-slide.qmd >}}
 
 ## Budget tiers {.roomy style="--roomy: 1.55em"}
 

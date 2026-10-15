@@ -1,0 +1,101 @@
+## Ways to contribute {.contrib}
+
+```{=html}
+<style>
+/* One row per way of contributing, grouped by package. Plum marks this
+   slide as being about what partners can do; it is not one of the role
+   colours on the package slides. The right-hand tag says what partners
+   report for each contribution. */
+.reveal .contrib .ways { --plum: #7B3F75; font-size: 1.1em; }
+.reveal .contrib .ways h4 { margin: 0.7em 0 0.25em 0; color: var(--plum); }
+.reveal .contrib .ways h4:first-child { margin-top: 0; }
+.reveal .contrib .way {
+  display: grid; grid-template-columns: 1fr 7.5em 11em;
+  column-gap: 1em; align-items: center;
+  padding: 0.45em 0.7em; margin-bottom: 0.3em;
+  border-left: 0.35em solid var(--plum); background: rgba(123, 63, 117, 0.08);
+}
+.reveal .contrib .way > p { margin: 0; }
+.reveal .contrib .aid { color: rgba(0, 0, 0, 0.62); font-size: 0.85em; }
+.reveal .contrib .way > p:last-child { justify-self: end; }
+.reveal .contrib .tag {
+  display: inline-block; padding: 0.05em 0.6em;
+  border: 1px solid var(--plum); border-radius: 0.8em;
+  font-size: 0.8em; font-weight: 700; color: var(--plum);
+}
+.reveal .contrib .topup { margin-top: 0.6em; }
+</style>
+```
+
+::: {.ways}
+#### Package 1 – Scheme improvement
+
+::: {.way}
+Buy new acoustic recorders (PAM), insect cameras, CamAlien
+
+[A1.4–A1.7]{.aid}
+
+[Report purchases]{.tag}
+:::
+
+::: {.way}
+Operate and register sensors
+
+[A1.1, A1.4–A1.7]{.aid}
+
+[Report person-months]{.tag}
+:::
+
+::: {.way}
+Contribute taxonomic verifications
+
+[A1.3]{.aid}
+
+[Report person-months]{.tag}
+:::
+
+#### Package 2 – Data flows
+
+::: {.way}
+Contribute to standards and data publication templates
+
+[A2.2]{.aid}
+
+[Report person-months]{.tag}
+:::
+
+::: {.way}
+Contribute to development of sensor-derived policy indicators
+
+[A2.4]{.aid}
+
+[Report person-months]{.tag}
+:::
+
+#### Package 3 – Capacity building
+
+::: {.way}
+Engage with online fora and curate user guidance
+
+[A3.4]{.aid}
+
+[Report person-months]{.tag}
+:::
+
+::: {.way}
+Contribute to the roadmap for an image and sound hub linked to an EBOCC
+
+[A3.3]{.aid}
+
+[Report person-months]{.tag}
+:::
+:::
+
+[Contributions can be in kind or through EC top-up. Top-up does not unlock further EC funding, but helps bring the hub to life.]{.small .topup}
+
+::: {.notes}
+45 seconds. A summary of where partners can contribute, by package. Sensors
+bought within the scope of MANTIS can be acoustic recorders, insect cameras or
+CamAlien units; partners report the purchases. For every other contribution,
+partners report the person-months.
+:::

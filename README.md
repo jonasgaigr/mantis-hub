@@ -42,6 +42,8 @@ core-pitch.qmd    revealjs, the core message in five slides
 full-pitch.qmd    revealjs, the 7-10 minute pitch for decision makers
 extended-pitch.qmd  revealjs, the full pitch plus one slide per package
                   on who leads each task and how partners contribute
+contribute.qmd    revealjs, the "Ways to contribute" slide on its own, one
+                  self-contained file for sending to partners
 figures.qmd       A4 variants, captions, alt text (html + pdf)
 slides.qmd        revealjs, L1 only -- every figure, one slide each
 ```
