@@ -1,0 +1,19 @@
+---
+# ---------------------------------------------------------------------------
+# contribute.qmd -- the "Ways to contribute" slide on its own, for sharing
+# with partners. The slide itself is _contribute-slide.qmd, which
+# extended-pitch.qmd includes too, so the two cannot drift apart.
+#
+# No title, so there is no title slide: the file opens on the slide. It
+# embeds its resources, so contribute.html is one file that can be sent as an
+# attachment.
+# ---------------------------------------------------------------------------
+pagetitle: "MANTIS – ways to contribute"
+format:
+  biodiversaplus-revealjs:
+    embed-resources: true
+    slide-number: false
+    menu: false
+---
+
+{{< include _contribute-slide.qmd >}}

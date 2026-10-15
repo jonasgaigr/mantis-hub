@@ -8,6 +8,7 @@ project:
     - core-pitch.qmd
     - full-pitch.qmd
     - extended-pitch.qmd
+    - contribute.qmd
     - figures.qmd
     - slides.qmd
 
